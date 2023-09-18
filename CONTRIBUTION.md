@@ -69,4 +69,8 @@ By following these steps, you can effectively collaborate on our Static GitHub W
 
 #### Need More Clarifications?
 Click the link below to watch a video on how collaboration on this project can be done:
-  - <strong><em><a href="https://drive.google.com/file/d/1fHZAPNNHwp8ia0u0RhnJGwV8DOATmxeh/view?usp=drive_link">Contributing to this project</a></em></strong>
+  - <strong><em><a href="https://youtu.be/6kSyGMsDRUw">Contributing to this project</a></em></strong>
+  <!--
+  https://drive.google.com/file/d/1fHZAPNNHwp8ia0u0RhnJGwV8DOATmxeh/view?usp=drive_link
+  https://drive.google.com/file/d/1INIqvF7uHbfh2QO30lyb65addtt_iLht/view?usp=drive_link
+  -->
