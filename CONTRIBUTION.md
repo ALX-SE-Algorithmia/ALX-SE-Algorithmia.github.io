@@ -72,7 +72,7 @@ Click the link below to watch a video on how collaboration on this project can b
   - <strong><em><a href="https://youtu.be/6kSyGMsDRUw">YouTube Video</a></em></strong>
 
 #### Useful Links"
-+ <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=198-50&t=nBeXl2Ou08oEyWTJ-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=34%3A488&mode=design">Figma Presentation</a>
++ <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=541-379&t=mSpiguRB4NRl4hQ1-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=34%3A488">Figma Presentation</a>
 + <a href="https://docs.google.com/document/d/1GWltuULw7BjHkrT66N243f6Uak5guNJD_N154PZtqvA/edit?usp=sharing">Website Details</a>
 <!-- + <a href="https://docs.google.com/document/d/1cYYwSZkB4SAw22hN7YMHBtFbSnkbRRjBYHuB1v4SE6o/edit?usp=sharing">Home Page</a> -->
   <!--
