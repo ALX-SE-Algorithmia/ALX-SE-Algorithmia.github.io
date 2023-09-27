@@ -1,24 +1,44 @@
-name: Preview Builder
+name: Comment HTML Preview Link
 
-# This action works with pull requests and pushes
 on:
   pull_request:
-  push:
-    branches:
-      - main
+    types:
+      - opened  # You can customize this to trigger on other PR events as well
 
 jobs:
-  HTML_Preview:
+  comment_html_preview:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          # Make sure the actual branch is checked out when running on pull requests
-          ref: ${{ github.head_ref }}
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-      - name: Render Preview
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # You can adjust the Node.js version as needed
+
+      - name: Comment HTML Preview
+        id: comment
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: 'index.html'
+
+      - name: Extract HTML Preview URL
+        id: get_url
+        run: echo "HTML Preview URL: ${{ steps.comment.outputs.url }}"
+
+      - name: Comment PR with HTML Preview Link
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const url = `HTML Preview URL: ${{ steps.comment.outputs.url }}`;
+
+            github.issues.createComment({
+              issue_number: prNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: url
+            });
