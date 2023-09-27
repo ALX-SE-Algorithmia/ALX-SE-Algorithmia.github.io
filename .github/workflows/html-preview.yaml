@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  prettier:
+  HTML_Preview:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
 
-      - name: HTML Preview
+      - name: Render Preview
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: 'index.html'
