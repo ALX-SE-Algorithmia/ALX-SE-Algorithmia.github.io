@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Start HTTP server
-        run: |
-          python3 -m http.server 8000 &
-          echo "Server started"
+#      - name: Start HTTP server
+#        run: |
+#          python3 -m http.server 8000 &
+#          echo "Server started"
       - name: Deploy to GitHub Pages
         uses: rossjrw/pr-preview-action@v1
         with:
