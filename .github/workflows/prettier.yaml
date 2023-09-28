@@ -3,7 +3,6 @@ name: Lint
 # This action works with pull requests and pushes
 on:
   push:
-  pull_request:
     branches:
       - main
 
