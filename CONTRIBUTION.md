@@ -6,11 +6,11 @@ Collaborating on the static website, following the exact way it worked on the <a
 2. Check out the "Issues" tab. Click the link below:
      - <a href="https://github.com/ALX-SE-Algorithmia/ALX-SE-Algorithmia.github.io/issues">ALX-SE-Algorithmia.github.io/issues</a>
 
-3. Check out an issue you would like to work on. Comment on that issue and tag the Code Moderators on the issue you would like to work on.
+3. For the Issues, you must have been assigned to work on an issue, with your teammates . If you haven't but would like to, simply comment under the preferred issue.
 
 4. Wait for the response from the Code Review Team. After that, that issue will be assigned to you, and with a specific deadline too.
 
-5. Start working on your issue as soon as possible. You can follow the steps below to do so:
+5. Start working on your issue with your team as soon as possible, and within the timeline for the deadline. You can follow the steps below to do so:
 
 6. **Fork the repository:** Start by navigating back to the <a href="https://github.com/ALX-SE-Algorithmia/ALX-SE-Algorithmia.github.io/">GitHub Repo</a>, and click on the "Fork" button. This creates a copy of the repository under your GitHub account. Use the link below:
     - Fork this repository: <a href="https://github.com/ALX-SE-Algorithmia/ALX-SE-Algorithmia.github.io/fork">Click here</a>
@@ -69,10 +69,10 @@ By following these steps, you can effectively collaborate on our Static GitHub W
 
 #### Need More Clarifications?
 Click the link below to watch a video on how collaboration on this project can be done:
-  - <strong><em><a href="https://youtu.be/6kSyGMsDRUw">YouTube Video</a></em></strong>
+  - <strong><em><a href="https://youtu.be/Qeibe59f72s">YouTube Video</a></em></strong>
 
 #### Useful Links"
-+ <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=541-379&t=mSpiguRB4NRl4hQ1-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=34%3A488">Figma Presentation</a>
++ <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=541-379&t=mSpiguRB4NRl4hQ1-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=34%3A488">Figma Presentation (Home Page)</a>
 + <a href="https://docs.google.com/document/d/1GWltuULw7BjHkrT66N243f6Uak5guNJD_N154PZtqvA/edit?usp=sharing">Website Details</a>
 <!-- + <a href="https://docs.google.com/document/d/1cYYwSZkB4SAw22hN7YMHBtFbSnkbRRjBYHuB1v4SE6o/edit?usp=sharing">Home Page</a> -->
   <!--
