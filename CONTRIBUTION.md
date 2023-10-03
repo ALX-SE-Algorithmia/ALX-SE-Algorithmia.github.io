@@ -69,7 +69,7 @@ By following these steps, you can effectively collaborate on our Static GitHub W
 
 #### Need More Clarifications?
 Click the link below to watch a video on how collaboration on this project can be done:
-  - <strong><em><a href="">YouTube Video</a></em></strong>
+  - <strong><em><a href="https://youtu.be/Qeibe59f72s">YouTube Video</a></em></strong>
 
 #### Useful Links"
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=541-379&t=mSpiguRB4NRl4hQ1-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=34%3A488">Figma Presentation (Home Page)</a>
