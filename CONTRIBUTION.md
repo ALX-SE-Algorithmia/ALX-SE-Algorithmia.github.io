@@ -74,9 +74,9 @@ By following these steps, you can effectively collaborate on our Static GitHub W
 #### Useful Links"
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=541-379&t=mSpiguRB4NRl4hQ1-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=34%3A488">Home Page (Figma Prototype)</a>
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=68-50&t=O8rGPIFi2zdg1u11-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=541%3A379&mode=design">Events Page (Figma Prototype)</a>
++ <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=26-51&t=lrwFyeZhwBIg7MNw-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=541%3A379&mode=design">Projects Page (Figma Prototype)</a>
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=217-149&t=QYinztsDNlaHi6Xl-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=541%3A379&mode=design">Blogs Page (Figma Prototype)</a>
-<!-- + <a href="">About Us Page (Figma Prototype)</a>
-+ <a href="">Projects Page (Figma Prototype)</a> -->
+
 + <a href="https://docs.google.com/document/d/1GWltuULw7BjHkrT66N243f6Uak5guNJD_N154PZtqvA/edit?usp=sharing">Google Doc (Website Details)</a>
 <!-- + <a href="https://docs.google.com/document/d/1cYYwSZkB4SAw22hN7YMHBtFbSnkbRRjBYHuB1v4SE6o/edit?usp=sharing">Home Page</a> -->
   <!--
