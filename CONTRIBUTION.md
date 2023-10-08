@@ -72,6 +72,7 @@ By following these steps, you can effectively collaborate on our Static GitHub W
 - Here's a <strong><em><a href="https://youtu.be/Qeibe59f72s" target="_blank">YouTube Video</a></em></strong>. Hope it helps!
 
 #### Useful Links"
++ <a href="https://docs.google.com/document/d/1xyfMAVnIS_wzdov7WCAJqiysbiDK9EemSrmUql16BF4/edit">Static Website Collaboration</a>
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=541-379&t=mSpiguRB4NRl4hQ1-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=34%3A488" target="_blank">Home Page (Figma Prototype)</a>
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=68-50&t=O8rGPIFi2zdg1u11-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=541%3A379&mode=design" target="_blank">Events Page (Figma Prototype)</a>
 + <a href="https://www.figma.com/proto/dZE0hWhNqcgolmITw5KUKV/Algorithmia-SE-Website?type=design&node-id=26-51&t=lrwFyeZhwBIg7MNw-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=541%3A379&mode=design" target="_blank">Projects Page (Figma Prototype)</a>
