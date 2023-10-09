@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #062F3D;
+}
+
+.header{
+    position: fixed;
+    top:20px;
+    left:0;
+    width:100%;
+    padding: 20px 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 0px;
+    padding: 0 13px;
+}
+
+.joinus{
+    padding: 14px 30px;
+    background-color: #fff;
+    margin-left: 35px;
+    font-weight: 500;
+    border-radius: 50px;
+    border-style: none;
+}
+.recent{
+    font-size: 50px;
+    color:#fff;
+    margin-top: 120px;
+    text-align: center;
+
+}
+.container-recent{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+
+}
+.recent-img{
+    width:420px;
+    height:190px;
+    padding:10px;
+    border-radius: 20px;
+}
+.recent-text{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.recent-p{
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.recent-button{
+    margin-top: 50px;
+    font-size: 19px;
+    padding: 20px 60px;
+    border-radius: 50px;
+    background-color: #FF7B1B;
+    color: #fff;
+    border-style: none;
+}
+
+.recent-butto{
+    margin-top: 30px;
+    margin-left:auto;
+    font-size: 19px;
+    margin-left: 60px;
+    padding: 20px 60px;
+    border-radius: 50px;
+    background-color: #FF7B1B;
+    color: #fff;
+    border-style: none;
+}
