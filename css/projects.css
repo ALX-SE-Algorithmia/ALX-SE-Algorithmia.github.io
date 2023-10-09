@@ -52,6 +52,7 @@ body{
     margin-left: 50px;
     margin-top: 20px;
     display: flex;
+    overflow: scroll;
 
 }
 .recent-img{
@@ -74,6 +75,7 @@ body{
 }
 .recent-button{
     margin-top: 50px;
+    margin-left: 50px;
     font-size: 19px;
     padding: 20px 60px;
     border-radius: 50px;
@@ -84,9 +86,9 @@ body{
 
 .recent-butto{
     margin-top: 30px;
-    margin-left:auto;
+    
     font-size: 19px;
-    margin-left: 60px;
+    margin-left: 90px;
     padding: 20px 60px;
     border-radius: 50px;
     background-color: #FF7B1B;
