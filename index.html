@@ -14,7 +14,7 @@
 
     <!-- Linking CSS -->
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/navbar.css">
     <!--Linking Bentham Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,26 +41,88 @@
     <!--  Body of the website -->
     <body>
       <!-- chykB - Header File -->
-      <header>
-        <div>
-          <!-- Add Logo and Header Text -->
-          <img src="./images/website-logos/logo.svg" alt="" />
-          <span>Algorithmia SE 🌍</span>
+      <header class="header">
+        <div class="overlay"></div>
+    
+        <!---Start of the dropdown menu code-->
+        <div class="menu">
+          <div>
+            <!-- Add Logo and Header Text -->
+            
+            
+          </div>
+          <div id="header">
+            <div class="logo">
+              <img src="./images/website-logos/logo.svg" alt="" />
+              <span>Algorithmia SE 🌍</span>
+            </div>  
+            <nav>
+              <!-- <form class="search" action="search.php"> 
+                <input name="q" placeholder="Search..." type="search">
+              </form> -->
+              <button class="search">Join Us</button>
+              <ul>
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">About</a>
+                  <ul class="mega-dropdown">
+                    <li class="row">
+                      <ul class="mega-col">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                      <ul class="mega-col">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Services</a></li>
+                      </ul>
+                      <ul class="mega-col">
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="#">404 Error</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Author Page</a></li>
+                      </ul>
+                      <ul class="mega-col">
+                        <li><a href="#">Full Width</a></li>
+                        <li><a href="#">Right Column</a></li>
+                        <li><a href="#">Left Column</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                      </ul>
+                    </li>
+                  </ul>        
+                </li>
+                <li class="dropdown">
+                  <a href="">Contact</a>
+                    <ul>
+                      <li><a href="#">About Version</a></li>
+                      <li><a href="#">About Version</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>        
+                </li>
+                <li>
+                  <a href="">Portfolio</a>
+                </li>
+                <li>
+                  <a href="">Team</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          
+    
         </div>
-
-        <!-- Add links to other pages -->
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home Page</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <button>Join Us</button>
-            <!-- Google Form Link: https://forms.gle/21nWu7QqVe3NvR3XA -->
-          </ul>
-        </nav>
+      
       </header>
+      
       <!-- Samuel and emycodes - Hero Section -->
       <div id="hero-section">
         <h1>Welcome to Algorithmia SE 🌍</h1>
@@ -354,4 +416,5 @@
       </footer>
     </body>
   </head>
+  <script src="js/main.js"></script>
 </html>
