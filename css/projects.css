@@ -9,7 +9,6 @@ body{
 }
 
 .header{
-    position: fixed;
     top:20px;
     left:0;
     width:100%;
@@ -53,11 +52,12 @@ body{
     margin-top: 20px;
     display: flex;
     overflow: scroll;
-
+    overflow:visible;
+    margin-bottom: 200px;
 }
 .recent-img{
     width:420px;
-    height:190px;
+    height:290px;
     padding:10px;
     border-radius: 20px;
 }
@@ -74,7 +74,7 @@ body{
     color: white;
 }
 .recent-button{
-    margin-top: 50px;
+    margin-top: 52px;
     margin-left: 50px;
     font-size: 19px;
     padding: 20px 60px;
@@ -86,12 +86,11 @@ body{
 
 .recent-butto{
     margin-top: 30px;
-    
     font-size: 19px;
-    margin-left: 90px;
-    padding: 20px 60px;
+    margin-left: 70px;
+    padding: 20px 90px;
     border-radius: 50px;
     background-color: #FF7B1B;
-    color: #fff;
+    color: #ffffff;
     border-style: none;
 }
