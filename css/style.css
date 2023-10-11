@@ -1,1 +1,33 @@
 /* ======================== CSS file for index.html ======================== */
+#alx-se_style{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 80px;
+    margin: 147px auto 200px auto;
+    border: solid red 2px;
+}
+
+#text{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+#alx-se_style h2{
+    color: #FF7B1B;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#alx-se_style p{
+    color: #353030;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
