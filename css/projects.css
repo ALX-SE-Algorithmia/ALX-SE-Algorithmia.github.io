@@ -1,1 +1,37 @@
-/* ======================== CSS file for projects.html ======================== */
+.about{
+  width: 80%;
+  height: 81vh;
+  display: flex;
+  background-color: rgb(246, 104, 4);
+  border-radius: 20px;
+}
+.image img{
+    border-radius: 10px;
+    width: 200%;
+  height: 81vh;
+  }
+ .small
+ {
+  width: 3%;
+  height: 3vh;
+ }
+ .aboutinfo
+ {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+
+ }
+ .flex-container {
+  display: flex;
+ 
+  flex-direction: column;
+  font-size: large;
+
+}
+
+.space-top {
+  margin-top: 30px; 
+}
+p {
+  font-size: 30px; 
+}
