@@ -1,1 +1,46 @@
 /* ======================== CSS file for index.html ======================== */
+/* css styles for the introduction section - flexywork327 */
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+#hero-section h1 {
+  color: #ff7b1b;
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#hero-section #hero-main-header {
+  color: #fff;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 50%;
+  padding-top: 10px;
+}
+
+#hero-section #hero-text {
+  color: "E6DFF4";
+}
+
+#hero-section #join-consortium {
+  border-radius: 100px;
+  background: #ff7b1b;
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
