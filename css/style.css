@@ -43,4 +43,34 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  
+  .subscribe-container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-box{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: max-content;
+    width: 70%;
+    margin: auto;
+}
+
+.sub-box input{
+    width: 80%;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.sub-box button{
+    width: 20%;
+    border-radius: 0 20px 20px 0;
+    background-color: #FF7B1B;
+    border: none;
+    font-size: 18px;
 }
