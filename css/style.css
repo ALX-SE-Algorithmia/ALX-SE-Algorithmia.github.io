@@ -1,2 +1,40 @@
 /* ======================== CSS file for index.html ======================== */
+/* CSS style for Mission and Vision - Nana Aba */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    }
 
+p {
+    font-size: 16px;
+    color: #333;
+    }
+
+.card {
+    height: 470px;
+    background-color: white;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    }
+
+.card h2 {
+    font-family: 'Bentham';
+    font-size: 2rem;
+    font-weight: 600;
+    /* margin: 0 0 1rem 0; */
+    color: #fff;
+    }
+
+.card p {
+    font-size: 16px;
+    /* margin: 0 0 1rem 0; */
+    font-family: 'Bentham';
+    color: #fff;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+    }
