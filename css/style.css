@@ -1,7 +1,33 @@
 /* ======================== CSS file for index.html ======================== */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+/* CSS styling for section "Our-Journey"*/
+
+.our_journey{
+    background-color: #062F3D;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 450px;
+}
+.our_journey h2 {
+    color: #FF7B1B;
+    font-size: 200%;
+    padding-left: 105px;
+}
+.our_journey--image {
+    flex: 1;
+    padding-left: 170px;
+}
+.our_journey--text {
+    font-size: 100%;
+}
+
+>>>>>>> origin/home-page
 /* css styles for the introduction section - flexywork327 */
 
 #hero-section {
@@ -46,7 +72,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
+}
   .subscribe-container{
     width: 70%;
     margin: auto;
@@ -77,4 +103,7 @@
     border: none;
     font-size: 18px;
 }
+<<<<<<< HEAD
 >>>>>>> 22d61971c356379720e7d5af3b2e8254841af7e3
+=======
+>>>>>>> origin/home-page
