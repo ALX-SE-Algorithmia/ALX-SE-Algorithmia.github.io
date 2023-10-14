@@ -1,33 +1,30 @@
-/* ======================== CSS file for index.html ======================== */
-#alx-se_style{
+.subscribe-container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.sub-box{
     display: flex;
+    justify-content: center;
+    height: 60px;
+    width: max-content;
+    width: 70%;
+    margin: auto;
+}
+
+.sub-box input{
     width: 80%;
-    align-items: center;
-    gap: 80px;
-    margin: 147px auto 200px auto;
-    border: solid red 2px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    padding: 0 30px;
+    font-size: 14px;
 }
 
-#text{
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
-
-#alx-se_style h2{
-    color: #FF7B1B;
-    font-family: Space Grotesk;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-#alx-se_style p{
-    color: #353030;
-    font-family: Space Grotesk;
+.sub-box button{
+    width: 20%;
+    border-radius: 0 20px 20px 0;
+    background-color: #FF7B1B;
+    border: none;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
