@@ -1,14 +1,111 @@
 /* ======================== CSS file for index.html ======================== */
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-=======
-/* CSS styling for section "Our-Journey"*/
+body{
+  background-color: #062F3D;
+  color: white;
+}
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
+/* navbar css */
+#header{
+  width:100%;
+  position:relative
+}
+
+#header{
+  display:flex;
+  justify-content: space-between;
+  
+  /*border: solid red 2px;*/
+}
+
+.logo{
+  width: max-content;
+  padding: 10px;
+}
+
+.nav{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  /*border: solid red 2px;*/
+  color: #DEDEDE;
+  align-items: center;
+
+}
+
+.nav .main{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  /*border: solid red 2px;*/
+}
+
+.nav button{
+  width: 20%;
+  height: max-content;
+  background-color: #e27107;
+  border: none;
+  border-radius: 20px;
+  color: #DEDEDE;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.mega-dropdown{
+  width:max-content;
+  position:absolute;
+  top: 70%;
+  background:#fff;
+  overflow:hidden;
+  padding:20px 35px;
+  border-bottom:3px solid #34495e;
+  visibility: hidden;
+}
+
+.mega-dropdown li a{
+  color: #062F3D;
+  list-style: circle;
+  padding:10px 0;
+  font-size:13px;
+  min-width:200px
+}
+
+@media only screen and (max-width: 1170px) {
+  nav >ul>li >a{padding:35px 15px}
+}
+@media only screen and (min-width: 960px) {
+  nav{display:block!important}
+}
+@media only screen and (max-width: 480px) {
+  nav{display:none;width:100%;clear:both;float:none;max-height:400px;overflow-y:scroll}
+  #menu-icon{display:inline;top:45px;cursor:pointer}
+  #menu-icon.active .first{transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px}
+  #menu-icon.active .second{transform:rotate(135deg);-webkit-transform:rotate(135deg);position:relative;top:-9px;}
+  #menu-icon.active .third{display:none}
+  .search{float:none}
+  .search input{width:100%}
+  nav{padding:10px}
+  nav ul{float:none}
+  nav li{float:none}
+  nav ul li a{float:none;padding:8px;display:block}
+  #header nav ul ul{display:block;position:static;background:none;border:none;padding:0}
+  #header nav a{color:#fff;padding:8px}
+  #header nav a:hover{background:#fff;color:#333;border-radius:3px}
+  #header nav ul li li a:before{content:"- "}
+  .mega-col{width:100%}
+}
+
+/* end of navbar css*/
+
+
+/* our_journey css */
 .our_journey{
-    background-color: #062F3D;
-    color: white;
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -26,9 +123,6 @@
 .our_journey--text {
     font-size: 100%;
 }
-
->>>>>>> origin/home-page
-/* css styles for the introduction section - flexywork327 */
 
 #hero-section {
   display: flex;
@@ -103,7 +197,3 @@
     border: none;
     font-size: 18px;
 }
-<<<<<<< HEAD
->>>>>>> 22d61971c356379720e7d5af3b2e8254841af7e3
-=======
->>>>>>> origin/home-page
