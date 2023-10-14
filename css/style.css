@@ -1,2 +1,24 @@
 /* ======================== CSS file for index.html ======================== */
+/* CSS styling for section "Our-Journey"*/
+
+.our_journey{
+    background-color: #062F3D;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 450px;
+}
+.our_journey h2 {
+    color: #FF7B1B;
+    font-size: 200%;
+    padding-left: 85px;
+}
+.our_journey--image {
+    flex: 1;
+    padding-left: 170px;
+}
+.our_journey--text {
+    font-size: 100%;
+}
 
