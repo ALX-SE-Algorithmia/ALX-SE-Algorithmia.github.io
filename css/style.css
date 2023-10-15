@@ -10,6 +10,10 @@ a{
   text-decoration: none;
 }
 
+p{
+  line-height: 1.3em;
+}
+
 /* navbar css */
 #header{
   width:100%;
@@ -75,32 +79,6 @@ a{
   font-size:13px;
   min-width:200px
 }
-
-@media only screen and (max-width: 1170px) {
-  nav >ul>li >a{padding:35px 15px}
-}
-@media only screen and (min-width: 960px) {
-  nav{display:block!important}
-}
-@media only screen and (max-width: 480px) {
-  nav{display:none;width:100%;clear:both;float:none;max-height:400px;overflow-y:scroll}
-  #menu-icon{display:inline;top:45px;cursor:pointer}
-  #menu-icon.active .first{transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px}
-  #menu-icon.active .second{transform:rotate(135deg);-webkit-transform:rotate(135deg);position:relative;top:-9px;}
-  #menu-icon.active .third{display:none}
-  .search{float:none}
-  .search input{width:100%}
-  nav{padding:10px}
-  nav ul{float:none}
-  nav li{float:none}
-  nav ul li a{float:none;padding:8px;display:block}
-  #header nav ul ul{display:block;position:static;background:none;border:none;padding:0}
-  #header nav a{color:#fff;padding:8px}
-  #header nav a:hover{background:#fff;color:#333;border-radius:3px}
-  #header nav ul li li a:before{content:"- "}
-  .mega-col{width:100%}
-}
-
 /* end of navbar css*/
 
 
@@ -185,7 +163,6 @@ a{
 /* alx-se-style section css */
 #alx-se_style{
   display: flex;
-  flex-wrap: wrap;
   width: 70%;
   margin: auto;
   justify-content: space-between;
@@ -220,21 +197,35 @@ a{
 
 /* our_journey css */
 .our_journey{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    height: 450px;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin: 147px auto 200px auto;
+  /*border: solid red 2px;*/
+  align-items: center;
 }
-.our_journey h2 {
-    color: #FF7B1B;
-    font-size: 100%;
-    padding-left: 105px;
+
+.our_journey .texts{
+  display: flex;
+  flex-direction: column;
+  /*border: solid red 2px;*/
+  width: 50%;
+  padding: 10px;
 }
-.our_journey--image {
-    flex: 1;
-    padding-left: 170px;
+
+.our_journey .sub-heading{
+  color: #FF7B1B;
+  font-family: Space Grotesk;
+  font-size: 2em;
+  margin: 0;
+  /*border: solid red 2px;*/
 }
-.our_journey--text {
-    font-size: 100%;
+
+.our_journey p{
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 1.1em;
+  /*border: solid red 2px;*/
 }
 /* end of our_journey css */
