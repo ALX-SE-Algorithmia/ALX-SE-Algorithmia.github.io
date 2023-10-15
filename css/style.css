@@ -128,35 +128,17 @@ p{
   align-items: center;
   gap: 10px;
 }
-  .subscribe-container{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-}
 
-.sub-box{
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    width: max-content;
-    width: 70%;
-    margin: auto;
-}
-
-.sub-box input{
-    width: 80%;
-    border-radius: 20px 0 0 20px;
-    border: none;
-    padding: 0 30px;
-    font-size: 14px;
-}
-
-.sub-box button{
-    width: 20%;
-    border-radius: 0 20px 20px 0;
-    background-color: #FF7B1B;
-    border: none;
-    font-size: 18px;
+#hero-section button{
+  width: 20%;
+  height: max-content;
+  background-color: #e27107;
+  border: none;
+  border-radius: 20px;
+  color: #DEDEDE;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
 /* end of hero section css */
 
@@ -229,3 +211,109 @@ p{
   /*border: solid red 2px;*/
 }
 /* end of our_journey css */
+
+/* contact section css */
+.contact h1, .contact p{
+  text-align: center;
+}
+
+.contact h1{
+  font-size: 3em;
+  margin: 0;
+}
+
+.contact p{
+  font-size: 1.5em;
+}
+
+.contact b{
+  color: orange;
+}
+
+.contact-section{
+  border-radius: 25px;
+  background-color: #0b3b49;
+  margin-left: 200px;
+  margin-right: 150px;
+  padding: 10px 10px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  /*border: solid red 2px;*/
+  width: 70%;
+  margin: auto;
+}
+
+.name, .contact{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+}
+
+.input-text{
+  text-align: left;
+  width: 70%;
+  margin: 20px auto;
+}
+
+form button{
+  width: 20%;
+  height: max-content;
+  background-color: #e27107;
+  border: none;
+  border-radius: 20px;
+  color: #DEDEDE;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+/* end ofcontact section css */
+
+/* sub section css */
+.subscribe-container{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.sub-box{
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: max-content;
+  width: 70%;
+  margin: auto;
+}
+
+.sub-box input{
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding: 0 30px;
+  font-size: 14px;
+}
+
+.sub-box button{
+  width: 20%;
+  border-radius: 0 20px 20px 0;
+  background-color: #FF7B1B;
+  border: none;
+  font-size: 18px;
+}
+/*end of sub section css */

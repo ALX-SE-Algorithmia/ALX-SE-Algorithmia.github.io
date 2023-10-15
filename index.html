@@ -292,10 +292,49 @@
       </main>
 
       <!-- Contact Us Form (HTML) -->
+      <div class="contact-section">
+        <h1>Contact <b>Us</b></h1>
+        <p>Ready to build real-life solutions as ALX SE students<br>collaboratively?</p>
+        <p>Reach out to us</p>
+        <form>
+          <div class="contact-details">
+            <div class="name">
+              <div class="first-name">
+                  <label>First name</label> <br>
+                  <input type="text" class="input1" placeholder="Enter your first name" required>
+              </div>
+              <div class="last-name">
+                  <label>Last name</label> <br>
+                  <input type="text" class="input1" placeholder="Enter your last name" required>
+              </div>
+            </div>
+  
+            <div class="contact">
+              <div class="email">
+                <label>Email</label> <br>
+                <input type="email" id="email" placeholder="Your email address" name="email" required>
+              </div>
+              <div class="number">
+                <label>Phone number</label> <br>
+                <input  type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number">
+              </div>
+            </div>
+          </div>
+
+          <div class="input-text">
+            <label>What would you like to tell us</label>
+            <textarea name="message" id="message" placeholder="Drop a message..." cols="90" rows="10"></textarea>
+          </div>
+          
+          <button class="button">Send Message</button>
+        </form>
+      </div>
+
       <!-- Formspree.io -->
 
       <!-- Suscribing -->
       <div class="subscribe-container">
+        <img src="./images/home/email.svg" alt="">
 	      <h2> Subscribe to Our Newsletter </h2>
         <h1> Subscribe to our newsletter and join our community of innovators </h1>
 
