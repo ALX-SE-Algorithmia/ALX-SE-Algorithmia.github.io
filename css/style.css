@@ -283,7 +283,7 @@ form button{
   padding: 20px;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
-/* end ofcontact section css */
+/* end of contact section css */
 
 /* sub section css */
 .subscribe-container{
@@ -295,6 +295,7 @@ form button{
 .sub-box{
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 60px;
   width: max-content;
   width: 70%;
@@ -305,8 +306,9 @@ form button{
   width: 80%;
   border-radius: 20px 0 0 20px;
   border: none;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 14px;
+  height: 90%;
 }
 
 .sub-box button{
@@ -314,6 +316,9 @@ form button{
   border-radius: 0 20px 20px 0;
   background-color: #FF7B1B;
   border: none;
-  font-size: 18px;
+  font-size: 1em;
+  height: 100%;
+  color: white;
+  cursor: pointer;
 }
 /*end of sub section css */
