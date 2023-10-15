@@ -1,1 +1,54 @@
 /* ======================== CSS file for blogs.html ======================== */
+
+/* ==== Start of Styling done by Evance and Akos for `BLOGS` section ==== */
+body {
+    font-family: 'Bentham', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Blog Section Styles */
+.blog-section {
+    text-align: center;
+    background-color: #062f3d;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#blog-heading {
+    margin-bottom: 30px;
+}
+
+.blog-nav-section {
+    background-color: #ff7b1b;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.blog-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.blog-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: medium;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.blog-nav ul li a:hover,
+.blog-nav ul li a:active {
+    background-color: #ffffff;
+    color: #040b16;
+}
+
+/* ==== End of Styling done by Evance and Akos for `BLOGS` section ==== */
