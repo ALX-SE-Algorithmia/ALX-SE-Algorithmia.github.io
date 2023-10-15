@@ -182,6 +182,41 @@ a{
 }
 /* end of hero section css */
 
+/* alx-se-style section css */
+#alx-se_style{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin: 147px auto 200px auto;
+  /*border: solid red 2px;*/
+}
+
+#texts{
+  display: flex;
+  flex-direction: column;
+  /*border: solid red 2px;*/
+  width: 55%;
+}
+
+#alx-se_style .sub-heading{
+  color: #FF7B1B;
+  font-family: Space Grotesk;
+  font-size: 2em;
+  width: 100%;
+  padding: 0;
+  /*border: solid red 2px;*/
+}
+
+#alx-se_style p{
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 1.1em;
+  /*border: solid red 2px;*/
+}
+/* end of alx-se-style section css */
+
 
 /* our_journey css */
 .our_journey{
@@ -202,3 +237,4 @@ a{
 .our_journey--text {
     font-size: 100%;
 }
+/* end of our_journey css */
