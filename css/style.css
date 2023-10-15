@@ -5,7 +5,6 @@ h1 {
     font-weight: bold;
     color: #333;
     }
-
 p {
     font-size: 16px;
     color: #333;
@@ -38,3 +37,326 @@ img {
     max-width: 100%;
     height: auto;
     }
+
+body{
+  background-color: #062F3D;
+  color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+p{
+  line-height: 1.3em;
+}
+
+/* navbar css */
+#header{
+  width:100%;
+  position:relative
+}
+
+#header{
+  display:flex;
+  justify-content: space-between;
+  
+  /*border: solid red 2px;*/
+}
+
+.logo{
+  width: max-content;
+  padding: 10px;
+}
+
+.nav{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  /*border: solid red 2px;*/
+  color: #DEDEDE;
+  align-items: center;
+
+}
+
+.nav .main{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  /*border: solid red 2px;*/
+}
+
+.nav button{
+  width: 20%;
+  height: max-content;
+  background-color: #e27107;
+  border: none;
+  border-radius: 20px;
+  color: #DEDEDE;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.mega-dropdown{
+  width:max-content;
+  position:absolute;
+  top: 70%;
+  background:#fff;
+  overflow:hidden;
+  padding:20px 35px;
+  border-bottom:3px solid #34495e;
+  visibility: hidden;
+}
+
+.mega-dropdown li a{
+  color: #062F3D;
+  list-style: circle;
+  padding:10px 0;
+  font-size:13px;
+  min-width:200px
+}
+/* end of navbar css*/
+
+
+/* hero-section css */
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  font-size: 150%;
+  text-justify: distribute;
+}
+
+#hero-section h1 {
+  color: #ff7b1b;
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#hero-section #hero-main-header {
+  color: #fff;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 50%;
+}
+
+#hero-section #hero-text {
+  color: "E6DFF4";
+}
+
+#hero-section #join-consortium {
+  border-radius: 100px;
+  background: #ff7b1b;
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#hero-section button{
+  width: 20%;
+  height: max-content;
+  background-color: #e27107;
+  border: none;
+  border-radius: 20px;
+  color: #DEDEDE;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+/* end of hero section css */
+
+/* alx-se-style section css */
+#alx-se_style{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin: 147px auto 200px auto;
+  /*border: solid red 2px;*/
+}
+
+#texts{
+  display: flex;
+  flex-direction: column;
+  /*border: solid red 2px;*/
+  width: 55%;
+}
+
+#alx-se_style .sub-heading{
+  color: #FF7B1B;
+  font-family: Space Grotesk;
+  font-size: 2em;
+  width: 100%;
+  padding: 0;
+  /*border: solid red 2px;*/
+}
+
+#alx-se_style p{
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 1.1em;
+  /*border: solid red 2px;*/
+}
+/* end of alx-se-style section css */
+
+
+/* our_journey css */
+.our_journey{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  margin: 147px auto 200px auto;
+  /*border: solid red 2px;*/
+  align-items: center;
+}
+
+.our_journey .texts{
+  display: flex;
+  flex-direction: column;
+  /*border: solid red 2px;*/
+  width: 50%;
+  padding: 10px;
+}
+
+.our_journey .sub-heading{
+  color: #FF7B1B;
+  font-family: Space Grotesk;
+  font-size: 2em;
+  margin: 0;
+  /*border: solid red 2px;*/
+}
+
+.our_journey p{
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 1.1em;
+  /*border: solid red 2px;*/
+}
+/* end of our_journey css */
+
+/* contact section css */
+.contact h1, .contact p{
+  text-align: center;
+}
+
+.contact h1{
+  font-size: 3em;
+  margin: 0;
+}
+
+.contact p{
+  font-size: 1.5em;
+}
+
+.contact b{
+  color: orange;
+}
+
+.contact-section{
+  border-radius: 25px;
+  background-color: #0b3b49;
+  margin-left: 200px;
+  margin-right: 150px;
+  padding: 10px 10px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  /*border: solid red 2px;*/
+  width: 70%;
+  margin: auto;
+}
+
+.name, .contact{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+}
+
+.input-text{
+  text-align: left;
+  width: 70%;
+  margin: 20px auto;
+}
+
+form button{
+  width: 20%;
+  height: max-content;
+  background-color: #e27107;
+  border: none;
+  border-radius: 20px;
+  color: #DEDEDE;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+/* end of contact section css */
+
+/* sub section css */
+.subscribe-container{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.sub-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: max-content;
+  width: 70%;
+  margin: auto;
+}
+
+.sub-box input{
+  width: 80%;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding: 0 20px;
+  font-size: 14px;
+  height: 90%;
+}
+
+.sub-box button{
+  width: 20%;
+  border-radius: 0 20px 20px 0;
+  background-color: #FF7B1B;
+  border: none;
+  font-size: 1em;
+  height: 100%;
+  color: white;
+  cursor: pointer;
+}
+/*end of sub section css */
