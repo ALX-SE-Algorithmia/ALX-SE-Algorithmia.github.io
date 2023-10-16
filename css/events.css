@@ -17,6 +17,37 @@ body {
 
 
     /* LATEST EVENTS GOES HERE!!!! */
+  .event_page{
+      width: Hug (1,552px);
+      height: Hug (737px);
+      gap: 64px;
+      }
+
+     .latest-events{
+      font-family: Space Grotesk;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 61px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #FFFFFF;
+      }
+      .Static_Website_Project{
+      width: Hug (370px);
+      height: Hug (612px);
+      padding: 10px;
+      gap: 10px;
+
+
+     .Explore_Highlights{
+      width: 370px;
+      height: 612px;
+      padding: 10px;
+      overflow: hidden;
+      position: relative;
+      Gap:10px;
+     }
+
 
     /* LATEST EVENT ENDS HERE!!!! */
 
