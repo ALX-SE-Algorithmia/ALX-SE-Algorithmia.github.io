@@ -1,43 +1,4 @@
 /* ======================== CSS file for index.html ======================== */
-/* CSS style for Mission and Vision - Nana Aba */
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    }
-p {
-    font-size: 16px;
-    color: #333;
-    }
-
-.card {
-    height: 470px;
-    background-color: white;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 20px;
-    }
-
-.card h2 {
-    font-family: 'Bentham';
-    font-size: 2rem;
-    font-weight: 600;
-    /* margin: 0 0 1rem 0; */
-    color: #fff;
-    }
-
-.card p {
-    font-size: 16px;
-    /* margin: 0 0 1rem 0; */
-    font-family: 'Bentham';
-    color: #fff;
-    }
-
-img {
-    max-width: 100%;
-    height: auto;
-    }
-
 body{
   background-color: #062F3D;
   color: white;
@@ -63,6 +24,14 @@ p{
   justify-content: space-between;
   
   /*border: solid red 2px;*/
+}
+
+span{
+  font-size: 2em;
+}
+
+#header li{
+  list-style: none;
 }
 
 .logo{
@@ -129,32 +98,41 @@ p{
   padding: 10px;
   width: 70%;
   margin: auto;
+  margin-top: 40px;
   font-size: 150%;
   text-justify: distribute;
+  /*border: solid red 2px;*/
 }
 
 #hero-section h1 {
   color: #ff7b1b;
-  font-family: Space Grotesk;
-  font-size: 24px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 #hero-section #hero-main-header {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: #fff;
   text-align: center;
-  font-family: Space Grotesk;
   font-size: 2em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 50%;
+  /*border: solid red 2px;*/
 }
 
 #hero-section #hero-text {
   color: "E6DFF4";
+  /*border: solid red 2px;*/
+  width: 70%;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
 }
 
 #hero-section #join-consortium {
@@ -164,18 +142,14 @@ p{
   padding: 14px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-}
-
-#hero-section button{
   width: 20%;
   height: max-content;
+  margin-top: 10px;
   background-color: #e27107;
   border: none;
   border-radius: 20px;
   color: #DEDEDE;
   cursor: pointer;
-  padding: 20px;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
 /* end of hero section css */
@@ -183,10 +157,10 @@ p{
 /* alx-se-style section css */
 #alx-se_style{
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: auto;
   justify-content: space-between;
-  margin: 147px auto 200px auto;
+  margin: 200px auto 200px auto;
   /*border: solid red 2px;*/
 }
 
@@ -194,22 +168,22 @@ p{
   display: flex;
   flex-direction: column;
   /*border: solid red 2px;*/
-  width: 55%;
+  width: 60%;
 }
 
 #alx-se_style .sub-heading{
   color: #FF7B1B;
-  font-family: Space Grotesk;
-  font-size: 2em;
+  font-size: 2.5em;
   width: 100%;
   padding: 0;
   /*border: solid red 2px;*/
 }
 
 #alx-se_style p{
+  width: 90%;
+  margin-top: 0;
   color: white;
-  font-family: Space Grotesk;
-  font-size: 1.1em;
+  font-size: 1.5em;
   /*border: solid red 2px;*/
 }
 /* end of alx-se-style section css */
@@ -218,10 +192,10 @@ p{
 /* our_journey css */
 .our_journey{
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: auto;
   justify-content: space-between;
-  margin: 147px auto 200px auto;
+  margin: 200px auto 200px auto;
   /*border: solid red 2px;*/
   align-items: center;
 }
@@ -230,25 +204,89 @@ p{
   display: flex;
   flex-direction: column;
   /*border: solid red 2px;*/
-  width: 50%;
+  width: 60%;
   padding: 10px;
 }
 
 .our_journey .sub-heading{
   color: #FF7B1B;
-  font-family: Space Grotesk;
-  font-size: 2em;
-  margin: 0;
+  font-size: 2.5em;
   /*border: solid red 2px;*/
 }
 
 .our_journey p{
+  width: 90%;
   color: white;
-  font-family: Space Grotesk;
-  font-size: 1.1em;
+  margin-top: 0;
+  font-size: 1.5em;
   /*border: solid red 2px;*/
 }
 /* end of our_journey css */
+
+/* algorithimia difference css */
+.algorithimia-diff{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.algorithimia-diff h1{
+  font-size: 3.5em;
+  margin-bottom: 40px;
+}
+
+.algorithimia-diff p{
+  width: 80%;
+  margin: auto;
+  font-size: 1.3em;
+}
+
+.mission-vision{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  height: 640px;
+  width: 43%;
+  border-radius: 20px;
+  margin-top: 70px;
+  padding: 20px 20px 0 20px;
+  }
+
+  .card img{
+    margin-bottom: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  .mission{
+    background-color: #05171d;
+  }
+
+  .vision{
+    background-color: #e27107;
+  }
+
+
+
+.card h2 {
+  font-size: 2.5em;
+  color: #fff;
+  }
+
+.card p {
+  width: 70%;
+  font-size: 1.3em;
+  color: #fff;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+  }
+/* end of algorithimia difference css */
 
 /* contact section css */
 .contact h1, .contact p{
