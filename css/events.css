@@ -1,13 +1,25 @@
 /* ======================== CSS file for events.html ======================== */
 body {
-  font-family: "Bentham", serif;
   background-color: #07303e;
   color: white;
 }
 * {
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  font-family: "Bentham", serif;
+  border: 0;
+  outline: none;
+  transition: all .2s linear;
 }
+
+html{
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
 /* NAVIGATION BAR GOES HERE!!!! */
 
 /* NAVIGATION BAR ENDS HERE!!!! */
@@ -24,20 +36,23 @@ body {
 
 .upcoming-events_container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .upcoming-events_card {
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   padding: 20px;
   text-align: left;
   transition: transform 0.3s;
 }
 
 .upcoming-events_card img {
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
+  height: 10rem;
+  object-fit:fill;
 }
 
 .upcoming-events_card:hover {
@@ -52,7 +67,7 @@ body {
 
 .upcoming-events_card_title {
   font-size: 24px;
-  padding: 8px 0px;
+  padding: 4px 0px;
 }
 
 a {
@@ -62,15 +77,21 @@ a {
 
 /* button */
 .upcoming-events_button {
-  background-color: #ff7b1b;
-  padding: 16px;
+  background-color: rgb(255, 123, 27);
+  padding: 10px;
   border-radius: 24px;
   color: white;
   text-align: center;
   width: 80px;
   height: 20px;
-  margin-top: 32px;
+  margin-top: 10px;
+  cursor: pointer;
 }
+
+.upcoming-events_button:hover{
+  background-color: rgba(255, 123, 27, .2);
+  color: rgb(255, 165, 0);
+  }
 
 /*left and right navigation buttons */
 .upcoming-carousel-prev,
