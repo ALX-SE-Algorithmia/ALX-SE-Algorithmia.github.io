@@ -186,11 +186,10 @@ button {
   overflow: hidden;
   position: relative;
   gap: 10px;
->>>>>>> 5f06b7a7cc29e88f588fcb78d4010226156cea95
 }
 /* LATEST EVENT ENDS HERE!!!! */
 
-<<<<<<< HEAD
+
 /* PAST EVENTS GOES HERE!!!! */
 .past-events h3 {
     font-size: 48px;
@@ -233,8 +232,8 @@ button {
 
 a {
     text-decoration: none;
-    color: white
-=======
+    color: white;
+}
 /* LATEST EVENT ENDS HERE!!!! */
 
 /* PAST EVENTS GOES HERE!!!! */
@@ -280,31 +279,17 @@ a {
 a {
   text-decoration: none;
   color: white;
->>>>>>> 5f06b7a7cc29e88f588fcb78d4010226156cea95
 }
 
 /* button */
 .button {
-<<<<<<< HEAD
-    background-color: #FF7B1B;
-    padding: 16px;
-    border-radius: 24px; 
-    color: white;
-    text-align: center;
-    width: 80px;
-    height: 20px;
-    margin-top: 32px
-}
-=======
-  background-color: #ff7b1b;
+  background-color: #FF7B1B;
   padding: 16px;
-  border-radius: 24px;
+  border-radius: 24px; 
   color: white;
   text-align: center;
   width: 80px;
   height: 20px;
   margin-top: 32px;
 }
-
->>>>>>> 5f06b7a7cc29e88f588fcb78d4010226156cea95
 /* PAST EVENT ENDS HERE!!!! */
