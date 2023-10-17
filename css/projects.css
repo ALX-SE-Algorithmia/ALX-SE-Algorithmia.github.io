@@ -1,1 +1,19 @@
 /* ======================== CSS file for projects.html ======================== */
+.container {
+    display: flex;
+    align-items: center; /* Centered content vertically */
+    background-color:rgb(244, 109, 12);
+    width: 90%;
+    height: 70%;
+}
+
+.content {
+    flex: 1; /* Grow to fill available space */
+    padding: 1px; /* Added some spacing for the content */
+}
+
+.image {
+    flex: 1; /* Grow to fill available space */
+    padding: 1px; /* spacing for the image */
+    text-align: center; /* Centered the image horizontally */
+}
