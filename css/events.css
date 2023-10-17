@@ -32,11 +32,47 @@ body {
       text-align: center;
       color: #FFFFFF;
       }
-      .Static_Website_Project{
-      width: Hug (370px);
-      height: Hug (612px);
-      padding: 10px;
-      gap: 10px;
+      .section1{
+	width: Hug (370px);
+	height: Hug (612px);
+	padding: 10px;
+	gap: 10px;
+	}
+
+     
+      img{
+	width: 350px;
+	height: 265px
+	border-radius: 19.59px, 19.59px, 0px, 0px;
+	}	
+	.Tech{
+	width: Fill (350px);
+	height: Hug (36px);
+	gap: 89px;
+	}
+	time{
+	font-family: Space Grotesk;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: right;
+	color: #FFFFFF;
+	}
+	button{
+	width: Hug (53px);
+	height: Hug (36px);
+	padding: 8px;
+	border-radius: 32px;
+	gap: 10px;
+	background:#FF7B1B;
+
+
+	}
+
+
+
+
 
 
      .Explore_Highlights{
