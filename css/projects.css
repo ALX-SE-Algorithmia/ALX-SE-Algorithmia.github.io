@@ -1,3 +1,5 @@
+/* Projects CSS */
+
 *{
     margin:0;
     padding:0;
@@ -6,6 +8,7 @@
 
 body{
    background-color: #062F3D;
+   
 }
 
 .header{
@@ -40,6 +43,9 @@ body{
     border-radius: 50px;
     border-style: none;
 }
+
+/* Recent Projects CSS section */
+
 .recent{
     font-size: 50px;
     color:#fff;
@@ -60,6 +66,8 @@ body{
     height:290px;
     padding:10px;
     border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .recent-text{
     margin-top: 10px;
