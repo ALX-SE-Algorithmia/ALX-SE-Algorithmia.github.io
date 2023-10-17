@@ -3,55 +3,56 @@ body {
     font-family: 'Bentham', serif;
     background-color: #07303e;
     color: white;
-  }
-    /* NAVIGATION BAR GOES HERE!!!! */
+}
 
-    /* NAVIGATION BAR ENDS HERE!!!! */
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* NAVIGATION BAR GOES HERE!!!! */
+/* NAVIGATION BAR ENDS HERE!!!! */
 
+/* UPCOMING EVENT GOES HERE!!!! */
+/* UPCOMING EVENT ENDS HERE!!!!  */
 
-    /* UPCOMING EVENT GOES HERE!!!! */
+/* LATEST EVENTS GOES HERE!!!! */
+.event_page{
+    width: Hug (1,552px);
+    height: Hug (737px);
+    gap: 64px
+}
 
-    /* UPCOMING EVENT ENDS HERE!!!!  */
+.latest-events {
+    font-family: Space Grotesk;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
 
-
-
-    /* LATEST EVENTS GOES HERE!!!! */
-  .event_page{
-      width: Hug (1,552px);
-      height: Hug (737px);
-      gap: 64px;
-      }
-
-     .latest-events{
-      font-family: Space Grotesk;
-      font-size: 48px;
-      font-weight: 500;
-      line-height: 61px;
-      letter-spacing: 0em;
-      text-align: center;
-      color: #FFFFFF;
-      }
-<<<<<<< HEAD
-      .section1{
-	width: Hug (370px);
+.section1 {
+    width: Hug (370px);
 	height: Hug (612px);
 	padding: 10px;
 	gap: 10px;
-	}
-
+}
      
-      img{
+img {
 	width: 350px;
-	height: 265px
-	border-radius: 19.59px, 19.59px, 0px, 0px;
-	}	
-	.Tech{
-	width: Fill (350px);
+	height: 265px;
+	border-radius: 19.59px 19.59px 0px 0px;
+}
+
+.Tech{
+    width: Fill (350px);
 	height: Hug (36px);
 	gap: 89px;
-	}
-	time{
+}
+	
+time{
 	font-family: Space Grotesk;
 	font-size: 16px;
 	font-weight: 400;
@@ -59,68 +60,45 @@ body {
 	letter-spacing: 0em;
 	text-align: right;
 	color: #FFFFFF;
-	}
-	button{
+}
+
+button{
 	width: Hug (53px);
 	height: Hug (36px);
 	padding: 8px;
 	border-radius: 32px;
 	gap: 10px;
-	background:#FF7B1B;
-
-
-	}
-
-
-
-
-=======
-
-      .Static_Website_Project{
-      width: Hug (370px);
-      height: Hug (612px);
-      padding: 10px;
-      gap: 10px;
-      }
->>>>>>> 5bcbcdf45c589aa9a7fc88531ebb60d9373a03d1
-
-
-     .Explore_Highlights{
-      width: 370px;
-      height: 612px;
-      padding: 10px;
-      overflow: hidden;
-      position: relative;
-      Gap:10px;
-     }
-
-
-    /* LATEST EVENT ENDS HERE!!!! */
-
-
-
-    /* PAST EVENTS GOES HERE!!!! */
-
-* {
-    margin: 0;
-    padding: 0;
+	background:#FF7B1B
+}
+    
+.Static_Website_Project{
+    width: Hug (370px);
+    height: Hug (612px);
+    padding: 10px;
+    gap: 10px
 }
 
-body {
-    background-color: #07303E;
-    color: #FFFFFF;
+.Explore_Highlights{
+    width: 370px;
+    height: 612px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    Gap:10px
 }
+/* LATEST EVENT ENDS HERE!!!! */
 
+/* PAST EVENTS GOES HERE!!!! */
 .past-events h3 {
     font-size: 48px;
     text-align: center;
-    padding: 24px 0px;
+    padding: 24px 0px
 }
 
 .swiper_container {
     display: flex;
     flex-wrap:nowrap; 
-    justify-content: center; /
+    justify-content: center
 }
 
 .card {
@@ -128,37 +106,34 @@ body {
     height: 320px; 
     padding: 20px;
     text-align: left;
-    transition: transform 0.3s;
+    transition: transform 0.3s
 }
 
 .card img {
-    width: 320px;
-
+    width: 320px
 }
 
 .card:hover {
-    transform: scale(1.1);
-    
+    transform: scale(1.1)
 }
 
 .card_info {
     text-align: left;
     font-size: 16px;
-    color: #E6DFF3;
+    color: #E6DFF3
 }
 
 .card_title {
     font-size: 24px;
-    padding: 8px 0px;
+    padding: 8px 0px
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: white
 }
 
 /* button */
-
 .button {
     background-color: #FF7B1B;
     padding: 16px;
@@ -167,7 +142,6 @@ a {
     text-align: center;
     width: 80px;
     height: 20px;
-    margin-top: 32px;
+    margin-top: 32px
 }
-
-    /* PAST EVENT ENDS HERE!!!! */
+/* PAST EVENT ENDS HERE!!!! */
