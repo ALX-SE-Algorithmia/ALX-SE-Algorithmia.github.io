@@ -1,6 +1,5 @@
 /* ======================== CSS file for events.html ======================== */
 body {
-<<<<<<< HEAD
     font-family: 'Bentham', serif;
     background-color: #07303e;
     color: white;
@@ -23,239 +22,131 @@ body {
     height: Hug (737px);
     gap: 64px
 }
-
-.latest-events {
+h2{
     font-family: Space Grotesk;
     font-size: 48px;
     font-weight: 500;
     line-height: 61px;
     letter-spacing: 0em;
     text-align: center;
+    color:#FFFFFF;
+}
+.section{
+    width: Fixed (350px);
+    height: Hug (592px);
+    gap: 16px;
+}
+img{
+    width: 350px;
+    height: 265px;
+    border-radius: 19.59px, 19.59px, 0px, 0px;
+}
+.tech_section{
+    width: Fill (350px);
+    height: Hug (36px);
+    gap: 89px;
+}
+.tech_section button{
+    width: Hug (53px);
+    height: Hug (36px);
+    padding: 8px;
+    border-radius: 32px;
+    gap: 10px;
+}
+.tech_section time{
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+.title_on_lastest {
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
     color: #FFFFFF;
 }
 
-.section1 {
+.information_on_lastest {
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.explore_highlights div {
+    width: Hug (172px);
+    height: Hug (52px);
+    padding: 16px;
+    border-radius: 24px;
+    gap: 10px;
+}
+.explore_highlights p {
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.coding_section{
     width: Hug (370px);
-	height: Hug (612px);
-	padding: 10px;
-	gap: 10px;
-}
-     
-img {
-	width: 350px;
-	height: 265px;
-	border-radius: 19.59px 19.59px 0px 0px;
-}
-
-.Tech{
-    width: Fill (350px);
-	height: Hug (36px);
-	gap: 89px;
-}
-	
-time{
-	font-family: Space Grotesk;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: 0em;
-	text-align: right;
-	color: #FFFFFF;
-}
-
-button{
-	width: Hug (53px);
-	height: Hug (36px);
-	padding: 8px;
-	border-radius: 32px;
-	gap: 10px;
-	background:#FF7B1B
-}
-    
-.Static_Website_Project{
-    width: Hug (370px);
-    height: Hug (612px);
+    height: Hug (572px);
     padding: 10px;
+    gap: 10px;
+}
+.coding_section p {
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.code_learn_more {
+    width: Hug (119px)
+    height: Hug (52px)
+    padding: 16px
+    border-radius: 24px
     gap: 10px
 }
-
-.Explore_Highlights{
-    width: 370px;
-    height: 612px;
+.code_learn_more button{
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.python_section{
+    width: Hug (370px);
+    height: Hug (580px);
     padding: 10px;
-    overflow: hidden;
-    position: relative;
-    Gap:10px
-=======
-  font-family: "Bentham", serif;
-  background-color: #07303e;
-  color: white;
+    gap: 10px;
 }
-* {
-  margin: 0;
-  padding: 0;
+.python_learn_more{
+    width: Hug (119px);
+    height: Hug (52px);
+    padding: 16px;
+    border-radius: 24px;
+    gap: 10px;
+    
 }
-/* NAVIGATION BAR GOES HERE!!!! */
+.python_learn_more button{
+    background-color:#FF7B1B
+    
 
-/* NAVIGATION BAR ENDS HERE!!!! */
-
-/* UPCOMING EVENT GOES HERE!!!! */
-.upcoming-events {
-  margin-bottom: 200px;
-}
-.upcoming-events h3 {
-  font-size: 48px;
-  text-align: center;
-  padding: 24px 0px;
 }
 
-.upcoming-events_container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
 
-.upcoming-events_card {
-  width: 320px;
-  height: 320px;
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s;
-}
-
-.upcoming-events_card img {
-  width: 320px;
-}
-
-.upcoming-events_card:hover {
-  transform: scale(1.1);
-}
-
-.upcoming-events_card_info {
-  text-align: left;
-  font-size: 16px;
-  color: #e6dff3;
-}
-
-.upcoming-events_card_title {
-  font-size: 24px;
-  padding: 8px 0px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-/* button */
-.upcoming-events_button {
-  background-color: #ff7b1b;
-  padding: 16px;
-  border-radius: 24px;
-  color: white;
-  text-align: center;
-  width: 80px;
-  height: 20px;
-  margin-top: 32px;
-}
-
-/*left and right navigation buttons */
-.upcoming-carousel-prev,
-.upcoming-carousel-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: #191919;
-  color: #fff;
-  border-radius: 20px;
-}
-
-.upcoming-carousel-prev {
-  left: 0;
-}
-
-.upcoming-carousel-next {
-  right: 0;
-}
-
-/* UPCOMING EVENT ENDS HERE!!!!  */
-
-/* LATEST EVENTS GOES HERE!!!! */
-.event_page {
-  width: Hug (1, 552px);
-  height: Hug (737px);
-  gap: 64px;
-}
-
-.latest-events {
-  font-family: Space Grotesk;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 61px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #ffffff;
-}
-
-.section1 {
-  width: Hug (370px);
-  height: Hug (612px);
-  padding: 10px;
-  gap: 10px;
-}
-
-img {
-  width: 350px;
-  height: 265px;
-  border-radius: 19.59px, 19.59px, 0px, 0px;
-}
-
-.Tech {
-  width: Fill (350px);
-  height: Hug (36px);
-  gap: 89px;
-}
-
-time {
-  font-family: Space Grotesk;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: #ffffff;
-}
-
-button {
-  width: Hug (53px);
-  height: Hug (36px);
-  padding: 8px;
-  border-radius: 32px;
-  gap: 10px;
-  background: #ff7b1b;
-}
-
-.Static_Website_Project {
-  width: Hug (370px);
-  height: Hug (612px);
-  padding: 10px;
-  gap: 10px;
-}
-
-.Explore_Highlights {
-  width: 370px;
-  height: 612px;
-  padding: 10px;
-  overflow: hidden;
-  position: relative;
-  gap: 10px;
->>>>>>> 5f06b7a7cc29e88f588fcb78d4010226156cea95
-}
 /* LATEST EVENT ENDS HERE!!!! */
 
-<<<<<<< HEAD
 /* PAST EVENTS GOES HERE!!!! */
 .past-events h3 {
     font-size: 48px;
@@ -299,58 +190,10 @@ button {
 a {
     text-decoration: none;
     color: white
-=======
-/* LATEST EVENT ENDS HERE!!!! */
-
-/* PAST EVENTS GOES HERE!!!! */
-.past-events h3 {
-  font-size: 48px;
-  text-align: center;
-  padding: 24px 0px;
-}
-
-.card_container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.card {
-  width: 320px;
-  height: 320px;
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s;
-}
-
-.card img {
-  width: 320px;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.card_info {
-  text-align: left;
-  font-size: 16px;
-  color: #e6dff3;
-}
-
-.card_title {
-  font-size: 24px;
-  padding: 8px 0px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
->>>>>>> 5f06b7a7cc29e88f588fcb78d4010226156cea95
 }
 
 /* button */
 .button {
-<<<<<<< HEAD
     background-color: #FF7B1B;
     padding: 16px;
     border-radius: 24px; 
@@ -360,16 +203,4 @@ a {
     height: 20px;
     margin-top: 32px
 }
-=======
-  background-color: #ff7b1b;
-  padding: 16px;
-  border-radius: 24px;
-  color: white;
-  text-align: center;
-  width: 80px;
-  height: 20px;
-  margin-top: 32px;
-}
-
->>>>>>> 5f06b7a7cc29e88f588fcb78d4010226156cea95
 /* PAST EVENT ENDS HERE!!!! */
