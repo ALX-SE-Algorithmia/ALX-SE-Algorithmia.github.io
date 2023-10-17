@@ -32,6 +32,7 @@ body {
       text-align: center;
       color: #FFFFFF;
       }
+<<<<<<< HEAD
       .section1{
 	width: Hug (370px);
 	height: Hug (612px);
@@ -73,6 +74,15 @@ body {
 
 
 
+=======
+
+      .Static_Website_Project{
+      width: Hug (370px);
+      height: Hug (612px);
+      padding: 10px;
+      gap: 10px;
+      }
+>>>>>>> 5bcbcdf45c589aa9a7fc88531ebb60d9373a03d1
 
 
      .Explore_Highlights{
@@ -90,5 +100,74 @@ body {
 
 
     /* PAST EVENTS GOES HERE!!!! */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #07303E;
+    color: #FFFFFF;
+}
+
+.past-events h3 {
+    font-size: 48px;
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.swiper_container {
+    display: flex;
+    flex-wrap:nowrap; 
+    justify-content: center; /
+}
+
+.card {
+    width: 320px; 
+    height: 320px; 
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 320px;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    
+}
+
+.card_info {
+    text-align: left;
+    font-size: 16px;
+    color: #E6DFF3;
+}
+
+.card_title {
+    font-size: 24px;
+    padding: 8px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* button */
+
+.button {
+    background-color: #FF7B1B;
+    padding: 16px;
+    border-radius: 24px; 
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    margin-top: 32px;
+}
 
     /* PAST EVENT ENDS HERE!!!! */
