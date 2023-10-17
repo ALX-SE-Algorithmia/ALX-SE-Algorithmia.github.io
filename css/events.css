@@ -117,10 +117,10 @@ body {
     padding: 24px 0px;
 }
 
-.swiper_container {
+.card_container {
     display: flex;
     flex-wrap:nowrap; 
-    justify-content: center; /
+    justify-content: center;
 }
 
 .card {
