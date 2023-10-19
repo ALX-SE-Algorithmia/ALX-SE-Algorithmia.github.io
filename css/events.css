@@ -1,322 +1,112 @@
 /* ======================== CSS file for events.html ======================== */
 body {
-<<<<<<< HEAD
-    font-family: 'Bentham', serif;
-    background-color: #07303e;
-    color: white;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* NAVIGATION BAR GOES HERE!!!! */
-/* NAVIGATION BAR ENDS HERE!!!! */
-
-/* UPCOMING EVENT GOES HERE!!!! */
-/* UPCOMING EVENT ENDS HERE!!!!  */
-
-/* LATEST EVENTS GOES HERE!!!! */
-.event_page{
-    width: Hug (1,552px);
-    height: Hug (737px);
-    gap: 64px
-}
-h2{
-    font-family: Space Grotesk;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 61px;
-    letter-spacing: 0em;
-    text-align: center;
-    color:#FFFFFF;
-}
-.section{
-    width: Fixed (350px);
-    height: Hug (592px);
-    gap: 16px;
-}
-img{
-    width: 350px;
-    height: 265px;
-    border-radius: 19.59px, 19.59px, 0px, 0px;
-}
-.tech_section{
-    width: Fill (350px);
-    height: Hug (36px);
-    gap: 89px;
-}
-.tech_section button{
-    width: Hug (53px);
-    height: Hug (36px);
-    padding: 8px;
-    border-radius: 32px;
-    gap: 10px;
-=======
+  font-family: "Bentham", serif;
   background-color: #07303e;
   color: white;
 }
 
 * {
-  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  font-family: "Bentham", serif;
-  border: 0;
-  outline: none;
-  transition: all .2s linear;
-}
-
-html{
-  overflow-x: hidden;
-  scroll-padding-top: 6rem;
-  scroll-behavior: smooth;
 }
 
 /* NAVIGATION BAR GOES HERE!!!! */
+/* Hide the dropdown by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f9f9f9; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Style the individual dropdown items */
+.dropdown-content li {
+  padding: 10px;
+}
+
+/* Show the dropdown when hovering over the "Event" link */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ff7b1b;
+  border-radius: 10px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* -------------*/
+.logo {
+  margin: 40px 20px 20px 200px;
+  font-size: 30px;
+}
+.nav-container {
+  position: absolute;
+  top: 0; /* Place the nav bar at the top of the viewport */
+  right: 170px; /* Place the nav bar at the right edge of the viewport */
+  padding: 20px; /* Add some padding to the nav items */
+  margin-top: 50px;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list :hover {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff7b1b;
+}
+
+.nav-list {
+  display: inline; /* Display list items in a horizontal line */
+  margin-right: 50px; /* Add spacing between list items */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff; /* Set link color to white */
+}
+
+.nav-container button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.nav-container button:hover {
+  background-color: #ff7b1b;
+}
 
 /* NAVIGATION BAR ENDS HERE!!!! */
 
-/* UPCOMING EVENT GOES HERE!!!! */
-.upcoming-events {
+/* EVENTS GOES HERE!!!! */
+
+.events {
   margin-bottom: 200px;
-}
-.upcoming-events h3 {
-  font-size: 48px;
-  text-align: center;
-  padding: 24px 0px;
+  margin-top: 100px;
 }
 
-.upcoming-events_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.upcoming-events_card {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s;
-}
-
-.upcoming-events_card img {
-  /* width: 320px; */
-  width: 100%;
-  height: 10rem;
-  object-fit:fill;
-}
-
-.upcoming-events_card:hover {
-  transform: scale(1.1);
-}
-
-.upcoming-events_card_info {
-  text-align: left;
-  font-size: 16px;
-  color: #e6dff3;
-}
-
-.upcoming-events_card_title {
-  font-size: 24px;
-  padding: 4px 0px;
->>>>>>> ff46ace02c4aa169420d43b0349646f830d4462a
-}
-.tech_section time{
-    font-family: Space Grotesk;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: right;
-}
-<<<<<<< HEAD
-.title_on_lastest {
-    font-family: Space Grotesk;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-.information_on_lastest {
-    font-family: Space Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-=======
-
-/* button */
-.upcoming-events_button {
-  background-color: rgb(255, 123, 27);
-  padding: 10px;
-  border-radius: 24px;
-  color: white;
-  text-align: center;
-  width: 80px;
-  height: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-.upcoming-events_button:hover{
-  background-color: rgba(255, 123, 27, .2);
-  color: rgb(255, 165, 0);
-  }
-
-/*left and right navigation buttons */
-.upcoming-carousel-prev,
-.upcoming-carousel-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: #191919;
-  color: #fff;
-  border-radius: 20px;
->>>>>>> ff46ace02c4aa169420d43b0349646f830d4462a
-}
-.explore_highlights div {
-    width: Hug (172px);
-    height: Hug (52px);
-    padding: 16px;
-    border-radius: 24px;
-    gap: 10px;
-}
-.explore_highlights p {
-    font-family: Space Grotesk;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.coding_section{
-    width: Hug (370px);
-    height: Hug (572px);
-    padding: 10px;
-    gap: 10px;
-}
-.coding_section p {
-    font-family: Space Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.code_learn_more {
-    width: Hug (119px)
-    height: Hug (52px)
-    padding: 16px
-    border-radius: 24px
-    gap: 10px
-}
-.code_learn_more button{
-    font-family: Space Grotesk;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.python_section{
-    width: Hug (370px);
-    height: Hug (580px);
-    padding: 10px;
-    gap: 10px;
-}
-.python_learn_more{
-    width: Hug (119px);
-    height: Hug (52px);
-    padding: 16px;
-    border-radius: 24px;
-    gap: 10px;
-    
-}
-.python_learn_more button{
-    background-color:#FF7B1B
-    
-
-}
-
-
-<<<<<<< HEAD
-/* LATEST EVENT ENDS HERE!!!! */
-
-=======
-.Explore_Highlights {
-  width: 370px;
-  height: 612px;
-  padding: 10px;
-  overflow: hidden;
-  position: relative;
-  gap: 10px;
-}
-/* LATEST EVENT ENDS HERE!!!! */
-
-
->>>>>>> ff46ace02c4aa169420d43b0349646f830d4462a
-/* PAST EVENTS GOES HERE!!!! */
-.past-events h3 {
-    font-size: 48px;
-    text-align: center;
-    padding: 24px 0px
-}
-
-.swiper_container {
-    display: flex;
-    flex-wrap:nowrap; 
-    justify-content: center
-}
-
-.card {
-    width: 320px; 
-    height: 320px; 
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s
-}
-
-.card img {
-    width: 320px
-}
-
-.card:hover {
-    transform: scale(1.1)
-}
-
-.card_info {
-    text-align: left;
-    font-size: 16px;
-    color: #E6DFF3
-}
-
-.card_title {
-    font-size: 24px;
-    padding: 8px 0px
-}
-
-a {
-    text-decoration: none;
-<<<<<<< HEAD
-    color: white
-=======
-    color: white;
-}
-/* LATEST EVENT ENDS HERE!!!! */
-
-/* PAST EVENTS GOES HERE!!!! */
-.past-events h3 {
+.events h3 {
   font-size: 48px;
   text-align: center;
   padding: 24px 0px;
@@ -358,29 +148,18 @@ a {
 a {
   text-decoration: none;
   color: white;
->>>>>>> ff46ace02c4aa169420d43b0349646f830d4462a
 }
 
 /* button */
 .button {
-<<<<<<< HEAD
-    background-color: #FF7B1B;
-    padding: 16px;
-    border-radius: 24px; 
-    color: white;
-    text-align: center;
-    width: 80px;
-    height: 20px;
-    margin-top: 32px
-=======
-  background-color: #FF7B1B;
+  background-color: #ff7b1b;
   padding: 16px;
-  border-radius: 24px; 
+  border-radius: 24px;
   color: white;
   text-align: center;
   width: 80px;
   height: 20px;
   margin-top: 32px;
->>>>>>> ff46ace02c4aa169420d43b0349646f830d4462a
 }
-/* PAST EVENT ENDS HERE!!!! */
+
+/* EVENTS ENDS HERE!!!!  */
