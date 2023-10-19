@@ -138,10 +138,28 @@ body {
     background-color: #ff7b1b;
     padding: 9px 10px;
     width: 30px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+.tag:active,
+.tag:hover{
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:active,
+a:hover{
+    color: #000;
 }
 h5{
     margin-left: 170px;
     margin-top: -25px;
+    color: #fff;
+}
+h4{
+    color: #fff;
 }
 .box{
     width: 40px;
@@ -151,4 +169,5 @@ h5{
 }
 p{
     margin: -25px 50px;
+    color: #fff;
 }
