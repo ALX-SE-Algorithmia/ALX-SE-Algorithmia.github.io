@@ -226,9 +226,9 @@ span{
 /* algorithimia difference css */
 .algorithimia-diff{
   width: 80%;
-  margin: auto;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 200px auto 200px auto;
+  /*border: solid red 2px;*/
 }
 
 .algorithimia-diff h1{
@@ -287,6 +287,55 @@ img {
   height: auto;
   }
 /* end of algorithimia difference css */
+
+/* Goal section css */
+.goals-section{
+  width: 90%;
+  margin: 200px auto 200px auto;
+  text-align: center;
+  /*border:  solid red 2px;*/
+}
+
+.goals-section .head{
+  margin-bottom: 120px;
+}
+
+.goals-section h2{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.goals-section h3{
+  font-size: 1.5em;
+  margin: 0 auto 10px auto;
+}
+
+.goals-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.goal{
+  background-color: #e27107;
+  color: #DEDEDE;
+  border: solid #e27107 1px;
+  border-radius: 20px;
+}
+
+.goal h4{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.goal p{
+  font-size: 1em;
+  padding: 0 10px;
+  margin-top: 0;
+}
+/* end of Goal section css
 
 /* contact section css */
 .contact h1, .contact p{
