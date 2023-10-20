@@ -2,6 +2,7 @@
 body{
   background-color: #062F3D;
   color: white;
+  font-family: Bentham;
 }
 
 a{
@@ -11,6 +12,10 @@ a{
 
 p{
   line-height: 1.3em;
+}
+
+button{
+  font-family: Bentham;
 }
 
 /* navbar css */
@@ -411,6 +416,7 @@ input{
 textarea{
   background-color: #0b3b49;
   color: #DEDEDE;
+  border-color: #DEDEDE;
   border-radius: 10px;
   margin-top: 10px;
   padding: 10px;
@@ -433,36 +439,30 @@ form button{
 /* sub section css */
 .subscribe-container{
   width: 70%;
-  margin: auto;
+  margin: 200px auto;
   text-align: center;
 }
 
-.sub-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
+.subscribe-container h2{
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.subscribe-container h1{
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.subscribe-container button{
   width: max-content;
-  width: 70%;
-  margin: auto;
-}
-
-.sub-box input{
-  width: 80%;
-  border-radius: 20px 0 0 20px;
-  border: none;
-  padding: 0 20px;
-  font-size: 14px;
-  height: 90%;
-}
-
-.sub-box button{
-  width: 20%;
-  border-radius: 0 20px 20px 0;
+  height: max-content;
+  padding: 20px 30px;
+  margin-top: 40px;
+  border-radius: 50px;
   background-color: #FF7B1B;
   border: none;
-  font-size: 1em;
-  height: 100%;
+  font-size: 2.5em;
+  font-family: Bentham;
   color: white;
   cursor: pointer;
 }
