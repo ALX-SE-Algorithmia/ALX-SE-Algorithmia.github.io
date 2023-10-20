@@ -14,6 +14,11 @@
 
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
     <link rel="stylesheet" href="css/events.css" />
@@ -21,6 +26,7 @@
   </head>
 
   <body>
+    <div class="header-background"></div>
     <!-- NAVIGATION BAR GOES HERE!!!! -->
     <header>
       <div class="logo">
@@ -33,16 +39,16 @@
           <li class="nav-list"><a href="./about.html">About Us</a></li>
           <li class="nav-list"><a href="./about.html">Contact Us</a></li>
           <li class="nav-list"><a href="./projects.html">Projects</a></li>
-          <li class="dropdown">
-            <a href="./events.html">Events</a>
+
+          <li class="nav-list dropdown">
+            <a href="./events.html"><span>Events</span></a>
             <ul class="dropdown-content">
-              <li><a href="#">Upcoming Events</a></li>
-              <li><a href="#">Latest Events</a></li>
-              <li><a href="#">Past Events</a></li>
+              <li><a href="#upcoming-events">Upcoming Events</a></li>
+              <li><a href="#latest-events">Latest Events</a></li>
+              <li><a href="#past-events">Past Events</a></li>
             </ul>
           </li>
 
-          <!-- <li class="nav-list"><a href="./events.html">Events</a></li> -->
           <li class="nav-list"><a href="./contact.html">Blogs</a></li>
           <button>Join Us</button>
         </ul>
@@ -51,9 +57,11 @@
     <!-- NAVIGATION BAR ENDS HERE!!!! -->
 
     <!-- UPCOMING EVENT GOES HERE!!!! -->
+
     <div class="events">
       <h3>Upcoming Events</h3>
-      <div class="card_container">
+      <div class="card_container" id="upcoming-events">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
         <div class="card">
           <div>
             <img
@@ -76,7 +84,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <!-- <div class="card">
           <div>
             <img
               src="images/events/image_1.png"
@@ -97,7 +105,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="card">
           <div>
             <img
@@ -128,7 +136,7 @@
               <p class="card_title">
                 <b>Twitter Space Event</b>
               </p>
-              <p class="ard_info">
+              <p class="card_info">
                 Get ready for an interactive and engaging experience as we take
                 to Twitter Spaces for an upcoming event that's all about
                 connection and conversation. Here's a sneak peek at what you can
@@ -140,6 +148,7 @@
             </div>
           </div>
         </div>
+        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
       </div>
     </div>
 
@@ -147,8 +156,9 @@
 
     <!-- LATEST EVENT STARTS HERE!!!! -->
     <div class="events">
-      <h3>Latest Events</h3>
-      <div class="card_container">
+      <h3><span>Latest Events</span></h3>
+      <div class="card_container" id="latest-events">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
         <div class="card">
           <div>
             <img
@@ -169,7 +179,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <!-- <div class="card">
           <div>
             <img
               src="images/events/community_hangout.png"
@@ -188,7 +198,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="card">
           <div>
             <img src="images/events/coding_battle.png" alt="Coding Battle" />
@@ -225,14 +235,16 @@
             </div>
           </div>
         </div>
+        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
       </div>
     </div>
     <!-- LATEST EVENT ENDS HERE!!!! -->
 
     <!-- PAST EVENTS GOES HERE!!!! -->
     <div class="events">
-      <h3>Past Events</h3>
-      <div class="card_container">
+      <h3><span>Past Events</span></h3>
+      <div class="card_container" id="past-events">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
         <div class="card">
           <div>
             <img src="images/events/demo_calculator.png" alt="demo project" />
@@ -253,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <!-- <div class="card">
           <div>
             <img src="images/events/demo_calculator.png" alt="demo project" />
             <div>
@@ -270,7 +282,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="card">
           <div>
             <img src="images/events/team_meetups.png" alt="demo project" />
@@ -304,9 +316,22 @@
             </div>
           </div>
         </div>
+        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
       </div>
     </div>
-
     <!-- PAST EVENT ENDS HERE!!!! -->
+
+    <!-- JavaScript -->
+    <script>
+      // JavaScript to add box-shadow to the header when scrolling down
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        if (window.scrollY > 0) {
+          header.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
+        } else {
+          header.style.boxShadow = "none";
+        }
+      });
+    </script>
   </body>
 </html>
