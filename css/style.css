@@ -50,6 +50,7 @@ span{
   justify-content: space-around;
   /*border: solid red 2px;*/
   color: #DEDEDE;
+  font-size: 1.3em;
   align-items: center;
 
 }
@@ -62,18 +63,24 @@ span{
 }
 
 .nav button{
-  width: 20%;
+  background: #ff7b1b;
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
   height: max-content;
+  font-size: 1em;
+  margin-top: 10px;
   background-color: #e27107;
   border: none;
-  border-radius: 20px;
+  border-radius: 40px;
   color: #DEDEDE;
   cursor: pointer;
-  padding: 20px;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
 
-.mega-dropdown{
+/*.mega-dropdown{
   width:max-content;
   position:absolute;
   top: 70%;
@@ -82,7 +89,7 @@ span{
   padding:20px 35px;
   border-bottom:3px solid #34495e;
   visibility: hidden;
-}
+}*/
 
 .mega-dropdown li a{
   color: #062F3D;
@@ -131,7 +138,7 @@ span{
 }
 
 #hero-section #hero-text {
-  color: "E6DFF4";
+  color: "#E6DFF4";
   /*border: solid red 2px;*/
   width: 70%;
   margin-bottom: 10px;
@@ -141,18 +148,18 @@ span{
 }
 
 #hero-section #join-consortium {
-  border-radius: 100px;
   background: #ff7b1b;
   display: flex;
-  padding: 14px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: max-content;
   height: max-content;
+  font-size: 1em;
   margin-top: 10px;
   background-color: #e27107;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   color: #DEDEDE;
   cursor: pointer;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
@@ -258,6 +265,9 @@ span{
   border-radius: 20px;
   margin-top: 70px;
   padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
 
   .card img{
@@ -283,7 +293,7 @@ span{
 
 .card p {
   width: 70%;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #fff;
   }
 
@@ -467,3 +477,58 @@ form button{
   cursor: pointer;
 }
 /*end of sub section css */
+
+/* footer section css */
+footer{
+  width: 95%;
+  position: absolute;
+  right: 0;
+  margin-bottom: 200px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left, .right{
+  width: 45%;
+  font-size: 1.1em;
+  color: #DEDEDE;
+}
+
+.right .links{
+  display: flex;
+  gap: 100px;
+  padding: 0;
+  font-size: 1.3em;
+  color: #8dacc9;
+}
+
+.right h3{
+  font-size: 1.5em;
+  margin-top: 0;
+  padding: 0;
+}
+
+.links ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.links li{
+  padding: 0;
+}
+
+.under{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
+  color: #DEDEDE;
+  margin-bottom: 200px;
+}
+/* end of footer css */
