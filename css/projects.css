@@ -7,6 +7,44 @@
 
 body{
    background-color: #062F3D;
+   
+}
+
+.header{
+    top:20px;
+    left:0;
+    width:100%;
+    padding: 20px 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 0px;
+    padding: 0 13px;
+}
+
+.joinus{
+    padding: 14px 30px;
+    background-color: #fff;
+    margin-left: 35px;
+    font-weight: 500;
+    border-radius: 50px;
+    border-style: none;
+}
+
+body{
+   background-color: #062F3D;
 }
 /* Nav Bar  */
 
@@ -60,12 +98,12 @@ body{
 }
 .container-featured{
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 90px;
     display: flex;
-    overflow: scroll;
-    overflow:visible;
+    overflow: hidden;
     margin-bottom: 200px;
 }
+
 .featured, .container-featured{
     margin-bottom: -40px;
 }
@@ -93,11 +131,12 @@ body{
     margin-top: 30px;
     margin-left: 50px;
     font-size: 19px;
-    padding: 20px 80px;
+    padding: 20px 100px;
     border-radius: 50px;
     background-color: #FF7B1B;
     color: #fff;
     border-style: none;
+    cursor: pointer;
 }
 
 .featured-butto{
@@ -109,6 +148,16 @@ body{
     background-color: #FF7B1B;
     color: #ffffff;
     border-style: none;
+    cursor: pointer;
+}
+
+.featured-butto:hover{
+    background-color:#fa9551;
+    transition: 0.7s;
+}
+.featured-button:hover{
+    background-color:#fa9551;
+    transition: 0.7s;
 }
 
 /* Recent Projects Section */
@@ -117,14 +166,18 @@ body{
     color:#fff;
     margin-top: 120px;
     text-align: center;
-
 }
+
+.recent, .container-recent{
+    margin-bottom: 40px;
+}
+
 .container-recent{
     margin-left: 50px;
     margin-top: 20px;
     display: flex;
     overflow: scroll;
-    overflow:visible;
+    overflow:hidden;
     margin-bottom: 200px;
 }
 .recent-img{
@@ -156,17 +209,28 @@ body{
     background-color: #FF7B1B;
     color: #fff;
     border-style: none;
+    cursor: pointer;
 }
 
 .recent-butto{
     margin-top: 30px;
     font-size: 19px;
     margin-left: 70px;
-    padding: 20px 90px;
+    padding: 20px 100px;
     border-radius: 50px;
     background-color: #FF7B1B;
     color: #ffffff;
     border-style: none;
+    cursor: pointer;
+}
+
+.recent-butto:hover{
+    background-color:#fa9551;
+    transition: 0.7s;
+}
+.recent-button:hover{
+    background-color: #fa9551;
+    transition: 0.7s;
 }
 
 /* Upcoming Section  */
@@ -182,13 +246,14 @@ body{
     margin-top: 20px;
     display: flex;
     overflow: scroll;
-    overflow:visible;
+    overflow:hidden;
     margin-bottom: 200px;
 }
 
 .upcoming, .container-upcoming{
-    margin-top: 20px;
+    margin: 50px;
 }
+
 .upcoming-img{
     width:420px;
     height:290px;
@@ -218,16 +283,26 @@ body{
     background-color: #FF7B1B;
     color: #fff;
     border-style: none;
+    cursor: pointer;
 }
 
 .upcoming-butto{
     margin-top: 30px;
     margin-bottom: 60px;
     font-size: 16px;
-    margin-left: 70px;
-    padding: 20px 100px;
+    margin-left: 55px;
+    padding: 20px 90px;
     border-radius: 50px;
     background-color: #FF7B1B;
     color: #ffffff;
     border-style: none;
+    cursor: pointer;
+}
+.upcoming-butto:hover{
+    background-color:#fa9551;
+    transition: 0.7s;
+}
+.upcoming-button:hover{
+    background-color:#fa9551;
+    transition: 0.7s;
 }
