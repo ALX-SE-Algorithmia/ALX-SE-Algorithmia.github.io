@@ -240,6 +240,7 @@ body{
     color:#fff;
     margin-top: -10px;
     text-align: center;
+    margin-top: -100px;
 
 }
 .container-upcoming{
@@ -248,11 +249,10 @@ body{
     display: flex;
     overflow: scroll;
     overflow:hidden;
-    margin-bottom: 200px;
 }
 
 .upcoming, .container-upcoming{
-    margin-top: 10px;
+   
 }
 
 .upcoming-img{
