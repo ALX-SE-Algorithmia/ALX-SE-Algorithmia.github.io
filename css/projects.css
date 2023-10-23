@@ -65,9 +65,9 @@ body{
     float: left;
     color: black;
     font-size: 30px;
-   border-left: 20px;
-   position: relative;
-   right: 0.9em;
+    border-left: 20px;
+    position: relative;
+    right: 0.9em;
 }
 .para{
     font-size: 25px;
@@ -90,7 +90,7 @@ body{
 
 /* Featured Projects */
 .featured{
-    font-size: 50px;
+    font-size: 40px;
     color:#fff;
     margin-top: 120px;
     text-align: center;
@@ -162,7 +162,7 @@ body{
 
 /* Recent Projects Section */
 .recent{
-    font-size: 50px;
+    font-size: 40px;
     color:#fff;
     margin-top: 120px;
     text-align: center;
@@ -180,6 +180,7 @@ body{
     overflow:hidden;
     margin-bottom: 200px;
 }
+
 .recent-img{
     width:420px;
     height:290px;
@@ -235,9 +236,9 @@ body{
 
 /* Upcoming Section  */
 .upcoming{
-    font-size: 50px;
+    font-size: 40px;
     color:#fff;
-    margin-top: 120px;
+    margin-top: -10px;
     text-align: center;
 
 }
@@ -251,7 +252,7 @@ body{
 }
 
 .upcoming, .container-upcoming{
-    margin: 50px;
+    margin-top: 10px;
 }
 
 .upcoming-img{
