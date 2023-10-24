@@ -64,36 +64,8 @@ img {
 }
 
 
-@media (min-width: 640px) {
-    /* Media query for screens with a maximum width of 768px */
-    .hero-section {
-        width: 50%; /* Adjust to fill the entire viewport width */
-        text-align:left;
-        height: auto; /* Allow the height to adjust based on content */
-        flex-direction: column; /* Stack text and image vertically */
-    }
-
-    .text-hero {
-        width: 100%; /* Each section takes 100% of the card's width */
-    }
-}
-
-@media (min-width: 768px) and (min-width: 1290px){
-    /* Media query for screens with a maximum width of 768px */
-    .hero-section {
-        width: 70%; /* Adjust to fill the entire viewport width */
-        text-align:left;
-        height: auto; /* Allow the height to adjust based on content */
-        flex-direction: column; /* Stack text and image vertically */
-    }
-
-    .text-hero {
-        width: 100%; /* Each section takes 100% of the card's width */
-    }
-}
-
 /* For screens between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 768px) {
     .hero-section {
         width: 50%; /* Adjust card width as needed */
         flex-direction: column;
