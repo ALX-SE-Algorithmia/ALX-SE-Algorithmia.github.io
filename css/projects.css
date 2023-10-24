@@ -1,296 +1,305 @@
-/* ======================== CSS file for projects.html ======================== */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box; /* set the box sizing to border box for all elements on the page */
+/*Linear gradient */
+.header-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh; /* Adjust the height as needed */
+    z-index: -1;
+    background: linear-gradient(
+      90deg,
+      rgba(6, 47, 61, 0.8),
+      rgba(255, 123, 27, 0.8),
+      rgba(255, 123, 27, 0.8),
+      rgba(116, 64, 225, 0.8)
+    );
+    filter: blur(200px); 
+  }
+  
+  body {
+    font-family: "Bentham", serif;
+    background-color: #07303e;
+    color: white;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Hero Section */
+  .hero-section{
+    display: flex;
+    background-color:#ff7b1b;
+    border: 1px solid #070101;
+    border-radius: 20px;
+    width: 65em; /* Increase the width as needed to make the card wider */
+    height: 540px;
+    margin-left: 190px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-body{
-    /* Change background color for entire page */
-   background-color: #062F3D; 
+.text-hero {
+    color: black; /* text for the hero card */
+    flex: 3;
+    width: 50%; /* Each half takes 50% of the card */
+    margin-top: 40px;
+    
+}
+
+.image-hero{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: stretch;
    
 }
 
-/* Nav Bar  */
-
-
-
-/* Hero Section */
-.hero-card{
-    max-width: 92%; /* Maximum width for the hero card */
-    margin: 0 auto; 
-    margin-top: 4vh;
-    margin-bottom: -80px; /* include ,margin bottom for the hero card and other cards */
-    background-color: #FF7B1B;
-    border: none; /* remove border */
-    padding: 55px ;
-    height: 91.6vh;
-    border-radius: 30px;
-    display:flex; /* set a flex display for the hero section */
-}
-.hero-text{
-    float: left; /* Move the text in the hero card to the left */
-    color: black; /* text for the hero card */
-    font-size: 30px; /* change the font-size */
-    border-left: 20px;
-    position: relative; /* set the position of the text to relative */
-    right: 0.9em;
-}
-.para{
-    font-size: 25px; /*  font size for the paragraph in the hero card */
-    margin-bottom: 5vh;
+.h-hero {
+    font-size: 48px;
+    margin-left: 35px;
 }
 
-.content {
-    flex: 1; /* Grow to fill available space */
-    padding: 1px; /* Added some spacing for the content */
+.p-hero{
+    font-size: 25px;
+    margin-top: 13px;
+    font-weight: 300;
 }
 
-.img-hero{
-    float: right; /* move the image in the hero section to the right */
-    margin-top: -529px;
-    margin-bottom: 500rem;
-    margin-left: 617px; 
-    height: 600px; /* set the height to 600px */
-    border-radius: none; /* remove border radius for the image */
+img {
+    max-width: 200%;
+    max-height: 200%; /* Set maximum height to 100% */
+    object-fit: cover;
 }
 
-/* Featured Projects */
-.featured{
-    font-size: 40px; /* font size for the title */
-    color:#fff; /* color of the text */
-    margin-top: 120px; /* margin for the title */
-    text-align: center; /* align text to center */
-}
-.container-featured{
-    margin-left: 50px; /* give a definite margin to the left */
-    margin-top: 90px; /* give a definite margin to the top */
-    display: flex; /* change display to flex */
-    margin-bottom: 200px; /* give the margin bottom a size */
-    overflow:hidden;
-    transition: all 0.5s ease-in;
-}
+    
 
-.featured, .container-featured{
-    margin-bottom: -40px; /*move the container to give space before the previous card */
-}
-.featured-img{
-    width:420px; /* width of the image */
-    height:290px; /* gives the image a definite height */
-    padding:10px; /* add a padding to the image */
-    border-radius: 20px; /* set a border radius */
-    border-bottom-left-radius: 0px; 
-    border-bottom-right-radius: 0px;
-}
-.featured-img:hover{
-    opacity:0.7; 
-    transform: scale(0.98);
-}
-.featured-text{
-    margin-top: 10px; /* set a margin top to the text section */
-    font-size: 30px; /* set a font size to the text section */
-    text-align: center; /* align the text to center */
-    color: white; /* set the color to white */
-}
-.featured-p{
-    margin-top: 30px;
+/* Projects Section  */
+
+  .projects {
+    margin-bottom: 200px;
+    margin-top: 100px;
+  }
+  
+  .projects h3 {
+    font-size: 48px;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .projects h3 span {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .card_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+  }
+  
+  .fa-circle-chevron-left {
+    left: 0;
+  }
+  
+  .fa-circle-chevron-right {
+    right: 0;
+  }
+  
+  .card_container i {
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .card_container i:hover {
+    color: #ff7b1b;
+  }
+  
+  .card {
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+    border-radius: 0.5rem;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 12rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card_info {
+    text-align: left;
+    font-size: 14px;
+    color: #e6dff3;
+  }
+  
+  .card_title {
+    font-size: 18px;
+    padding: 8px 0px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* button */
+  .button {
+    background-color: rgb(255, 123, 27);
+    padding: 20px;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    margin-top: 16px;
+    font-family: "Bentham", serif;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 123, 27, 0.2);
+    color: rgb(255, 165, 0);
+  }
+  
+ 
+  /* Arrow */
+  .fa-arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: rgb(255, 123, 27);
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  /* Media Query */
+  @media only screen and (max-width: 1200px) {
+    header {
+      gap: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  
+  .nav-list {
+    margin-right: 20px; /* Add spacing between list items */
+  }
+  }
+  
+  @media (max-width:991px){
+    /* For tablets */
+    .button {
+      font-size: 14px;
+      padding: 5px;
+      width: 80px;
+      height: 20px;
+    }
+  
+  }
+  
+  @media (max-width: 775px){
+    /* For mobile phones */
+    .responsiveness {
+      display:  flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+    }
+  
+    #menu-bar{
+      position: absolute;
+      top: 100%; right: 0; left: 95%;
+      display: flex;
+      margin-left: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+    .logo{
+      position: absolute;
+      top: 100%; right: 0; left: 2%;
+    }
+
+    .nav-container {
+      position: absolute;
+      top: 100%; right: 0; left: 60%;
+      background-color: transparent;
+      padding: 10px 10px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .nav-container.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  .dropdown {
+    display: none;
+  }
+  
+  .nav-list a {
+    display: block;
+    border-radius: .5rem;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(255, 123, 27);
+  }
+  
+  header {
     font-size: 20px;
+  }
+  
+  .projects {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  #upcoming_container {
+    margin-top: 100px;
+  }
+  
+  .projects h3 {
+    font-size: 40px;
+  }
+  
+  .card_container {
+    display: block;
+    position: relative;
     text-align: center;
-    color: white;
-}
-
-/* Button styling  */
-.featured-button{
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 19px; /* change the size of the font */
-    padding: 20px 100px;
-    border-radius: 50px;
-    background-color: #FF7B1B; /* change background color */
-    color: #fff; /* change color of the text inside the button */
-    border-style: none;
-    cursor: pointer; /* change cursor to pointer for the button */
-}
-
-/* Button styling  */
-.featured-butto{
-    margin-top: 30px;
-    font-size: 19px; /* change the size of the font */
-    margin-left: 70px;
-    padding: 20px 90px;
-    border-radius: 50px;
-    background-color: #FF7B1B; /* change background color */
-    color: #ffffff; /* change color of the text inside the button */
-    border-style: none;
-    cursor: pointer; /* change cursor to pointer for the button */
-}
-
-.featured-butto:hover{
-    background-color:#fa9551; /* change background color when hovered on */
-    transition: 0.7s; /* change transtion time when hovered on */
-}
-.featured-button:hover{
-    background-color:#fa9551; /* change background color when hovered on */
-    transition: 0.7s; /* change transtion time when hovered on */
-}
-
-/* Recent Projects Section */
-.recent{
-    font-size: 40px; /* font size for the title */
-    color:#fff;  /* color of the text */
-    margin-top: 120px; /* margin for the title */
-    text-align: center; /* align text to center */
-}
-
-.recent, .container-recent{
-    margin-bottom: 40px; /* include a margin at the bottom */
-}
-
-.container-recent{
-    margin-left: 50px; /* give a definite margin to the left */
-    margin-top: 20px; /* give a definite margin to the top */
-    display: flex; /* give a flex display to the container */
-    margin-bottom: 200px; /* margin bottom between the container and subsequent elements */
-    overflow:hidden;
-    transition: all 0.5s ease-in;
-}
-
-
-.recent-img{
-    width:420px; /* width of the image */
-    height:290px; /* gives the image a definite height */
-    padding:10px;  /* add a padding to the image */
-    border-radius: 20px; /* set a border radius */
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.recent-img:hover{
-    opacity:0.7; 
-    transform: scale(0.98);
-}
-.recent-text{
-    margin-top: 10px;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
-.recent-p{
-    margin-top: 30px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-}
-
-/* Button styling  */
-.recent-button{
-    margin-top: 52px;
-    margin-left: 50px;
-    font-size: 19px; /* change the size of the font */
-    padding: 20px 60px;
-    border-radius: 50px; 
-    background-color: #FF7B1B;   /* change background color */
-    color: #fff; /* change color of the text inside the button */
-    border-style: none;
-    cursor: pointer; /* change cursor to pointer for the button */
-}
-
-/* Button styling  */
-.recent-butto{
-    margin-top: 30px;
-    font-size: 19px; /* change size of the font */
-    margin-left: 70px;
-    padding: 20px 100px;
-    border-radius: 50px;
-    background-color: #FF7B1B; /* change background color */
-    color: #ffffff; /* change color of the text */
-    border-style: none;
-    cursor: pointer; /* change cursor to pointer for the button */
-}
-
-.recent-butto:hover{
-    background-color:#fa9551;  /* change background color when hovered on */
-    transition: 0.7s; /* change transtion time when hovered on */
-}
-.recent-button:hover{
-    background-color: #fa9551;  /* change background color when hovered on */
-    transition: 0.7s; /* change transtion time when hovered on */
-}
-
-/* Upcoming Section  */
-.upcoming{
-    font-size: 40px; /* font size for the title */
-    color:#fff;  /* color of the text */
-    margin-top: -10px; /* margin for the title */
-    text-align: center; /* align text to center */
-    margin-top: -100px;
-}
-
-.container-upcoming{
-    margin-left: 50px; /* give a definite margin to the left */
-    margin-top: 20px;  /* give a definite margin to the top */
-    display: flex; /* give a flex display to the container */
-    overflow:hidden;
-    transition: all 0.5s ease-in;
-}
-
-.upcoming-img{
-    width:420px; /* width of the image */
-    height:290px; /* gives the image a definite height */
-    padding:10px;  /* add a padding to the image */
-    border-radius: 20px;  /* set a border radius */
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.upcoming-img:hover{
-    opacity:0.7; 
-    transform: scale(0.98);
-}
-.upcoming-text{
-    margin-top: 10px;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
-.upcoming-p{
-    margin-top: 30px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-}
-
-/* Button styling  */
-.upcoming-button{
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 19px; /* change the size of the font */
-    padding: 20px 120px;
-    border-radius: 50px;
-    background-color: #FF7B1B;    /* change background color */
-    color: #fff; /* change color of the text inside the button */
-    border-style: none;
-    cursor: pointer; /* change cursor to pointer for the button */
-}
-
-/* Button styling  */
-.upcoming-butto{
-    margin-top: 30px;
-    margin-bottom: 60px;
-    font-size: 16px; /* change the size of the font */
-    margin-left: 55px;
-    padding: 20px 90px;
-    border-radius: 50px;
-    background-color: #FF7B1B;   /* change background color */
-    color: #ffffff; /* change color of the text inside the button */
-    border-style: none;
-    cursor: pointer; /* change cursor to pointer for the button */
-}
-.upcoming-butto:hover{ 
-    background-color:#fa9551;  /* change background color when hovered on */
-    transition: 0.7s; /* change transtion time when hovered on */
-}
-.upcoming-button:hover{
-    background-color:#fa9551;  /* change background color when hovered on */
-    transition: 0.7s; /* change transtion time when hovered on */
-}
+    overflow: hidden;
+    max-width: 100%; /* Ensure cards don't go beyond the screen width */
+    margin: 0 auto; /* Center-align the container */
+    padding: 0 10px; /* Add some horizontal padding for better spacing */
+    box-sizing: border-box; /* Include padding in the max-width */
+  }
+  .card {
+    display: block; /* Ensure all cards are displayed */
+    margin: 0 auto; /* Center-align each card */
+    margin-bottom: 120px; /* Add some vertical spacing between cards */
+  }
+  
+  .fa-circle-chevron-left,
+  .fa-circle-chevron-right {
+    display: none;
+  }
+  
+  }
