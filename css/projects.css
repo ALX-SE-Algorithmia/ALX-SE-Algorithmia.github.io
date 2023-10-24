@@ -68,6 +68,7 @@ body{
     margin-top: 90px; /* give a definite margin to the top */
     display: flex; /* change display to flex */
     margin-bottom: 200px; /* give the margin bottom a size */
+    transition: all 0.5s ease-in;
 }
 
 .featured, .container-featured{
@@ -80,6 +81,10 @@ body{
     border-radius: 20px; /* set a border radius */
     border-bottom-left-radius: 0px; 
     border-bottom-right-radius: 0px;
+}
+.featured-img:hover{
+    opacity:0.7; 
+    transform: scale(0.98);
 }
 .featured-text{
     margin-top: 10px; /* set a margin top to the text section */
@@ -146,7 +151,9 @@ body{
     margin-top: 20px; /* give a definite margin to the top */
     display: flex; /* give a flex display to the container */
     margin-bottom: 200px; /* margin bottom between the container and subsequent elements */
+    transition: all 0.5s ease-in;
 }
+
 
 .recent-img{
     width:420px; /* width of the image */
@@ -155,6 +162,11 @@ body{
     border-radius: 20px; /* set a border radius */
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.recent-img:hover{
+    opacity:0.7; 
+    transform: scale(0.98);
 }
 .recent-text{
     margin-top: 10px;
@@ -217,6 +229,7 @@ body{
     margin-left: 50px; /* give a definite margin to the left */
     margin-top: 20px;  /* give a definite margin to the top */
     display: flex; /* give a flex display to the container */
+    transition: all 0.5s ease-in;
 }
 
 .upcoming-img{
@@ -226,6 +239,11 @@ body{
     border-radius: 20px;  /* set a border radius */
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.upcoming-img:hover{
+    opacity:0.7; 
+    transform: scale(0.98);
 }
 .upcoming-text{
     margin-top: 10px;
