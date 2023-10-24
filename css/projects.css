@@ -2,75 +2,42 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* set the box sizing to border box for all elements on the page */
 }
 
 body{
-   background-color: #062F3D;
+    /* Change background color for entire page */
+   background-color: #062F3D; 
    
 }
 
-.header{
-    top:20px;
-    left:0;
-    width:100%;
-    padding: 20px 80px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.navbar a {
-    color: #fff;
-    font-size: 15px;
-    text-decoration: none;
-    margin-left: 0px;
-    padding: 0 13px;
-}
-
-.joinus{
-    padding: 14px 30px;
-    background-color: #fff;
-    margin-left: 35px;
-    font-weight: 500;
-    border-radius: 50px;
-    border-style: none;
-}
-
-body{
-   background-color: #062F3D;
-}
 /* Nav Bar  */
+
+
 
 /* Hero Section */
 .hero-card{
-    max-width: 92%;
-    margin: 0 auto;
+    max-width: 92%; /* Maximum width for the hero card */
+    margin: 0 auto; 
     margin-top: 4vh;
-    margin-bottom: -80px;
+    margin-bottom: -80px; /* include ,margin bottom for the hero card and other cards */
     background-color: #FF7B1B;
-    border: none;
+    border: none; /* remove border */
     padding: 55px ;
     height: 91.6vh;
     border-radius: 30px;
-    display:flex;
+    display:flex; /* set a flex display for the hero section */
 }
 .hero-text{
-    float: left;
-    color: black;
-    font-size: 30px;
+    float: left; /* Move the text in the hero card to the left */
+    color: black; /* text for the hero card */
+    font-size: 30px; /* change the font-size */
     border-left: 20px;
-    position: relative;
+    position: relative; /* set the position of the text to relative */
     right: 0.9em;
 }
 .para{
-    font-size: 25px;
+    font-size: 25px; /*  font size for the paragraph in the hero card */
     margin-bottom: 5vh;
 }
 
@@ -80,46 +47,45 @@ body{
 }
 
 .img-hero{
-    float:right;
+    float: right; /* move the image in the hero section to the right */
     margin-top: -529px;
     margin-bottom: 500rem;
-    margin-left: 617px;
-    height: 600px;
-    border-radius: none;
+    margin-left: 617px; 
+    height: 600px; /* set the height to 600px */
+    border-radius: none; /* remove border radius for the image */
 }
 
 /* Featured Projects */
 .featured{
-    font-size: 40px;
-    color:#fff;
-    margin-top: 120px;
-    text-align: center;
+    font-size: 40px; /* font size for the title */
+    color:#fff; /* color of the text */
+    margin-top: 120px; /* margin for the title */
+    text-align: center; /* align text to center */
 
 }
 .container-featured{
-    margin-left: 50px;
-    margin-top: 90px;
-    display: flex;
-    overflow: hidden;
-    margin-bottom: 200px;
+    margin-left: 50px; /* give a definite margin to the left */
+    margin-top: 90px; /* give a definite margin to the top */
+    display: flex; /* change display to flex */
+    margin-bottom: 200px; /* give the margin bottom a size */
 }
 
 .featured, .container-featured{
-    margin-bottom: -40px;
+    margin-bottom: -40px; /*move the container to give space before the previous card */
 }
 .featured-img{
-    width:420px;
-    height:290px;
-    padding:10px;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
+    width:420px; /* width of the image */
+    height:290px; /* gives the image a definite height */
+    padding:10px; /* add a padding to the image */
+    border-radius: 20px; /* set a border radius */
+    border-bottom-left-radius: 0px; 
     border-bottom-right-radius: 0px;
 }
 .featured-text{
-    margin-top: 10px;
-    font-size: 30px;
-    text-align: center;
-    color: white;
+    margin-top: 10px; /* set a margin top to the text section */
+    font-size: 30px; /* set a font size to the text section */
+    text-align: center; /* align the text to center */
+    color: white; /* set the color to white */
 }
 .featured-p{
     margin-top: 30px;
@@ -127,65 +93,66 @@ body{
     text-align: center;
     color: white;
 }
+
+/* Button styling  */
 .featured-button{
     margin-top: 30px;
     margin-left: 50px;
-    font-size: 19px;
+    font-size: 19px; /* change the size of the font */
     padding: 20px 100px;
     border-radius: 50px;
-    background-color: #FF7B1B;
-    color: #fff;
+    background-color: #FF7B1B; /* change background color */
+    color: #fff; /* change color of the text inside the button */
     border-style: none;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer for the button */
 }
 
+/* Button styling  */
 .featured-butto{
     margin-top: 30px;
-    font-size: 19px;
+    font-size: 19px; /* change the size of the font */
     margin-left: 70px;
     padding: 20px 90px;
     border-radius: 50px;
-    background-color: #FF7B1B;
-    color: #ffffff;
+    background-color: #FF7B1B; /* change background color */
+    color: #ffffff; /* change color of the text inside the button */
     border-style: none;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer for the button */
 }
 
 .featured-butto:hover{
-    background-color:#fa9551;
-    transition: 0.7s;
+    background-color:#fa9551; /* change background color when hovered on */
+    transition: 0.7s; /* change transtion time when hovered on */
 }
 .featured-button:hover{
-    background-color:#fa9551;
-    transition: 0.7s;
+    background-color:#fa9551; /* change background color when hovered on */
+    transition: 0.7s; /* change transtion time when hovered on */
 }
 
 /* Recent Projects Section */
 .recent{
-    font-size: 40px;
-    color:#fff;
-    margin-top: 120px;
-    text-align: center;
+    font-size: 40px; /* font size for the title */
+    color:#fff;  /* color of the text */
+    margin-top: 120px; /* margin for the title */
+    text-align: center; /* align text to center */
 }
 
 .recent, .container-recent{
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* include a margin at the bottom */
 }
 
 .container-recent{
-    margin-left: 50px;
-    margin-top: 20px;
-    display: flex;
-    overflow: scroll;
-    overflow:hidden;
-    margin-bottom: 200px;
+    margin-left: 50px; /* give a definite margin to the left */
+    margin-top: 20px; /* give a definite margin to the top */
+    display: flex; /* give a flex display to the container */
+    margin-bottom: 200px; /* margin bottom between the container and subsequent elements */
 }
 
 .recent-img{
-    width:420px;
-    height:290px;
-    padding:10px;
-    border-radius: 20px;
+    width:420px; /* width of the image */
+    height:290px; /* gives the image a definite height */
+    padding:10px;  /* add a padding to the image */
+    border-radius: 20px; /* set a border radius */
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -201,65 +168,62 @@ body{
     text-align: center;
     color: white;
 }
+
+/* Button styling  */
 .recent-button{
     margin-top: 52px;
     margin-left: 50px;
-    font-size: 19px;
+    font-size: 19px; /* change the size of the font */
     padding: 20px 60px;
-    border-radius: 50px;
-    background-color: #FF7B1B;
-    color: #fff;
+    border-radius: 50px; 
+    background-color: #FF7B1B;   /* change background color */
+    color: #fff; /* change color of the text inside the button */
     border-style: none;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer for the button */
 }
 
+/* Button styling  */
 .recent-butto{
     margin-top: 30px;
-    font-size: 19px;
+    font-size: 19px; /* change size of the font */
     margin-left: 70px;
     padding: 20px 100px;
     border-radius: 50px;
-    background-color: #FF7B1B;
-    color: #ffffff;
+    background-color: #FF7B1B; /* change background color */
+    color: #ffffff; /* change color of the text */
     border-style: none;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer for the button */
 }
 
 .recent-butto:hover{
-    background-color:#fa9551;
-    transition: 0.7s;
+    background-color:#fa9551;  /* change background color when hovered on */
+    transition: 0.7s; /* change transtion time when hovered on */
 }
 .recent-button:hover{
-    background-color: #fa9551;
-    transition: 0.7s;
+    background-color: #fa9551;  /* change background color when hovered on */
+    transition: 0.7s; /* change transtion time when hovered on */
 }
 
 /* Upcoming Section  */
 .upcoming{
-    font-size: 40px;
-    color:#fff;
-    margin-top: -10px;
-    text-align: center;
+    font-size: 40px; /* font size for the title */
+    color:#fff;  /* color of the text */
+    margin-top: -10px; /* margin for the title */
+    text-align: center; /* align text to center */
     margin-top: -100px;
-
 }
+
 .container-upcoming{
-    margin-left: 50px;
-    margin-top: 20px;
-    display: flex;
-    overflow: scroll;
-    overflow:hidden;
-}
-
-.upcoming, .container-upcoming{
-   
+    margin-left: 50px; /* give a definite margin to the left */
+    margin-top: 20px;  /* give a definite margin to the top */
+    display: flex; /* give a flex display to the container */
 }
 
 .upcoming-img{
-    width:420px;
-    height:290px;
-    padding:10px;
-    border-radius: 20px;
+    width:420px; /* width of the image */
+    height:290px; /* gives the image a definite height */
+    padding:10px;  /* add a padding to the image */
+    border-radius: 20px;  /* set a border radius */
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -275,35 +239,38 @@ body{
     text-align: center;
     color: white;
 }
+
+/* Button styling  */
 .upcoming-button{
     margin-top: 30px;
     margin-left: 50px;
-    font-size: 19px;
+    font-size: 19px; /* change the size of the font */
     padding: 20px 120px;
     border-radius: 50px;
-    background-color: #FF7B1B;
-    color: #fff;
+    background-color: #FF7B1B;    /* change background color */
+    color: #fff; /* change color of the text inside the button */
     border-style: none;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer for the button */
 }
 
+/* Button styling  */
 .upcoming-butto{
     margin-top: 30px;
     margin-bottom: 60px;
-    font-size: 16px;
+    font-size: 16px; /* change the size of the font */
     margin-left: 55px;
     padding: 20px 90px;
     border-radius: 50px;
-    background-color: #FF7B1B;
-    color: #ffffff;
+    background-color: #FF7B1B;   /* change background color */
+    color: #ffffff; /* change color of the text inside the button */
     border-style: none;
-    cursor: pointer;
+    cursor: pointer; /* change cursor to pointer for the button */
 }
-.upcoming-butto:hover{
-    background-color:#fa9551;
-    transition: 0.7s;
+.upcoming-butto:hover{ 
+    background-color:#fa9551;  /* change background color when hovered on */
+    transition: 0.7s; /* change transtion time when hovered on */
 }
 .upcoming-button:hover{
-    background-color:#fa9551;
-    transition: 0.7s;
+    background-color:#fa9551;  /* change background color when hovered on */
+    transition: 0.7s; /* change transtion time when hovered on */
 }
