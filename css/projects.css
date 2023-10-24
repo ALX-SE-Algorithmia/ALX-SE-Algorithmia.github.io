@@ -61,13 +61,13 @@ body{
     color:#fff; /* color of the text */
     margin-top: 120px; /* margin for the title */
     text-align: center; /* align text to center */
-
 }
 .container-featured{
     margin-left: 50px; /* give a definite margin to the left */
     margin-top: 90px; /* give a definite margin to the top */
     display: flex; /* change display to flex */
     margin-bottom: 200px; /* give the margin bottom a size */
+    overflow:hidden;
     transition: all 0.5s ease-in;
 }
 
@@ -151,6 +151,7 @@ body{
     margin-top: 20px; /* give a definite margin to the top */
     display: flex; /* give a flex display to the container */
     margin-bottom: 200px; /* margin bottom between the container and subsequent elements */
+    overflow:hidden;
     transition: all 0.5s ease-in;
 }
 
@@ -229,6 +230,7 @@ body{
     margin-left: 50px; /* give a definite margin to the left */
     margin-top: 20px;  /* give a definite margin to the top */
     display: flex; /* give a flex display to the container */
+    overflow:hidden;
     transition: all 0.5s ease-in;
 }
 
