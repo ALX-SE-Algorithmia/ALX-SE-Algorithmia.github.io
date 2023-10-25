@@ -92,7 +92,7 @@ header {
   padding-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -149,8 +149,8 @@ header {
 }
 
 .nav-container button {
-  background-color: white;
-  color: black;
+  background-color: #ff7b1b;
+  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -158,7 +158,8 @@ header {
 }
 
 .nav-container button:hover {
-  background-color: #ff7b1b;
+  background-color: white;
+  color: #ff7b1b;
 }
 
 /* NAVIGATION BAR ENDS HERE!!!! */
