@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Projects CSS */
 
 *{
@@ -102,3 +103,299 @@ body{
     color: #ffffff;
     border-style: none;
 }
+=======
+  body {
+    font-family: "Bentham", serif;
+    background-color: #07303e;
+    color: white;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  html {
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Hero Section */
+  .hero-section{
+    display: flex;
+    background-color:#ff7b1b;
+    border: 1px solid #070101;
+    border-radius: 20px;
+    width: 68em; /* Increase the width as needed to make the card wider */
+    height: 540px;
+    margin-left: 190px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-hero {
+    color: black; /* text for the hero card */
+    flex: 3;
+    width: 50%; /* Each half takes 50% of the card */
+    margin-top: 40px;
+    
+}
+
+.image-hero{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: stretch;
+   
+}
+
+.h-hero {
+    font-size: 48px;
+    margin-left: 35px;
+}
+
+.p-hero{
+    font-size: 25px;
+    margin-top: 29px;
+    font-weight: 300;
+}
+
+img {
+    max-width: 200%;
+    max-height: 200%; /* Set maximum height to 100% */
+    object-fit: cover;
+}
+
+
+/* For screens between 775px and 991px */
+@media (max-width: 775px) and (max-width: 991px) {
+    .hero-section {
+       display: none;
+    }
+}
+
+/* Projects Section  */
+
+  .projects {
+    margin-bottom: 200px;
+    margin-top: 100px;
+  }
+  
+  .projects h3 {
+    font-size: 48px;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .projects h3 span {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .card_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+  }
+  
+  .fa-circle-chevron-left {
+    left: 0;
+  }
+  
+  .fa-circle-chevron-right {
+    right: 0;
+  }
+  
+  .card_container i {
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .card_container i:hover {
+    color: #ff7b1b; /* set  color when hovered on */
+  }
+  
+  .card {
+    width: 300px; /* set width of each of the cards */
+    height: 300px; /*set height of the card */
+    text-align: left; /* aligns the text to the left */
+    transition: transform 0.3s;
+    border-radius: 0.5rem;
+  }
+  
+  /* changes the width and height of the image in each card */
+  .card img {
+    width: 100%;
+    height: 12rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card_info {
+    text-align: left;
+    font-size: 14px;
+    color: #e6dff3;
+  }
+  
+  .card_title {
+    font-size: 18px;
+    padding: 8px 0px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* button */
+  .button {
+    background-color: rgb(255, 123, 27);
+    padding: 20px;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    margin-top: 16px;
+    font-family: "Bentham", serif;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 123, 27, 0.2);
+    color: rgb(255, 165, 0);
+  }
+  
+ 
+  /* Arrow */
+  .fa-arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: rgb(192, 126, 79);
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  /* Media Query */
+  @media only screen and (max-width: 1200px) {
+    header {
+      gap: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  
+  .nav-list {
+    margin-right: 20px; /* Add spacing between list items */
+  }
+  }
+  
+  @media (max-width:991px){
+    /* For tablets */
+    .button {
+      font-size: 14px;
+      padding: 5px;
+      width: 80px;
+      height: 20px;
+    }
+  
+  }
+  
+  @media (max-width: 775px){
+    /* For mobile phones */
+    .responsiveness {
+      display:  flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+    }
+  
+    #menu-bar{
+      position: absolute;
+      top: 100%; right: 0; left: 95%;
+      display: flex;
+      margin-left: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+    .logo{
+      position: absolute;
+      top: 100%; right: 0; left: 2%;
+    }
+
+    .nav-container {
+      position: absolute;
+      top: 100%; right: 0; left: 60%;
+      background-color: transparent;
+      padding: 10px 10px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .nav-container.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  .dropdown {
+    display: none;
+  }
+  
+  .nav-list a {
+    display: block;
+    border-radius: .5rem;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(255, 123, 27);
+  }
+  
+  header {
+    font-size: 20px;
+  }
+  
+  .projects {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  #upcoming_container {
+    margin-top: 100px;
+  }
+  
+  .projects h3 {
+    font-size: 40px;
+  }
+  
+  .card_container {
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-width: 100%; /* Ensure cards don't go beyond the screen width */
+    margin: 0 auto; /* Center-align the container */
+    padding: 0 10px; /* Add some horizontal padding for better spacing */
+    box-sizing: border-box; /* Include padding in the max-width */
+  }
+  .card {
+    display: block; /* Ensure all cards are displayed */
+    margin: 0 auto; /* Center-align each card */
+    margin-bottom: 120px; /* Add some vertical spacing between cards */
+  }
+  
+  .fa-circle-chevron-left,
+  .fa-circle-chevron-right {
+    display: none;
+  }
+  
+  }
+>>>>>>> 05dcabd4c458b5d13279c41d053ed92580e985f0
