@@ -1,51 +1,63 @@
 /* ======================== CSS file for blogs.html ======================== */
-/* * {
+* {
   box-sizing: border-box;
-} */
+  padding: 0;
+  margin: 0;
+} 
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
 /* ==== Start of Styling done by Evance and Akos for `BLOGS` section ==== */
 body {
     font-family: 'Bentham', sans-serif;
     background-color: #062f3d;
-    margin: 0;
-    padding: 0;
 }
 
 /* Blog Section Styles */
-.blog-section {
+#blog-section {
     text-align: center;
     color: #ffffff;
     padding: 20px;
 }
 
-#blog-heading {
+#blog-section h1{
     margin-bottom: 30px;
+    font-size: 40px;
 }
 
 .blog-nav-section {
     background-color: #ff7b1b;
-    display: inline-block;
     border-radius: 30px;
     padding: 20px;
+    margin: auto;
+    width: 85%;
+    text-align: center;
 }
 
 .blog-nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.blog-nav ul li {
-    display: inline;
-    margin-right: 10px;
 }
 
 .blog-nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: medium;
-    padding: 10px;
+    /* font-weight: bold; */
+    padding: 15px;
     border-radius: 30px;
+    font-size: 22px;
 }
 
 .blog-nav ul li a:hover,
@@ -59,13 +71,12 @@ body {
 #article_open_source {
   display: flex;
   color: #FFF;
-  margin-top: 2%;
-  padding: 1% 5%;
+  margin: 3% auto;
 }
 
 #article_open_source .content {
   height: 100%;
-  padding: 9% 2%;
+  padding: 9% 0.5%;
 }
 
 #article_open_source .content h2, #article_open_source .content p {
@@ -74,7 +85,7 @@ body {
     margin-bottom: 40px;
 } 
 #article_open_source .content h2 {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 60px;
   padding: 2px 1.5px;
 }
@@ -95,7 +106,6 @@ body {
     width: 90px;
     height: 90px;
     display: inline-block;
-    /* padding: 1%; */
     text-align: center;
     border-radius: 50%;
     background-color: #ff7b1b;
@@ -110,64 +120,125 @@ body {
     font-size: 30px;
     color: #fff;
     padding-top:22px;
-} 
+}
+
+#article_open_source .content .article_link a:hover,
+#article_open_source .content .article_link a:active {
+    color: #ff7b1b;
+}
 
 #article_open_source .image img {
-    height: fit-content;
+    height: 700px;
+    width: fit-content;
     border-radius: 2%;
 }
-/* #article_open_source .content  */
 
 /* Styling by Samuel & Judith */
-.blog-body1{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
+#articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 2rem;
+    color: #fff;
 }
-.blog-body2{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
+
+#articles .card img {
+    width: 100%;
 }
-.blog-body3{
+
+#articles .card .date_article_type {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
 }
-.tag{
-    background-color: #ff7b1b;
-    padding: 9px 10px;
-    width: 30px;
+
+#articles .card .date_article_type .tag {
+    padding: 0.5rem 1rem;
+    background: #ff7b1b;
     border-radius: 50px;
-    margin-top: 5px;
+    margin-top: 0.2rem;
 }
-.tag:active,
-.tag:hover{
-    background-color: #fff;
+
+#articles .card  .article_desc {
+    margin: 0.8rem 0;
+    font-size: 25px;
 }
-a{
-    text-decoration: none;
-    color: #fff;
+
+#articles .card  .article_desc a:hover,
+#articles .card  .article_desc a:active,
+#articles .card .author_name:hover,
+#articles .card .author_name:active {
+    color:#ff7b1b;
 }
-a:active,
-a:hover{
-    color: #000;
+
+/* Media Query */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .blog-nav ul li a {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    #article_open_source {
+        justify-content: space-between;
+    }
+
+    #article_open_source .image img {
+        width: 500px;
+        height: 600px;
+    }
+
+    #articles {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
-h5{
-    margin-left: 170px;
-    margin-top: -25px;
-    color: #fff;
-}
-h4{
-    color: #fff;
-}
-.box{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: #ff7b1b;
-}
-p{
-    margin: -25px 50px;
-    color: #fff;
+
+@media screen and (max-width: 768px) {
+    #blog-section {
+        margin: auto;
+    }
+    .blog-nav ul {
+        flex-direction: column;
+    }
+
+    .blog-nav ul li {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-bottom: 0.5px dashed #555;
+    }
+    .blog-nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    #article_open_source .image img {
+        display: none;
+    }
+
+    #article_open_source {
+        position: relative;
+        background-image: url(../images/blogs/image_0.png);
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #article_open_source .content {
+        padding: 0.5rem 1rem;
+    }
+
+    #article_open_source .content .article_link a {
+        font-weight: bold;
+    }
+    #article_open_source .content h2  {
+        color: #000;
+    }
+
+    #articles {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
 }
