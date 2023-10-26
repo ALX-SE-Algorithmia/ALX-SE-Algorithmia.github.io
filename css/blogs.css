@@ -1,1 +1,244 @@
 /* ======================== CSS file for blogs.html ======================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+/* ==== Start of Styling done by Evance and Akos for `BLOGS` section ==== */
+body {
+    font-family: 'Bentham', sans-serif;
+    background-color: #062f3d;
+}
+
+/* Blog Section Styles */
+#blog-section {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#blog-section h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.blog-nav-section {
+    background-color: #ff7b1b;
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
+    width: 85%;
+    text-align: center;
+}
+
+.blog-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.blog-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    /* font-weight: bold; */
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 22px;
+}
+
+.blog-nav ul li a:hover,
+.blog-nav ul li a:active {
+    background-color: #ffffff;
+    color: #040b16;
+}
+/* ==== End of Styling done by Evance and Akos for `BLOGS` section ==== */
+
+/* Styling open source article */
+#article_open_source {
+  display: flex;
+  color: #FFF;
+  margin: 3% auto;
+}
+
+#article_open_source .content {
+  height: 100%;
+  padding: 9% 0.5%;
+}
+
+#article_open_source .content h2, #article_open_source .content p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+} 
+#article_open_source .content h2 {
+  font-size: 50px;
+  line-height: 60px;
+  padding: 2px 1.5px;
+}
+
+#article_open_source .content p {
+    font-size: 30px;
+}
+
+#article_open_source .content .article_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#article_open_source .content .article_link div {
+    margin: 0;
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ff7b1b;
+}
+
+#article_open_source .content .article_link .fa-solid {
+    font-size: 30px;
+    margin-top: 30px;
+}
+#article_open_source .content .article_link a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    padding-top:22px;
+}
+
+#article_open_source .content .article_link a:hover,
+#article_open_source .content .article_link a:active {
+    color: #ff7b1b;
+}
+
+#article_open_source .image img {
+    height: 700px;
+    width: fit-content;
+    border-radius: 2%;
+}
+
+/* Styling by Samuel & Judith */
+#articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 2rem;
+    color: #fff;
+}
+
+#articles .card img {
+    width: 100%;
+}
+
+#articles .card .date_article_type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#articles .card .date_article_type .tag {
+    padding: 0.5rem 1rem;
+    background: #ff7b1b;
+    border-radius: 50px;
+    margin-top: 0.2rem;
+}
+
+#articles .card  .article_desc {
+    margin: 0.8rem 0;
+    font-size: 25px;
+}
+
+#articles .card  .article_desc a:hover,
+#articles .card  .article_desc a:active,
+#articles .card .author_name:hover,
+#articles .card .author_name:active {
+    color:#ff7b1b;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .blog-nav ul li a {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    #article_open_source {
+        justify-content: space-between;
+    }
+
+    #article_open_source .image img {
+        width: 500px;
+        height: 600px;
+    }
+
+    #articles {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #blog-section {
+        margin: auto;
+    }
+    .blog-nav ul {
+        flex-direction: column;
+    }
+
+    .blog-nav ul li {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-bottom: 0.5px dashed #555;
+    }
+    .blog-nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    #article_open_source .image img {
+        display: none;
+    }
+
+    #article_open_source {
+        position: relative;
+        background-image: url(../images/blogs/image_0.png);
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #article_open_source .content {
+        padding: 0.5rem 1rem;
+    }
+
+    #article_open_source .content .article_link a {
+        font-weight: bold;
+    }
+    #article_open_source .content h2  {
+        color: #000;
+    }
+
+    #articles {
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+}
