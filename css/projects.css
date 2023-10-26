@@ -25,7 +25,7 @@
     background-color:#ff7b1b;
     border: 1px solid #070101;
     border-radius: 20px;
-    width: 68em; /* Increase the width as needed to make the card wider */
+    width:65em; /* Increase the width as needed to make the card wider */
     height: 540px;
     margin-left: 190px;
     overflow: hidden;
@@ -34,17 +34,21 @@
 
 .text-hero {
     color: black; /* text for the hero card */
-    flex: 3;
-    width: 50%; /* Each half takes 50% of the card */
+    flex: 1;
+    width: 50%;
+    /* Each half takes 50% of the card */
     margin-top: 40px;
+    margin-right: 40px;
     
 }
 
 .image-hero{
     display: flex;
-    flex:2;
+    flex:1;
+    width:50px;
     justify-content: center;
     align-items: stretch;
+   
    
 }
 
@@ -54,7 +58,7 @@
 }
 
 .p-hero{
-    font-size: 25px;
+    font-size: 26px;
     margin-top: 29px;
     font-weight: 300;
 }
@@ -71,6 +75,182 @@ img {
     .hero-section {
        display: none;
     }
+}
+
+@media (min-width: 1024px){
+  .hero-section{
+    display: flex;
+    background-color:#ff7b1b;
+    border: 1px solid #070101;
+    border-radius: 20px;
+    width:50em; /* Increase the width as needed to make the card wider */
+    height: 440px;
+    margin-left: 110px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-hero{
+    display: flex;
+    flex:0.6;
+  }
+
+.text-hero {
+  color: black; /* text for the hero card */
+  flex: 1;
+  width: 50px; /* Each half takes 50% of the card */
+  margin-top: 40px;
+  margin-right: 40px;
+  }
+
+.h-hero {
+    font-size: 32px !important;
+    margin-left: 35px;
+  }
+
+.p-hero{
+    font-size: 18px !important;
+    margin-top: 29px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1280px){
+  .hero-section{
+    display: flex;
+    background-color:#ff7b1b;
+    border: 1px solid #070101;
+    border-radius: 20px;
+    width:65em !important; /* Increase the width as needed to make the card wider */
+    height: 500px;
+    margin-left: 110px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ 
+  }
+
+  .text-hero {
+    color: black; /* text for the hero card */
+    flex: 0.6 !important;
+    width: 50px;
+    /* Each half takes 50% of the card */
+    margin-top: 40px;
+    margin-right: 40px;
+    
+}
+  .image-hero{
+    display: flex;
+    width:50% !important;
+    flex:0.6 !important;
+}
+
+.h-hero {
+    font-size: 40px !important;
+    margin-left: 35px;
+}
+
+.p-hero{
+    font-size: 24px !important;
+    margin-top: 29px;
+    font-weight: 300;
+}
+}
+
+@media (max-width: 1536px) { 
+  .hero-section{
+    display: flex;
+    background-color:#ff7b1b;
+    border: 1px solid #070101;
+    border-radius: 20px;
+    width:68em !important; /* Increase the width as needed to make the card wider */
+    height: 500px;
+    margin-left: 130px !important;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-hero {
+    color: black; /* text for the hero card */
+    flex: 0.7 !important;
+    width: 50%;
+    /* Each half takes 50% of the card */
+    margin-top: 40px;
+    margin-right: 40px;
+    
+}
+
+.image-hero{
+    display: flex !important;
+    flex:0.5 !important;
+    width:50px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.h-hero {
+    font-size: 48px;
+    margin-left: 35px;
+}
+
+.p-hero{
+    font-size: 26px;
+    margin-top: 29px;
+    font-weight: 300;
+}
+
+img {
+    max-width: 200%;
+    max-height: 200%; /* Set maximum height to 100% */
+    object-fit: cover;
+}
+}
+@media (min-width: 1536px) { 
+  .hero-section{
+    display: flex;
+    background-color:#ff7b1b;
+    border: 1px solid #070101;
+    border-radius: 20px;
+    width:68em !important; /* Increase the width as needed to make the card wider */
+    height: 500px;
+    margin-left: 258px !important;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-hero {
+    color: black; /* text for the hero card */
+    flex: 0.7 !important;
+    width: 50%;
+    /* Each half takes 50% of the card */
+    margin-top: 40px;
+    margin-right: 40px;
+    
+}
+
+.image-hero{
+    display: flex !important;
+    flex:0.5 !important;
+    width:50px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.h-hero {
+    font-size: 48px;
+    margin-left: 35px;
+}
+
+.p-hero{
+    font-size: 26px;
+    margin-top: 29px;
+    font-weight: 300;
+}
+
+img {
+    max-width: 200%;
+    max-height: 200%; /* Set maximum height to 100% */
+    object-fit: cover;
+}
 }
 
 /* Projects Section  */
@@ -171,7 +351,11 @@ img {
     color: rgb(255, 165, 0);
   }
   
- 
+ @media (min-width: 640px) {
+  .button{
+    padding:26px !important;
+  }
+ }
   /* Arrow */
   .fa-arrow-up {
     position: fixed;
@@ -294,4 +478,3 @@ img {
   }
   
   }
->>>>>>> 05dcabd4c458b5d13279c41d053ed92580e985f0
