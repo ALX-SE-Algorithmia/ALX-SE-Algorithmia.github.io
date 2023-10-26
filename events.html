@@ -21,7 +21,7 @@
     <!-- link to favicon -->
     <link
       rel="shortcut icon"
-      href="./images/website-logos/logo.svg"
+      href="./images/website-logos/index-logo.jpg"
       type="image/x-icon"
     />
 
@@ -332,7 +332,7 @@
     </div>
     <!-- PAST EVENT ENDS HERE!!!! -->
     <div class="scrolltotop" onclick="scrolltop()">
-      <i class="fa fa-arrow-up"></i>
+      <i class="fa-solid fa fa-arrow-up"></i>
     </div>
 
     <!-- JavaScript -->
@@ -406,6 +406,29 @@
       updateCardVisibility("upcoming-events");
       updateCardVisibility("latest-events");
       updateCardVisibility("past-events");
+
+      // Intersection observer for the navbar
+      const header = document.querySelector("header");
+      const section = document.querySelector(".events");
+      const sectionOptions = {
+        rootMargin: "-500px 0px 0px 0px",
+      };
+
+      const sectionObserver = new IntersectionObserver(function (
+        entries,
+        sectionObserver
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            header.classList.add("nav-scrolled");
+          } else {
+            header.classList.remove("nav-scrolled");
+          }
+        });
+      },
+      sectionOptions);
+
+      sectionObserver.observe(section);
     </script>
   </body>
 </html>
