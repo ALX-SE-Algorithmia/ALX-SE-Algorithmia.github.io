@@ -164,75 +164,170 @@ span{
   cursor: pointer;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 768px) {
+  #hero-section {
+    width: 100%;
+    padding: auto 20px;
+    margin: auto;
+    font-size: 2em;
+  }
+
+  #hero-section #hero-main-header {
+    font-size: 1.2em;
+  }
+
+  #hero-section #hero-text {
+    font-size: 0.7em;
+  }
+
+  #hero-section #join-consortium {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+}
 /* end of hero section css */
 
 /* alx-se-style section css */
-#alx-se_style{
+#alx-se_style {
   display: flex;
   width: 80%;
   margin: auto;
   justify-content: space-between;
   margin: 200px auto 200px auto;
-  /*border: solid red 2px;*/
 }
 
-#texts{
+#texts {
   display: flex;
   flex-direction: column;
-  /*border: solid red 2px;*/
   width: 60%;
 }
 
-#alx-se_style .sub-heading{
+#alx-se_style .sub-heading {
   color: #FF7B1B;
   font-size: 2.5em;
   width: 100%;
   padding: 0;
-  /*border: solid red 2px;*/
 }
 
-#alx-se_style p{
+#alx-se_style p {
   width: 90%;
   margin-top: 0;
   color: white;
   font-size: 1.5em;
-  /*border: solid red 2px;*/
+}
+
+@media (max-width: 768px) {
+  #alx-se_style {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+  }
+
+  #texts {
+    width: 90%;
+  }
+  
+  #alx-se_style .sub-heading {
+    font-size: 2em;
+  }
+  
+  #alx-se_style p {
+    width: 100%;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  #alx-se_style {
+    margin: 50px auto;
+  }
+
+  #texts {
+    width: 100%;
+  }
+
+  #alx-se_style .sub-heading {
+    font-size: 1.8em;
+  }
+  
+  #alx-se_style p {
+    font-size: 1em;
+  }
 }
 /* end of alx-se-style section css */
 
 
 /* our_journey css */
-.our_journey{
+.our_journey {
   display: flex;
   width: 80%;
   margin: auto;
   justify-content: space-between;
   margin: 200px auto 200px auto;
-  /*border: solid red 2px;*/
   align-items: center;
 }
 
-.our_journey .texts{
+.our_journey .texts {
   display: flex;
   flex-direction: column;
-  /*border: solid red 2px;*/
   width: 60%;
   padding: 10px;
 }
 
-.our_journey .sub-heading{
+.our_journey .sub-heading {
   color: #FF7B1B;
   font-size: 2.5em;
-  /*border: solid red 2px;*/
 }
 
-.our_journey p{
+.our_journey p {
   width: 90%;
   color: white;
   margin-top: 0;
   font-size: 1.5em;
-  /*border: solid red 2px;*/
 }
+
+@media (max-width: 768px) {
+  .our_journey {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 100px auto;
+  }
+
+  .our_journey .texts {
+    width: 80%;
+    text-align: center;
+  }
+
+  .our_journey .sub-heading {
+    font-size: 2em;
+  }
+
+  .our_journey p {
+    width: 100%;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .our_journey {
+    margin: 50px auto;
+  }
+
+  .our_journey .texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .our_journey .sub-heading {
+    font-size: 1.8em;
+  }
+
+  .our_journey p {
+    font-size: 1em;
+  }
+}
+
 /* end of our_journey css */
 
 /* algorithimia difference css */
@@ -301,31 +396,54 @@ img {
   max-width: 100%;
   height: auto;
   }
+
+@media screen and (max-width: 768px) {
+  .algorithimia-diff {
+    width: 90%;
+    margin: 100px auto;
+  }
+  .algorithimia-diff h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .algorithimia-diff p {
+    width: 90%;
+    font-size: 1.2em;
+  }
+  .mission-vision {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+    margin-top: 30px;
+    height: max-content;
+  }
+}
 /* end of algorithimia difference css */
 
 /* Goal section css */
-.goals-section{
+.goals-section {
   width: 90%;
   margin: 200px auto 200px auto;
   text-align: center;
-  /*border:  solid red 2px;*/
 }
 
-.goals-section .head{
+.goals-section .head {
   margin-bottom: 120px;
 }
 
-.goals-section h2{
+.goals-section h2 {
   font-size: 3.5em;
   margin-bottom: 10px;
 }
 
-.goals-section h3{
+.goals-section h3 {
   font-size: 1.5em;
   margin: 0 auto 10px auto;
 }
 
-.goals-container{
+.goals-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -333,45 +451,75 @@ img {
   margin: 0 auto;
 }
 
-.goal{
+.goal {
   background-color: #e27107;
   color: #DEDEDE;
   border: solid #e27107 1px;
   border-radius: 20px;
 }
 
-.goal h4{
+.goal h4 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.goal p{
+.goal p {
   font-size: 1em;
   padding: 0 10px;
   margin-top: 0;
 }
+
+@media (max-width: 768px) {
+  .goals-section {
+    margin: 100px auto;
+  }
+
+  .goals-section h2 {
+    font-size: 2.5em;
+  }
+
+  .goals-section h3 {
+    font-size: 1.2em;
+  }
+
+  .goals-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .goal {
+    margin-bottom: 20px;
+  }
+
+  .goal h4 {
+    font-size: 1.2em;
+  }
+
+  .goal p {
+    font-size: 1em;
+  }
+}
 /* end of Goal section css
 
 /* contact section css */
-.contact-section h1, .contact-section p{
+.contact-section h1, .contact-section p {
   text-align: center;
 }
 
-.contact-section h1{
+.contact-section h1 {
   font-size: 3.5em;
   margin: 30px;
 }
 
-.contact-section h1 b{
+.contact-section h1 b {
   color: #e27107;
 }
 
-.contact-section p{
+.contact-section p {
   font-size: 1.2em;
   margin: 30px;
 }
 
-.contact-section{
+.contact-section {
   margin-left: 200px;
   margin-right: 150px;
   padding: 10px 10px;
@@ -380,21 +528,21 @@ img {
   text-align: center;
 }
 
-form{
+form {
   border-radius: 25px;
   background-color: #0b3b49;
 }
 
-.contact-details{
+.contact-details {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 10px, auto;
+  margin: 10px auto;
   padding: 10px 20px;
   font-size: 1em;
 }
 
-.name, .contact{
+.name, .contact {
   display: flex;
   gap: 30px;
   width: 100%;
@@ -402,28 +550,28 @@ form{
   margin: 10px auto;
 }
 
-.first-name, .last-name, .email, .number{
+.first-name, .last-name, .email, .number {
   width: 50%;
 }
 
-input{
+input {
   width: 80%;
   padding: 10px;
   border-radius: 5px;
   border: solid 1px #DEDEDE;
   color: #DEDEDE;
   margin-top: 10px;
-  background-color:#0b3b49;
+  background-color: #0b3b49;
 }
 
-.input-text{
+.input-text {
   text-align: left;
   width: 100%;
   margin: 20px 30px;
   color: #DEDEDE;
 }
 
-textarea{
+textarea {
   background-color: #0b3b49;
   color: #DEDEDE;
   border-color: #DEDEDE;
@@ -432,7 +580,7 @@ textarea{
   padding: 10px;
 }
 
-form button{
+form button {
   width: max-content;
   height: max-content;
   background-color: #e27107;
@@ -444,26 +592,47 @@ form button{
   margin-bottom: 20px;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .name, .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input{
+    width: 100%;
+  }
+
+  textarea{
+    width: 80%;
+  }
+}
 /* end of contact section css */
 
 /* sub section css */
-.subscribe-container{
+.subscribe-container {
   width: 70%;
   margin: 200px auto;
   text-align: center;
 }
 
-.subscribe-container h2{
+.subscribe-container h2 {
   font-size: 2em;
   font-weight: 500;
 }
 
-.subscribe-container h1{
+.subscribe-container h1 {
   font-size: 3em;
   font-weight: 400;
 }
 
-.subscribe-container button{
+.subscribe-container button {
   width: max-content;
   height: max-content;
   padding: 20px 30px;
@@ -476,28 +645,49 @@ form button{
   color: white;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .subscribe-container {
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .subscribe-container h2 {
+    font-size: 1.5em;
+  }
+
+  .subscribe-container h1 {
+    font-size: 2.5em;
+  }
+
+  .subscribe-container button {
+    padding: 15px 25px;
+    margin-top: 30px;
+    font-size: 2em;
+  }
+}
 /*end of sub section css */
 
 /* footer section css */
-footer{
+footer {
   width: 95%;
   position: absolute;
   right: 0;
   margin-bottom: 200px;
 }
 
-.top{
+.top {
   display: flex;
   justify-content: space-between;
 }
 
-.left, .right{
+.left, .right {
   width: 45%;
   font-size: 1.1em;
   color: #DEDEDE;
 }
 
-.right .links{
+.right .links {
   display: flex;
   gap: 100px;
   padding: 0;
@@ -505,13 +695,13 @@ footer{
   color: #8dacc9;
 }
 
-.right h3{
+.right h3 {
   font-size: 1.5em;
   margin-top: 0;
   padding: 0;
 }
 
-.links ul{
+.links ul {
   padding: 0;
   margin: 0;
   display: flex;
@@ -519,11 +709,11 @@ footer{
   gap: 30px;
 }
 
-.links li{
+.links li {
   padding: 0;
 }
 
-.under{
+.under {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -531,6 +721,44 @@ footer{
   color: #DEDEDE;
   margin-bottom: 200px;
 }
+
+@media screen and (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .right h3{
+    visibility: hidden;
+  }
+
+  .links{
+    display: flex;
+  }
+
+  .links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+
+  .links ul li {
+    width: max-content;
+  }
+
+  .right .links {
+    gap: 20px;
+  }
+
+  .under{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+}
 /* end of footer css */
-
-
