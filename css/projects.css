@@ -70,29 +70,61 @@ img {
 }
 
 
-/* For screens between 775px and 991px */
-@media (max-width: 775px) and (max-width: 991px) {
-    .hero-section {
-       display: none;
-    }
+/* For screens */
+
+ @media (max-width: 993px) {
+  .hero-section{
+    display: none !important;
+  }
+ }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-section{
+    display: none !important;
+  }
 }
 
-@media (min-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .hero-section{
     display: flex;
-    background-color:#ff7b1b;
-    border: 1px solid #070101;
-    border-radius: 20px;
+    width:45em; /* Increase the width as needed to make the card wider */
+    height: 440px;
+    margin-left: 160px !important;
+
+    .image-hero{
+      display: flex;
+      flex:0.4;
+    }
+  
+  .text-hero {
+    color: black; /* text for the hero card */
+    flex: 1;
+    width: 50px; /* Each half takes 50% of the card */
+    margin-top: 40px;
+    margin-right: 40px;
+    }
+  
+  .h-hero {
+      font-size: 36px !important;
+      margin-left: 35px;
+    }
+  
+  .p-hero{
+      font-size: 19px !important;
+      margin-top: 29px;
+      font-weight: 300;
+    }
+  }
+}
+@media (min-width:1024px) and (max-width:1330px) {
+  .hero-section{
     width:50em; /* Increase the width as needed to make the card wider */
     height: 440px;
-    margin-left: 110px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 140px !important;
   }
-
   .image-hero{
     display: flex;
-    flex:0.6;
+    flex:0.4;
   }
 
 .text-hero {
@@ -104,156 +136,27 @@ img {
   }
 
 .h-hero {
-    font-size: 32px !important;
+    font-size: 36px !important;
     margin-left: 35px;
   }
 
 .p-hero{
-    font-size: 18px !important;
+    font-size: 19px !important;
     margin-top: 29px;
     font-weight: 300;
   }
+
 }
 
-@media (min-width: 1280px){
+
+@media (min-width:1536px) {
   .hero-section{
-    display: flex;
-    background-color:#ff7b1b;
-    border: 1px solid #070101;
-    border-radius: 20px;
-    width:65em !important; /* Increase the width as needed to make the card wider */
-    height: 500px;
-    margin-left: 110px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
- 
+    width:60em; /* Increase the width as needed to make the card wider */
+    height: 440px;
+    margin-left: 290px !important;
   }
-
-  .text-hero {
-    color: black; /* text for the hero card */
-    flex: 0.6 !important;
-    width: 50px;
-    /* Each half takes 50% of the card */
-    margin-top: 40px;
-    margin-right: 40px;
-    
 }
-  .image-hero{
-    display: flex;
-    width:50% !important;
-    flex:0.6 !important;
-}
-
-.h-hero {
-    font-size: 40px !important;
-    margin-left: 35px;
-}
-
-.p-hero{
-    font-size: 24px !important;
-    margin-top: 29px;
-    font-weight: 300;
-}
-}
-
-@media (max-width: 1536px) { 
-  .hero-section{
-    display: flex;
-    background-color:#ff7b1b;
-    border: 1px solid #070101;
-    border-radius: 20px;
-    width:68em !important; /* Increase the width as needed to make the card wider */
-    height: 500px;
-    margin-left: 130px !important;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.text-hero {
-    color: black; /* text for the hero card */
-    flex: 0.7 !important;
-    width: 50%;
-    /* Each half takes 50% of the card */
-    margin-top: 40px;
-    margin-right: 40px;
-    
-}
-
-.image-hero{
-    display: flex !important;
-    flex:0.5 !important;
-    width:50px;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.h-hero {
-    font-size: 48px;
-    margin-left: 35px;
-}
-
-.p-hero{
-    font-size: 26px;
-    margin-top: 29px;
-    font-weight: 300;
-}
-
-img {
-    max-width: 200%;
-    max-height: 200%; /* Set maximum height to 100% */
-    object-fit: cover;
-}
-}
-@media (min-width: 1536px) { 
-  .hero-section{
-    display: flex;
-    background-color:#ff7b1b;
-    border: 1px solid #070101;
-    border-radius: 20px;
-    width:68em !important; /* Increase the width as needed to make the card wider */
-    height: 500px;
-    margin-left: 258px !important;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.text-hero {
-    color: black; /* text for the hero card */
-    flex: 0.7 !important;
-    width: 50%;
-    /* Each half takes 50% of the card */
-    margin-top: 40px;
-    margin-right: 40px;
-    
-}
-
-.image-hero{
-    display: flex !important;
-    flex:0.5 !important;
-    width:50px;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.h-hero {
-    font-size: 48px;
-    margin-left: 35px;
-}
-
-.p-hero{
-    font-size: 26px;
-    margin-top: 29px;
-    font-weight: 300;
-}
-
-img {
-    max-width: 200%;
-    max-height: 200%; /* Set maximum height to 100% */
-    object-fit: cover;
-}
-}
-
-/* Projects Section  */
+ /* Projects Section  */
 
   .projects {
     margin-bottom: 200px;
@@ -351,11 +254,17 @@ img {
     color: rgb(255, 165, 0);
   }
   
- @media (min-width: 640px) {
-  .button{
-    padding:26px !important;
-  }
- }
+  @media (max-width: 640px) {
+    .button{
+      padding:26px !important;
+    }
+   }
+   @media (max-width: 991px) {
+    .button{
+      padding:26px !important;
+    }
+   }
+
   /* Arrow */
   .fa-arrow-up {
     position: fixed;
