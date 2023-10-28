@@ -716,6 +716,7 @@ footer p {
 
 @media (max-width:991px){
   /* For tablets */
+
   header {
     gap: 50px;
     padding-right: 0;
