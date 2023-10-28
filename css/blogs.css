@@ -133,7 +133,7 @@ body {
 }
 
 #article_open_source .image img {
-    height: 100%;
+    height: 95%;
     width: 530px;
     border-radius: 2%;
 }
@@ -199,12 +199,24 @@ body {
         border-radius: 40px;
     }
 
+    #article_open_source {
+        width: 100%;
+    }
     #article_open_source .content {
         padding: 2rem 1rem;
     } 
 
+    #article_open_source .content h2 {
+        font-size: 45px;
+    }
+
+    #article_open_source .content p {
+        margin-bottom: 30px;
+    }
+
     #article_open_source .image img {
-        width: 320px;
+        width: 340px;
+        border-radius: 8%;
     }
 
 
@@ -263,7 +275,7 @@ body {
 
     #article_open_source .content h2 {
         font-size: 45px;
-        line-height: 40px;
+        line-height: 38px;
     }
 
     #article_open_source .content p {
@@ -285,6 +297,7 @@ body {
         height: 500px;
         opacity: 0.7;
         z-index: -1;
+        border-radius: 0;
     }
 
     #articles {
