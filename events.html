@@ -3,69 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Bentham&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+
+    <!-- link to favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/website-logos/index-logo.jpg"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="css/events.css" />
+
     <title>Community Events – Join The Conversation</title>
   </head>
 
   <body>
+    <!-- linear gradient -->
+    <div class="header-background"></div>
     <!-- NAVIGATION BAR GOES HERE!!!! -->
     <header>
-      <div class="logo">
-        <img src="./images/website-logos/logo.svg" alt="" />
-        <span>Algorithmia SE 🌍</span>
+      <div class="responsiveness">
+        <div class="logo">
+          <img src="./images/website-logos/logo.svg" alt="" />
+          <span>Algorithmia SE 🌍</span>
+        </div>
+        <!-- For responsiveness -->
+        <div>
+          <i id="menu-bar" class="fas fa-bars"></i>
+        </div>
       </div>
       <nav class="nav-container">
         <ul>
           <li class="nav-list"><a href="./index.html">Home</a></li>
-          <li class="nav-list"><a href="./about.html">About Us</a></li>
-          <li class="nav-list"><a href="./about.html">Contact Us</a></li>
+          <li class="nav-list">
+            <a href="./index.html#About_us">About Us</a>
+          </li>
+          <li class="nav-list">
+            <a href="./index.html#Contact_us">Contact Us</a>
+          </li>
           <li class="nav-list"><a href="./projects.html">Projects</a></li>
-          <li class="dropdown">
-            <a href="./events.html">Events</a>
+
+          <li class="nav-list dropdown">
+            <a href="./events.html"><span>Events</span></a>
             <ul class="dropdown-content">
-              <li><a href="#">Upcoming Events</a></li>
-              <li><a href="#">Latest Events</a></li>
-              <li><a href="#">Past Events</a></li>
+              <li>
+                <a href="./events.html#upcoming-events">Upcoming Events</a>
+              </li>
+              <li><a href="./events.html#latest-events">Latest Events</a></li>
+              <li><a href="./events.html#past-events">Past Events</a></li>
             </ul>
           </li>
 
-          <!-- <li class="nav-list"><a href="./events.html">Events</a></li> -->
-          <li class="nav-list"><a href="./contact.html">Blogs</a></li>
-          <button>Join Us</button>
+          <li class="nav-list"><a href="./blogs.html">Blogs</a></li>
+          <button id="join_us">Join Us</button>
         </ul>
       </nav>
     </header>
     <!-- NAVIGATION BAR ENDS HERE!!!! -->
 
     <!-- UPCOMING EVENT GOES HERE!!!! -->
-    <div class="events">
-      <h3>Upcoming Events</h3>
-      <div class="card_container">
+
+    <div class="events" , id="upcoming_container">
+      <h3 class>Upcoming Events</h3>
+      <div class="card_container" id="upcoming-events">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
         <div class="card">
           <div>
             <img
-              src="images/events/image_1.png"
-              alt="A man with an headphone attending a virtual event"
+              src="images/events/impact.jpg"
+              alt="A woman with an headphone attending a virtual event"
             />
             <div>
               <p class="card_title">
-                <b>Twitter Space Event</b>
+                <b>Impact Sessions</b>
               </p>
               <p class="card_info">
-                DGet ready for an interactive and engaging experience as we take
-                to Twitter Spaces for an upcoming event that's all about
-                connection and conversation. Here's a sneak peek at what you can
-                expect: Live Discussions, Meet the Experts, Interactive Q&A.
+                Join our impact sessions and PLDs. Dive deep with us as we
+                brainstorm tech-driven solutions for Africa's pressing
+                challenges. Connect with our community, make study buddies,
+                explore! Be part of the change, ALX SE style!
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -76,18 +105,18 @@
         <div class="card">
           <div>
             <img
-              src="images/events/image_1.png"
-              alt="A man with an headphone attending a virtual event"
+              src="images/events/hackathon.jpg"
+              alt="Anime hackathon event"
             />
             <div>
               <p class="card_title">
-                <b>Game Dev Hackathon</b>
+                <b>AlgoRealm 🌍</b>
               </p>
               <p class="card_info">
-                DGet ready for an interactive and engaging experience as we take
-                to Twitter Spaces for an upcoming event that's all about
-                connection and conversation. Here's a sneak peek at what you can
-                expect: Live Discussions, Meet the Experts, Interactive Q&A.
+                Step into our hackathon, AlgoRealm! A tech arena where
+                innovation thrives. Tackle challenges across all tech facets,
+                forge solutions, and network with fellow pioneers. Where your
+                code shapes the future. Join us!
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -98,16 +127,16 @@
         <div class="card">
           <div>
             <img
-              src="images/events/image_1.png"
+              src="images/events/algosciate.jpg"
               alt="A man with an headphone attending a virtual event"
             />
             <div>
-              <p class="card_title"><b>Social App (Students)</b></p>
+              <p class="card_title"><b>Algosciate (Students)</b></p>
               <p class="card_info">
-                Get ready for an interactive and engaging experience as we take
-                to Twitter Spaces for an upcoming event that's all about
-                connection and conversation. Here's a sneak peek at what you can
-                expect: Live Discussions, Meet the Experts, Interactive Q&A.
+                Algosciate is an upcoming app by Algorithmia SE 🌍 designed to
+                foster student connections and learning. It will feature live
+                discussions, expert interactions, and interactive Q&A sessions,
+                serving as a hub for engagement and knowledge-sharing.
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -125,11 +154,11 @@
               <p class="card_title">
                 <b>Twitter Space Event</b>
               </p>
-              <p class="ard_info">
-                Get ready for an interactive and engaging experience as we take
-                to Twitter Spaces for an upcoming event that's all about
-                connection and conversation. Here's a sneak peek at what you can
-                expect: Live Discussions, Meet the Experts, Interactive Q&A.
+              <p class="card_info">
+                Join Algorithmia SE 🌍 in our upcoming Twitter Space! Dive into
+                vibrant conversations, network with tech aficionados, and
+                unravel fresh insights. It's not just a space — it's where
+                innovation meets conversation. Don't miss out!
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -137,6 +166,7 @@
             </div>
           </div>
         </div>
+        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
       </div>
     </div>
 
@@ -144,21 +174,19 @@
 
     <!-- LATEST EVENT STARTS HERE!!!! -->
     <div class="events">
-      <h3>Latest Events</h3>
-      <div class="card_container">
+      <h3><span>Latest Events</span></h3>
+      <div class="card_container" id="latest-events">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
         <div class="card">
           <div>
-            <img
-              src="images/events/community_hangout.png"
-              alt="Community Hangout"
-            />
+            <img src="images/events/website.png" alt="Community Hangout" />
             <div>
               <p class="card_title"><b>Static Website Project</b></p>
               <p class="card_info">
-                DExperience the warmth of our vibrant community at our recent
-                community hangout - a gathering that brought friends and
-                neighbors together for a fun and memorable time. Here's a
-                snapshot of the camaraderie.
+                Dive into our latest venture, our dynamic static website. Born
+                from collaboration and innovation, this website you're using
+                showcases a tip of our tech prowess and community spirit. A
+                digital reflection of our journey, here's a glimpse.
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -169,16 +197,15 @@
         <div class="card">
           <div>
             <img
-              src="images/events/community_hangout.png"
+              src="images/events/community_hangout.jpg"
               alt="Community Hangout"
             />
             <div>
               <p class="card_title"><b>Community Hangout</b></p>
               <p class="card_info">
-                Experience the warmth of our vibrant community at our recent
-                community hangout - a gathering that brought friends and
-                neighbors together for a fun and memorable time. Here's a
-                snapshot of the camaraderie.
+                Step into Algorithmia SE's community hub! Our recent hangout was
+                a fusion of tech passion and vibrant connection, forging
+                unforgettable memories. What fun we had in our consortium.
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -188,13 +215,14 @@
         </div>
         <div class="card">
           <div>
-            <img src="images/events/coding_battle.png" alt="Coding Battle" />
+            <img src="images/events/coding_quizzes.png" alt="Coding Quizzes" />
             <div>
-              <p class="card_title"><b>Coding Battle</b></p>
+              <p class="card_title"><b>Coding Quizzes</b></p>
               <p class="card_info">
-                Step into the arena of innovation and excitement as we recount
-                our epic coding battle challenge - an event that ignited sparks
-                of creativity and camaraderie throughout our organization.
+                During our weekly meetings, we've had several SE-related
+                quizzes, aimed at refreshing our minds on our SE journey, and
+                also revisit the very basics of coding. A lot of fun questions
+                too!
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -204,17 +232,14 @@
         </div>
         <div class="card">
           <div>
-            <img
-              src="images/events/python.png"
-              alt="Python Programming Lecture"
-            />
+            <img src="images/events/meetings.jpg" alt="Weekly Meetings" />
             <div>
-              <p class="card_title"><b>Python Programming Lecture</b></p>
+              <p class="card_title"><b>Weekly Meetings</b></p>
               <p class="card_info">
-                Join us as we continue on the journey of discovery. Python is
-                not just a language; it's a gateway to a world of endless
-                opportunities. Stay tuned for future events and updates. Let's
-                keep the Python community thriving and growing.
+                Every week, we meet at 6:00 PM WAT, to discuss, communicate, and
+                share our knowledge, experiences, contributions, ideas and
+                opportunities, on how we can succeed in our projects, and in the
+                main course, our growth in the ALX SE program.
               </p>
               <div>
                 <p class="button"><a href="#">Learn more</a></p>
@@ -222,65 +247,79 @@
             </div>
           </div>
         </div>
+        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
       </div>
     </div>
     <!-- LATEST EVENT ENDS HERE!!!! -->
 
     <!-- PAST EVENTS GOES HERE!!!! -->
     <div class="events">
-      <h3>Past Events</h3>
-      <div class="card_container">
+      <h3><span>Past Events</span></h3>
+      <div class="card_container" id="past-events">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
         <div class="card">
           <div>
-            <img src="images/events/demo_calculator.png" alt="demo project" />
+            <img src="images/events/demo_calculator.jpg" alt="demo project" />
             <div>
               <p class="card_title">
                 <b>Demo Project: C Calculator Project</b>
               </p>
               <p class="card_info">
-                Discover the world of programming as we embarked on an exciting
-                journey to create a calculator using the C programming language.
-                Our calculator project is just the beginning, as we continue to
-                explore new horizons and push the boundaries of what's possible
-                with code.
+                Discover the world of programming as we embark on an exciting
+                journey to create a CMD calculator using the C programming
+                language. Our calculator project is just the beginning, as we
+                continue to explore new horizons and push the boundaries of
+                what's possible with code.
               </p>
               <div>
-                <p class="button"><a href="#">Learn more</a></p>
+                <p class="button">
+                  <a
+                    href="https://github.com/ALX-SE-Algorithmia/Demo-Project"
+                    target="_blank"
+                    >Learn more</a
+                  >
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div>
-            <img src="images/events/demo_calculator.png" alt="demo project" />
+            <img src="images/events/community.jpg" alt="demo project" />
             <div>
               <p class="card_title"><b>Community Meetings</b></p>
               <p class="card_info">
-                Discover the world of programming as we embarked on an exciting
-                journey to create a calculator using the C programming language.
-                Our calculator project is just the beginning, as we continue to
-                explore new horizons and push the boundaries of what's possible
-                with code.
+                Every week, we meet at 6:00 PM WAT virtually, to communicate,
+                and share our knowledge, experiences, contributions, ideas and
+                opportunities, on how we can succeed in our projects, and in the
+                main course, our growth in the ALX SE program.
               </p>
               <div>
-                <p class="button"><a href="#">Learn more</a></p>
+                <p class="button">
+                  <a href="https://forms.gle/P3j9v7tnaAq5j1Qu9" target="_blank"
+                    >Learn more</a
+                  >
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div>
-            <img src="images/events/team_meetups.png" alt="demo project" />
+            <img src="images/events/pld.jpg" alt="Peer Learning Days" />
             <div>
               <p class="card_title"><b>Live Learning Sessions</b></p>
               <p class="card_info">
                 We recently held an inspiring and productive team meeting that
                 brought us together to discuss our goals, share ideas, and
-                strengthen our collective vision. Here's a quick recap of what
-                transpired.
+                strengthen our collective vision. Want to be a part of it?
               </p>
               <div>
-                <p class="button"><a href="#">Learn more</a></p>
+                <p class="button">
+                  <a href="https://forms.gle/P3j9v7tnaAq5j1Qu9" target="_blank"
+                    >Learn more</a
+                  >
+                </p>
               </div>
             </div>
           </div>
@@ -291,19 +330,228 @@
             <div>
               <p class="card_title"><b>Open Source Workshop</b></p>
               <p class="card_info">
-                Explore the latest trends in AI, machine learning, and beyond
-                with industry experts. Learn and network with fellow tech
-                enthusiasts.
+                Talking about the latest trends in Open Source Contribution, how
+                to be a part of it, irrespective of your level of expertise.
+                Contributions to projects are really 🚀🚀🚀.
               </p>
               <div>
-                <p class="button"><a href="#">Learn more</a></p>
+                <p class="button">
+                  <a href="https://forms.gle/P3j9v7tnaAq5j1Qu9" target="_blank"
+                    >Learn more</a
+                  >
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
       </div>
     </div>
-
     <!-- PAST EVENT ENDS HERE!!!! -->
+    <div class="scrolltotop" onclick="scrolltop()">
+      <i class="fa-solid fa fa-arrow-up"></i>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <!--footer style="position: fixed;bottom: 0;"-->
+      <div class="top">
+        <div class="left">
+          <img
+            src="./images/website-logos/logo.svg"
+            width="50px"
+            alt="Algorithmia SE logo"
+          />
+          <p>
+            Algorithmia SE 🌍 represents an inspiring convergence of innovation,
+            collaboration, and transformation impact. It illuminates the path
+            for ALX Software Engineering students, and the wider tech community,
+            fostering a culture of continuous learning, problem-solving, and
+            positive change.
+          </p>
+          <br />
+          <p><a href="tel:+2348139720259">+234-81-3972-0259</a></p>
+          <p>
+            <a href="mailto:algorithmiasecollaborators@gmail.com"
+              >algorithmiasecollaborators@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="right">
+          <h3>Quick Links</h3>
+          <div class="links">
+            <ul style="list-style-type: none">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./events.html">Events</a></li>
+              <li><a href="./index.html#Contact_us">Contact Us</a></li>
+            </ul>
+
+            <ul style="list-style-type: none">
+              <li><a href="./index.html#About_us">About Us</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="under">
+        <ul style="list-style: none">
+          <li>
+            <a href="https://github.com/ALX-SE-Algorithmia" target="_blank">
+              <i class="uil uil-github"></i>
+            </a>
+            <a href="https://twitter.com/Algorithmia_SE" target="_blank">
+              <i class="uil uil-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/algorithmia-se-0743b9283/"
+              target="_blank"
+            >
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://discord.gg/xgEsBQBRp3" target="_blank">
+              <i class="uil uil-discord"></i>
+            </a>
+            <a
+              href="https://whatsapp.com/channel/0029Va5SC3G9sBIFUjjzNl1c"
+              target="_blank"
+            >
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a
+              href="mailto:algorithmiasecollaborators@gmail.com"
+              target="_blank"
+            >
+              <i class="uil uil-envelope"></i>
+            </a>
+            <a href="https://www.youtube.com/@Algorithmia_SE" target="_blank">
+              <i class="uil uil-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="footer_product">
+          A product of
+          <img
+            src="./images/website-logos/logo.svg"
+            width="30px"
+            height="auto"
+            alt="Algorithmia SE logo"
+          />
+        </div>
+        <div class="copyright">
+          &copy; 2023 Algorithmia SE 🌍. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // menu responsivness
+      let menu = document.getElementById("menu-bar");
+      let navbar = document.querySelector(".nav-container");
+
+      window.onscroll = function () {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+      };
+
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      });
+      // menu responsivness ends
+
+      // Card visibility
+      function scrolltop() {
+        window.scrollTo(0, 0);
+      }
+
+      function updateCardVisibility(cardContainerId) {
+        // Get references to the card container and the cards
+        const cardContainer = document.getElementById(cardContainerId);
+        const cards = cardContainer.querySelectorAll(".card");
+        const leftArrow = cardContainer.querySelector(
+          ".fa-circle-chevron-left"
+        );
+        const rightArrow = cardContainer.querySelector(
+          ".fa-circle-chevron-right"
+        );
+
+        // Define the current card index
+        let currentCardIndex = 0;
+
+        // Event listener for left arrow click
+        leftArrow.addEventListener("click", () => {
+          if (currentCardIndex > 0) {
+            currentCardIndex--;
+            updateCardVisibility();
+          }
+        });
+
+        // Event listener for right arrow click
+        rightArrow.addEventListener("click", () => {
+          if (currentCardIndex < cards.length - 3) {
+            currentCardIndex++;
+            updateCardVisibility();
+          }
+        });
+
+        // Function to update the card visibility
+        function updateCardVisibility() {
+          cards.forEach((card, index) => {
+            if (index >= currentCardIndex && index < currentCardIndex + 3) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        }
+
+        // Initial card visibility setup
+        updateCardVisibility();
+      }
+
+      // Call the function for each section
+      updateCardVisibility("upcoming-events");
+      updateCardVisibility("latest-events");
+      updateCardVisibility("past-events");
+
+      // Intersection observer for the navbar
+      const header = document.querySelector("header");
+      const section = document.querySelector(".events");
+      const sectionOptions = {
+        rootMargin: "-500px 0px 0px 0px",
+      };
+
+      const sectionObserver = new IntersectionObserver(function (
+        entries,
+        sectionObserver
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            header.classList.add("nav-scrolled");
+          } else {
+            header.classList.remove("nav-scrolled");
+          }
+        });
+      },
+      sectionOptions);
+
+      sectionObserver.observe(section);
+
+      // Join us link
+      var button = document.getElementById("join_us");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function () {
+        var targetURL = "https://forms.gle/ojo9Yi3xM8mbaZ4HA";
+
+        window.location.href = targetURL;
+      });
+    </script>
   </body>
 </html>
