@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bentham&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="css/blogs.css" />
+    <title>Sharing Our Stories, Through Writing</title>
+  </head>
 
     <head>
         <meta charset="UTF-8" />
@@ -10,6 +30,30 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
         <title>Sharing Our Stories, Through Writing</title>
     </head>
+  <body>
+    <div class="header-background"></div>
+    <!-- NAVIGATION BAR GOES HERE!!!! -->
+    <header>
+      <div class="responsiveness">
+        <div class="logo">
+          <img src="./images/website-logos/logo.svg" alt="" />
+          <span>Algorithmia SE 🌍</span>
+        </div>
+        <!-- For responsiveness -->
+        <div>
+          <i id="menu-bar" class="fas fa-bars"></i>
+        </div>
+      </div>
+      <nav class="nav-container">
+        <ul>
+          <li class="nav-list"><a href="./index.html">Home</a></li>
+          <li class="nav-list">
+            <a href="./index.html#About_us">About Us</a>
+          </li>
+          <li class="nav-list">
+            <a href="./index.html#Contact_us">Contact Us</a>
+          </li>
+          <li class="nav-list"><a href="./projects.html">Projects</a></li>
 
     <body>
         <header>
@@ -29,5 +73,62 @@
             </nav>
         </header>
     </body>
+          <li class="nav-list dropdown">
+            <a href="./events.html">Events</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="./events.html#upcoming-events">Upcoming Events</a>
+              </li>
+              <li><a href="./events.html#latest-events">Latest Events</a></li>
+              <li><a href="./events.html#past-events">Past Events</a></li>
+            </ul>
+          </li>
 
+          <li class="nav-list">
+            <a href="./blogs.html" id="blogs"><span>Blogs</span></a>
+          </li>
+          <button id="join_us">Join Us</button>
+        </ul>
+      </nav>
+    </header>
+    <!-- NAVIGATION BAR ENDS HERE!!!! -->
+
+    <section>
+      <div class="coming-soon">
+        <h1>COMING<br />SOON</h1>
+        <div>
+          <p>
+            We are still working on implementing some exciting features. Stay
+            tuned for updates!
+          </p>
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+            <input type="submit" name="notify" id="notify" value="Notify Me" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // menu responsivness
+      let menu = document.getElementById("menu-bar");
+      let navbar = document.querySelector(".nav-container");
+
+      window.onscroll = function () {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+      };
+
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      });
+      // menu responsivness ends
+    </script>
+  </body>
 </html>
