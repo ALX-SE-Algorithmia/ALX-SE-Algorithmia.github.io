@@ -15,17 +15,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/blogs.css">
   <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
   <title>Sharing Our Stories, Through Writing</title>
   <style></style>
 </head>
   
-<body>  
+<body>
+   <!-- linear gradient -->
+   <div class="header-background"></div>
+   <!-- NAVIGATION BAR GOES HERE!!!! -->
+   <header>
+     <div class="responsiveness">
+       <div class="logo">
+         <img src="./images/website-logos/logo.svg" alt="" />
+         <span>Algorithmia SE 🌍</span>
+       </div>
+       <!-- For responsiveness -->
+        <div>
+         <i id="menu-bar" class="fas fa-bars"></i>
+       </div>
+     </div>
+     <nav class="nav-container">
+       <ul>
+         <li class="nav-list">
+           <a href="./index.html" id="home"><span>Home</span></a>
+         </li>
+         <li class="nav-list"><a href="#About_us">About Us</a></li>
+         <li class="nav-list"><a href="#Contact_us">Contact Us</a></li>
+         <li class="nav-list"><a href="./projects.html">Projects</a></li>
+
+         <li class="nav-list dropdown">
+           <a href="./events.html">Events</a>
+           <ul class="dropdown-content">
+             <li><a href="#upcoming-events">Upcoming Events</a></li>
+             <li><a href="#latest-events">Latest Events</a></li>
+             <li><a href="#past-events">Past Events</a></li>
+           </ul>
+         </li>
+
+         <li class="nav-list"><a href="./blogs.html">Blogs</a></li>
+         <button>
+           <a href="https://forms.gle/ojo9Yi3xM8mbaZ4HA" target="_blank"
+             >Join Us</a
+           >
+         </button>
+       </ul>
+     </nav>
+   </header>
+   <!-- NAVIGATION BAR ENDS HERE!!!! -->
+
   <!-- Start of Evance & Akos -->
   <section id="blog-section" class="container">
     <h1>BLOGS</h1>
-    <div class="blog-nav-section">
       <nav class="blog-nav">
         <ul>
           <li><a href="https://algorithmiasecollaborators.hashnode.dev/" class="current">All</a></li>
@@ -38,7 +81,6 @@
           <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Crypto</a></li>
         </ul>
       </nav>
-    </div>
   </section>
   <!-- End of Evance & Akos -->
   
@@ -59,7 +101,7 @@
   
   <!-- Start of Samuel & Judith -->
   <section id="articles" class="container">
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/algorithmia.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Algorithmia SE 🌍</p></div>
@@ -72,7 +114,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@gidambayiantony" target="_blank" class="author_name">Antony </a></p>
     </div>
     
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/genesis.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Algorithmia SE 🌍</p></div>
@@ -85,7 +127,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@DohouDaniel" target="_blank" class="author_name">Daniel Dohou</a></p>
     </div>
     
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/spotlight.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Spotlight</p></div>
@@ -96,7 +138,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@AlgorithmiaSE" target="_blank" class="author_name">Algorithmia SE 🌍</a></p>
     </div>
     
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/calculator.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Projects</p></div>
@@ -109,7 +151,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@Anniedevkiller" target="_blank" class="author_name">Tiffany Eribenne</a></p>
     </div>
 
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/website.png">
       <div class="date_article_type">
         <div class="tag"><p>Projects</p></div>
@@ -122,7 +164,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@samuelogboye" target="_blank" class="author_name">Samuel Ogboye</a></p>
     </div>
 
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/collaborate.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Algorithmia SE 🌍</p></div>
@@ -135,7 +177,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@gidambayiantony" target="_blank" class="author_name">Antony Gidambayi</a></p>
     </div>
     
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/code-review.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Open Source</p></div>
@@ -148,8 +190,8 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@samuelogboye" target="_blank" class="author_name">Samuel Ogboye</a></p>
     </div>
 
-    <div class="card">
-      <img src="./images/blogs/none_code.jpg">
+    <div class="card_a">
+      <img src="./images/blogs/non_code.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Open Source</p></div>
         <div class="date">
@@ -161,7 +203,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@Anniedevkiller" target="_blank" class="author_name">Tifanny Eberinne</a></p>
     </div>
     
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/trends.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Tech Trends</p></div>
@@ -174,7 +216,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@shazaAli"  target="_blank" class="author_name">Shaza Aly</a></p>
     </div>
 
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/sdg.jpg">
       <div class="date_article_type">
         <div class="tag"><p>SDGs</p></div>
@@ -187,7 +229,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@Anniedevkiller" target="_blank" class="author_name">Tifanny Eberinne</a></p>
     </div>
 
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/problem.jpg">
       <div class="date_article_type">
         <div class="tag"><p>SE</p></div>
@@ -198,7 +240,7 @@
       <p><span class="author_pic"></span><a href="https://hashnode.com/@DohouDaniel" target="_blank" class="author_name">Daniel Dohou</a></p>
     </div>
 
-    <div class="card">
+    <div class="card_a">
       <img src="./images/blogs/women.jpg">
       <div class="date_article_type">
         <div class="tag"><p>Women In Tech</p></div>
@@ -210,5 +252,99 @@
     </div>
   </section>
   <!-- End of Samuel & Judith's contribution -->
+  <footer>
+      <!--footer style="position: fixed;bottom: 0;"-->
+      <div class="top">
+        <div class="left">
+          <img
+            src="./images/website-logos/logo.svg"
+            width="50px"
+            alt="Algorithmia SE logo"
+          />
+          <p>
+            Algorithmia SE 🌍 represents an inspiring convergence of innovation,
+            collaboration, and transformation impact. It illuminates the path
+            for ALX Software Engineering students, and the wider tech community,
+            fostering a culture of continuous learning, problem-solving, and
+            positive change.
+          </p>
+          <br />
+          <p><a href="tel:+2348139720259">+234-81-3972-0259</a></p>
+          <p>
+            <a href="mailto:algorithmiasecollaborators@gmail.com"
+              >algorithmiasecollaborators@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="right">
+          <h3>Quick Links</h3>
+          <div class="links">
+            <ul style="list-style-type: none">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./events.html">Events</a></li>
+              <li><a href="./index.html#Contact_us">Contact Us</a></li>
+            </ul>
+
+            <ul style="list-style-type: none">
+              <li><a href="./index.html#About_us">About Us</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="under">
+        <ul style="list-style: none">
+          <li>
+            <a href="https://github.com/Algorithmia-SE" target="_blank">
+              <i class="uil uil-github"></i>
+            </a>
+            <a href="https://twitter.com/Algorithmia_SE" target="_blank">
+              <i class="uil uil-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/algorithmia-se-0743b9283/"
+              target="_blank"
+            >
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://discord.gg/xgEsBQBRp3" target="_blank">
+              <i class="uil uil-discord"></i>
+            </a>
+            <a
+              href="https://whatsapp.com/channel/0029Va5SC3G9sBIFUjjzNl1c"
+              target="_blank"
+            >
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a
+              href="mailto:algorithmiasecollaborators@gmail.com"
+              target="_blank"
+            >
+              <i class="uil uil-envelope"></i>
+            </a>
+            <a href="https://www.youtube.com/@Algorithmia_SE" target="_blank">
+              <i class="uil uil-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="footer_product">
+          A product of
+          <img
+            src="./images/website-logos/logo.svg"
+            width="30px"
+            height="auto"
+            alt="Algorithmia SE logo"
+          />
+        </div>
+        <div class="copyright">
+          &copy; 2023 Algorithmia SE 🌍. All Rights Reserved
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

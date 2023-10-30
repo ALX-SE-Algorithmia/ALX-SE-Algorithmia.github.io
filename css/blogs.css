@@ -1,9 +1,11 @@
 /* ======================== CSS file for blogs.html ======================== */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  
 
 a {
     text-decoration: none;
@@ -15,7 +17,7 @@ a {
     margin: auto;
     margin-bottom: 3rem;
     padding: 0 2rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* ==== Start of Styling done by Evance and Akos for `BLOGS` section ==== */
 body {
@@ -23,11 +25,13 @@ body {
     background-color: #062f3d;
 }
 
+  
 /* Blog Section Styles */
 #blog-section {
     text-align: center;
     color: #ffffff;
     padding: 20px;
+    margin-top: 10rem;
 }
 
 #blog-section h1 {
@@ -35,7 +39,7 @@ body {
     font-size: 40px;
 }
 
-.blog-nav-section {
+.blog-nav {
     background-color: #ff7b1b;
     border-radius: 30px;
     padding: 10px 12px;
@@ -121,7 +125,6 @@ body {
 }
 
 #article_open_source .content .article_link a {
-    text-decoration: none;
     font-size: 30px;
     color: #fff;
     padding-top:22px;
@@ -147,17 +150,29 @@ body {
     color: #fff;
 }
 
-#articles .card img {
+#articles .card_a {
+    transition: transform 0.3s;
+}
+
+#articles .card_a:nth-child(4) img {
+    height: 190px;
+}
+
+#articles .card_a:hover {
+    transform: scale(1.1);
+}
+
+#articles .card_a img {
     width: 100%;
 }
 
-#articles .card .date_article_type {
+#articles .card_a .date_article_type {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#articles .card .date_article_type .tag {
+#articles .card_a .date_article_type .tag {
     padding: 0.5rem 0.8rem;
     background: #ff7b1b;
     border-radius: 50px;
@@ -165,15 +180,15 @@ body {
     font-size: 14px;
 }
 
-#articles .card  .article_desc {
+#articles .card_a  .article_desc {
     margin: 0.8rem 0;
     font-size: 25px;
 }
 
-#articles .card  .article_desc a:hover,
-#articles .card  .article_desc a:active,
-#articles .card .author_name:hover,
-#articles .card .author_name:active {
+#articles .card_a  .article_desc a:hover,
+#articles .card_a  .article_desc a:active,
+#articles .card_a .author_name:hover,
+#articles .card_a .author_name:active {
     color:#ff7b1b;
 }
 
@@ -184,10 +199,11 @@ body {
         margin: auto;
     }
 
-    .blog-nav-section {
+    .blog-nav {
         padding: 2%;
         border-radius: 10%;
     }
+
     .blog-nav ul {
         flex-wrap: wrap;
         line-height: 1.8;
@@ -234,11 +250,17 @@ body {
 }
 
 @media screen and (max-width: 414px) {
+    .blog-nav {
+        padding: 2%;
+        border-radius: 5%;
+    }
     .blog-nav ul {
-        flex-direction: column
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     .blog-nav ul li .current {
-        display: none;
+        background-color: inherit;
+        color: inherit;
     }
     .blog-nav ul li {
         border-bottom: 1px dashed #d7610c;
@@ -266,7 +288,8 @@ body {
         position: absolute;
         z-index: 100;
         line-height: 1.3;
-        top: 30px;
+        top: 0;
+        text-align: center;
     }
 
     #article_open_source .content h2, #article_open_source .content p {
@@ -275,7 +298,7 @@ body {
 
     #article_open_source .content h2 {
         font-size: 45px;
-        line-height: 38px;
+        line-height: 42px;
     }
 
     #article_open_source .content p {
@@ -289,7 +312,7 @@ body {
     }
 
     #article_open_source .content .article_link .fa-solid  {
-        margin-top: 1.4rem;
+        margin-top: 1.5rem;
     }
 
     #article_open_source .image img  {
@@ -304,4 +327,24 @@ body {
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
     }
+}
+
+@media screen and (max-width: 320px) {
+    #article_open_source .content h2 {
+        font-size: 35px;
+    }
+
+    #article_open_source .content p {
+        margin-bottom: 0.5rem;
+        font-size: 23px;
+    }
+
+    #article_open_source .content .article_link div {
+        width: 65px;
+        height: 65px;
+    }
+
+     #article_open_source .content .article_link a {
+        font-size: 25px;
+    } 
 }
