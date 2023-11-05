@@ -23,63 +23,71 @@ body {
     background-color: #07303e;
     color: white;
 }
-
+  
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;  
 }
-
+  
 html {
     overflow-x: hidden;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
 
+/* a {
+    text-decoration: none;
+    color: #fff;
+} */
+
 /* NAVIGATION BAR GOES HERE!!!! */
+
 .dropdown {
     position: relative;
-  }
-
+}
+  
   /* Hide the dropdown by default */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #07303e;
     padding: 10px;
-  }
-
-  /* Style the individual dropdown items */
-  .dropdown-content li {
+}
+  
+/* Style the individual dropdown items */
+.dropdown-content li {
     margin: 5px, 0;
-  }
-
-  /* Show the dropdown when hovering over the "Event" link */
-  .dropdown:hover .dropdown-content {
+}
+  
+/* Show the dropdown when hovering over the "Event" link */
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
-  }
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
     background-color: #ff7b1b;
-  }
-
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
     background-color: #3e8e41;
-  }
-
-  /* -------------*/
-  header {
+}
+  
+/* -------------*/
+header {
     display: flex;
     flex-direction: row;
     /* justify-content: end; */
@@ -94,164 +102,329 @@ html {
     align-items: center;
     background-color: transparent; /* Make the navbar background transparent */
     transition: box-shadow 0.3s; /* Add a smooth transition to the box-shadow property */
-  }
-
-  /* Intersection observer */
-  .nav-scrolled {
+}
+  
+/* Intersection observer */
+.nav-scrolled {
     color: #fff;
     background-color: #07303e;
-  }
-
-  .logo {
+}
+  
+.logo {
     display: flex;
     align-items: center;
-  }
-
-  .logo img {
+}
+  
+.logo img {
     height: 25px;
     margin-right: 10px;
-  }
-
-  #menu-bar {
+}
+  
+#menu-bar {
     display: none;
     cursor: pointer;
-  }
-
-  .nav-container {
+}
+  
+.nav-container {
     display: flex;
     flex-direction: row;
     margin-right: 42px;
-  }
-
-  .nav-container ul {
+}
+  
+.nav-container ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  .nav-container span {
+}
+  
+.nav-container span {
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(255, 123, 27);
-  }
-
-  .nav-list :hover {
+}
+  
+.nav-list :hover {
     border-bottom: 2px solid #ff7b1b;
-  }
-
-  .nav-list {
+}
+  
+.nav-list {
     display: inline; /* Display list items in a horizontal line */
     margin-right: 40px; /* Add spacing between list items */
-  }
-
-  .nav-list a {
+}
+  
+.nav-list a {
     text-decoration: none;
     color: #fff; /* Set link color to white */
-  }
-
-  .nav-container button {
+}
+  
+.nav-container button {
     background-color: #ff7b1b;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
-  }
-
-  #blogs:hover {
+}
+  
+#blog:hover {
     border-bottom: none;
-  }
-
-  .nav-container button:hover {
+}
+  
+.nav-container button:hover {
     background-color: white;
     color: #ff7b1b;
-  }
-
-  /* NAVIGATION BAR ENDS HERE!!!! */
-/* NAVIGATION BAR ENDS HERE!!!! */
-
-form {
-    margin: 0;
-    padding: 0;
-    margin: 20px auto;
 }
 
-.coming-soon {
-    max-width: 75%;
-    margin: 150px auto;
+#join_us{
+    font-family: "Bentham", serif;
+}
+  /* NAVIGATION BAR ENDS HERE!!!! */
+
+/* ==== Start of Styling done by Evance and Akos for `BLOGS` section ==== */  
+/* Blog Section Styles */
+#blog-section {
+    text-align: center;
+    color: #ffffff;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10rem;
+}
+
+#blog-section h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.blog-nav {
+    background-color: #ff7b1b;
+    border-radius: 30px;
+    padding: 5px 12px;
+    margin: auto;
+    width: 90%;
     text-align: center;
 }
 
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80px;
-    letter-spacing: 16px;
+.blog-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.coming-soon p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    margin-top: 50px;
+.blog-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 18px;
 }
 
-input[type="email"] {
-    width: 500px;
+.blog-nav ul li .current {
+    background-color: #ffffff;
+    color: #ff7b1b;
+}
+
+.blog-nav ul li a:hover,
+.blog-nav ul li a:active {
+    background-color: #ffffff;
+    color: #ff7b1b;
+}
+/* ==== End of Styling done by Evance and Akos for `BLOGS` section ==== */
+
+/* Styling open source article */
+#article_open_source{
+    display: flex;
+    align-items: center;
+    /* background-color:#ff7b1b; */
+    border-radius: 20px;
+    width: 80%; /* Increase the width as needed to make the card wider */
+    height: 420px;
+    margin: 80px auto 0;
+    padding-left: 0;
+    padding-right: 0;
+    /* overflow: hidden; */
+    margin-bottom: 130px;
+}
+  
+.content {
+    flex: 1;
+    margin: 0;
+    color: #fff; /* text for the hero card */
+    /* margin-top: 40px;
+    margin-right: 40px;    */
+}
+  
+.image {
+    flex: 1;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.content h3, .content p, .image img {
+    margin: 0;
+}
+  
+.content h2 {
+    font-size: 40px;
+    padding: 15px;
+    margin: 0;
+}
+  
+.content p{
+    font-size: 18px;
     padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    font-size: 16px;
+    font-weight: 300;
+}
+  
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+.image-hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-input[type="submit"] {
-    width: 130px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    border: none;
-    background-color: #ff7b1b;
+#article_open_source .content .article_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+
+#article_open_source .content .article_link div {
+    margin: 0;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ff7b1b;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#article_open_source .content .article_link .fa-solid {
+    font-size: 25px;
+}
+
+#article_open_source .content .article_link a {
+    font-size: 20px;
     color: #fff;
 }
 
-/* Media Query for Tablets and Smaller Desktops */
+/* Styling by Samuel & Judith */
+#articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    grid-row-gap: 6rem;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#articles .card_a {
+    transition: transform 0.3s;
+}
+
+#articles .card_a:nth-child(4) img {
+    height: 190px;
+}
+
+#articles .card_a:hover {
+    transform: scale(1.1);
+}
+
+#articles .card_a img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px
+}
+
+#articles .card_a .date_article_type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#articles .card_a .date_article_type .tag {
+    padding: 0.5rem 0.8rem;
+    background: #ff7b1b;
+    border-radius: 50px;
+    margin-top: 0.2rem;
+    font-size: 14px;
+}
+
+#articles .card_a  .article_desc {
+    margin: 0.8rem 0;
+    font-size: 20px;
+}
+
+#articles .card_a  .article_desc a:hover,
+#articles .card_a  .article_desc a:active,
+#articles .card_a .author_name:hover,
+#articles .card_a .author_name:active {
+    color:#ff7b1b;
+}
+
+/* Media Query */
+
 @media only screen and (max-width: 1200px) {
     /* Adjust your styles for tablets and smaller desktop screens here */
     header {
       font-size: 14px;
     }
-
+  
   .nav-list {
     margin-right: 20px; /* Add spacing between list items */
-  }
 }
-
+}
+  
 @media (max-width:991px){
     /* For tablets */
+  
     header {
       gap: 50px;
       padding-right: 0;
     }
-
+  
+    /* Footer */
+    .footer_product {
+      display: none;
+    }
+  
 }
 
 @media (max-width: 775px){
     /* For mobile phones */
-    /* Responsieness menubar */
     .responsiveness {
       position: relative;
       display: contents;
       margin-right: auto;
     }
-
+  
     div #menu-bar {
       display: flex;
     }
-
+  
     /* Dropdown menu */
     .dropdown-content li {
       display: none;
     }
-
+  
     /* Navbar */
     .nav-container {
       position: absolute;
@@ -259,12 +432,12 @@ input[type="submit"] {
       background-color: transparent;
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-
+  
     .nav-container span {
       padding-bottom: 0;
       border-bottom: none;
     }
-
+  
     .nav-list a {
       display: block;
       padding: 10px;
@@ -272,44 +445,168 @@ input[type="submit"] {
       background-color: #07303e;
       box-shadow: 0 3px 20px rgba(255, 123, 27, 0.8);
     }
-
+  
     .nav-container button {
       background-color: white;
       color: #ff7b1b;
     }
-
+  
     .nav-container button:hover {
       color: white;
       background-color: #ff7b1b;
     }
-
+  
     /* Header */
     header {
       font-size: 20px;
       padding: 20px;
       background-color: #07303e;
     }
-
+  
     header .nav-container.active{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
-    .coming-soon {
+    .scrolltotop {
+        position: fixed;
+        bottom: 2.5%; right: 0; left: 92%;
         display: flex;
-        flex-direction: column;
-        margin: 150px auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-left: auto;
+    }
+    
+    .fa-arrow-up {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .fa-2xl {
+        font-size: 1em;
+    }
+    
+    /* Footer */
+    /* footer section css */
+    .top {
+        align-items: flex-start;
+        display: block;
+    }
+    
+    .left, .right {
+        width: 100%;
+        text-align: start;
+        padding: 20px;
+    }
+    
+    .right .links {
+        display: flex;
+        gap: 100px;
+        padding: 0;
+        font-size: 1rem;
+        color: #8dacc9;
+    }
+    
+    footer p {
+        font-size: 1rem;
+        width: 70%;
+    }
+    
+    .links li {
+        padding: 0;
+    }
+    
+    .under {
+       flex-direction: column;
+    }
+    
+    .footer_product {
+        display: none;
+    }
+    
+    .copyright {
+        font-size: 16px;
+    }
+    
+    .under a i {
+        padding: 5px;
+    }
+    /* blog */
+    .blog-nav {
+        display: none;
     }
 
-    h1 {
-        font-size: 40px;
+    .blog-nav ul {
+        display: none;
     }
 
-    input[type="email"] {
-        width: 300px;
+    /* .blog-nav ul li a {
+        padding: 6px 36px;
+    } */
+
+    /* .blog-nav {
+        padding-top: 0;
+        margin-top: 0;
+    } */
+
+    #article_open_source {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        background-color: #ff7b1b;
+        border-radius: 20px;
+        width: 60%;
+        height: 750px;
+        margin: 0 auto 0;
+        overflow: hidden;
+        margin-bottom: 130px;
     }
 
+    #articles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
 
+@media (max-width: 580px){
+    /* For mobile phones */
+  
+    /* Navbar */
+    .nav-container {
+      top: 100%; right: 0; left: 60%;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    #article_open_source .content .article_link div {
+        width: 40px;
+        height: 40px;
+    }
+
+    #article_open_source .content .article_link .fa-solid {
+        font-size: 16px;
+    }
+
+    #article_open_source .content .article_link a {
+        font-size: 16px;
+    }
+
+    #article_open_source {
+        height: 620px;
+    }
+
+    #articles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #article_open_source {
+        width: 70%;
+    }
 }
