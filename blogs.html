@@ -1,258 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link
-    rel="icon"
-    href="images/website-logos/index-logo.jpg"
-    type="image/jpg"
-  />
-  <script src="https://kit.fontawesome.com/d683a774d2.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="icon"
+      href="images/website-logos/index-logo.jpg"
+      type="image/jpg"
+    />
+    <script
+      src="https://kit.fontawesome.com/d683a774d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/events.css">
-  <link rel="stylesheet" href="css/blogs.css">
-  <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
-  <title>Sharing Our Stories, Through Writing</title>
-  <style></style>
-</head>
-  
-<body>
-   <!-- linear gradient -->
-   <div class="header-background"></div>
-   <!-- NAVIGATION BAR GOES HERE!!!! -->
-   <header>
-     <div class="responsiveness">
-       <div class="logo">
-         <img src="./images/website-logos/logo.svg" alt="" />
-         <span>Algorithmia SE 🌍</span>
-       </div>
-       <!-- For responsiveness -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bentham&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/blogs.css" />
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
+    <title>Sharing Our Stories, Through Writing</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!--nav bar -->
+    <!-- linear gradient -->
+    <div class="header-background"></div>
+    <!-- NAVIGATION BAR GOES HERE!!!! -->
+    <header>
+      <div class="responsiveness">
+        <div class="logo">
+          <img src="./images/website-logos/logo.svg" alt="" />
+          <span>Algorithmia SE 🌍</span>
+        </div>
+        <!-- For responsiveness -->
         <div>
-         <i id="menu-bar" class="fas fa-bars"></i>
-       </div>
-     </div>
-     <nav class="nav-container">
-       <ul>
-         <li class="nav-list">
-           <a href="./index.html" id="home"><span>Home</span></a>
-         </li>
-         <li class="nav-list"><a href="#About_us">About Us</a></li>
-         <li class="nav-list"><a href="#Contact_us">Contact Us</a></li>
-         <li class="nav-list"><a href="./projects.html">Projects</a></li>
-
-         <li class="nav-list dropdown">
-           <a href="./events.html">Events</a>
-           <ul class="dropdown-content">
-             <li><a href="#upcoming-events">Upcoming Events</a></li>
-             <li><a href="#latest-events">Latest Events</a></li>
-             <li><a href="#past-events">Past Events</a></li>
-           </ul>
-         </li>
-
-         <li class="nav-list"><a href="./blogs.html">Blogs</a></li>
-         <button>
-           <a href="https://forms.gle/ojo9Yi3xM8mbaZ4HA" target="_blank"
-             >Join Us</a
-           >
-         </button>
-       </ul>
-     </nav>
-   </header>
-   <!-- NAVIGATION BAR ENDS HERE!!!! -->
-
-  <!-- Start of Evance & Akos -->
-  <section id="blog-section" class="container">
-    <h1>BLOGS</h1>
-      <nav class="blog-nav">
+          <i id="menu-bar" class="fas fa-bars"></i>
+        </div>
+      </div>
+      <nav class="nav-container">
         <ul>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/" class="current">All</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Open Source</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Software Engineering</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Latest</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Startups</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">AI</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Cybercaster</a></li>
-          <li><a href="https://algorithmiasecollaborators.hashnode.dev/">Crypto</a></li>
+          <li class="nav-list"><a href="./index.html">Home</a></li>
+          <li class="nav-list">
+            <a href="./index.html#About_us">About Us</a>
+          </li>
+          <li class="nav-list">
+            <a href="./index.html#Contact_us">Contact Us</a>
+          </li>
+          <li class="nav-list">
+            <a href="./projects.html">Projects</a>
+          </li>
+
+          <li class="nav-list dropdown">
+            <a href="./events.html">Events</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="./events.html#upcoming-events">Upcoming Events</a>
+              </li>
+              <li><a href="./events.html#latest-events">Latest Events</a></li>
+              <li><a href="./events.html#past-events">Past Events</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-list">
+            <a href="./blogs.html" id="blog"><span>Blogs</span></a>
+          </li>
+          <button id="join_us">Join Us</button>
         </ul>
       </nav>
-  </section>
-  <!-- End of Evance & Akos -->
-  
-  <!-- Section contains content and link to the article "Beginner's Guide to open source" -->
-  <section id="article_open_source" class="container">
-    <div class="content">
-      <h2>Demystifying Open Source: A Beginner's Guide</h2>
-      <p>Explore the world of open-source software, its significance, and how beginners can get involved in open-source projects.</p>
-      <div class="article_link">
-        <div><i class="fa-solid fa-arrow-right"></i></div>
-        <a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Read full article</a>
-      </div>
-    </div>
-    <div class="image">
-      <img src="./images/blogs/open_source.png" alt="open source">
-    </div>
-  </section>
-  
-  <!-- Start of Samuel & Judith -->
-  <section id="articles" class="container">
-    <div class="card_a">
-      <img src="./images/blogs/algorithmia.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Algorithmia SE 🌍</p></div>
-        <div class="date">
-          <p>Oct 28, 2023</p>
+    </header>
+    <!-- NAVIGATION BAR ENDS HERE!!!! -->
+
+    <!-- Start of Evance & Akos -->
+    <section id="blog-section" class="container">
+      <!-- <h1>BLOGS</h1> -->
+      <nav class="blog-nav">
+        <ul>
+          <li>
+            <a
+              href="https://algorithmiasecollaborators.hashnode.dev/"
+              class="current"
+              >All</a
+            >
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/"
+              >Open Source</a
+            >
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/"
+              >Software Engineering</a
+            >
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/"
+              >Latest</a
+            >
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/"
+              >Startups</a
+            >
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/">AI</a>
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/"
+              >Cybercaster</a
+            >
+          </li>
+          <li>
+            <a href="https://algorithmiasecollaborators.hashnode.dev/"
+              >Crypto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of Evance & Akos -->
+
+    <!-- Section contains content and link to the article "Beginner's Guide to open source" -->
+    <section id="article_open_source" class="container">
+      <div class="content">
+        <h2>Demystifying Open Source: A Beginner's Guide</h2>
+        <p>
+          Explore the world of open-source software, its significance, and how
+          beginners can get involved in open-source projects.
+        </p>
+        <div class="article_link">
+          <div><i class="fa-solid fa-arrow-right"></i></div>
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Read full article</a
+          >
         </div>
       </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/algorithmia-se-building-an-open-source-community-through-collaboration" target="_blank">Algorithmia SE 🌍</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@gidambayiantony" target="_blank" class="author_name">Antony </a></p>
-    </div>
-    
-    <div class="card_a">
-      <img src="./images/blogs/genesis.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Algorithmia SE 🌍</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
+      <div class="image">
+        <img src="./images/blogs/open_source.png" alt="open source" />
+      </div>
+    </section>
+
+    <!-- Start of Samuel & Judith -->
+    <section id="articles" class="container">
+      <div class="card_a">
+        <img src="./images/blogs/algorithmia.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Algorithmia SE 🌍</p></div>
+          <div class="date">
+            <p>Oct 28, 2023</p>
+          </div>
         </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/algorithmia-se-building-an-open-source-community-through-collaboration"
+            target="_blank"
+            >Algorithmia SE 🌍</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@gidambayiantony"
+            target="_blank"
+            class="author_name"
+            >Antony
+          </a>
+        </p>
       </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">The Genesis Of Algorithmia SE 🌍</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@DohouDaniel" target="_blank" class="author_name">Daniel Dohou</a></p>
-    </div>
-    
-    <div class="card_a">
-      <img src="./images/blogs/spotlight.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Spotlight</p></div>
-        <div class="date">Coming Soon</p></div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Community Spotlight: Celebrating Algorithmia SE's Core Team</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@AlgorithmiaSE" target="_blank" class="author_name">Algorithmia SE 🌍</a></p>
-    </div>
-    
-    <div class="card_a">
-      <img src="./images/blogs/calculator.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Projects</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
+
+      <div class="card_a">
+        <img src="./images/blogs/genesis.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Algorithmia SE 🌍</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
         </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >The Genesis Of Algorithmia SE 🌍</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@DohouDaniel"
+            target="_blank"
+            class="author_name"
+            >Daniel Dohou</a
+          >
+        </p>
       </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Behind The Scene: Demo Project</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@Anniedevkiller" target="_blank" class="author_name">Tiffany Eribenne</a></p>
+
+      <div class="card_a">
+        <img src="./images/blogs/spotlight.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Spotlight</p></div>
+          <div class="date"><p>Coming Soon</p></div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Community Spotlight: Celebrating Algorithmia SE's Core Team</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@AlgorithmiaSE"
+            target="_blank"
+            class="author_name"
+            >Algorithmia SE 🌍</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/calculator.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Projects</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Behind The Scene: Demo Project</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@Anniedevkiller"
+            target="_blank"
+            class="author_name"
+            >Tiffany Eribenne</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/website.png" />
+        <div class="date_article_type">
+          <div class="tag"><p>Projects</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Behind The Scenes: Static Web Project</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@samuelogboye"
+            target="_blank"
+            class="author_name"
+            >Samuel Ogboye</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/collaborate.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Algorithmia SE 🌍</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Collaboration in Tech: The Power of Team Projects</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@gidambayiantony"
+            target="_blank"
+            class="author_name"
+            >Antony Gidambayi</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/code-review.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Open Source</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Mastering the Art of Code Review: Best Practices</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@samuelogboye"
+            target="_blank"
+            class="author_name"
+            >Samuel Ogboye</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/none_code.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Open Source</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Contributing to Open Source with Non-code Skills</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@Anniedevkiller"
+            target="_blank"
+            class="author_name"
+            >Tifanny Eberinne</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/trends.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Tech Trends</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Tech Trends of the year 2023: A Sight of 2024</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@shazaAli"
+            target="_blank"
+            class="author_name"
+            >Shaza Aly</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/sdg.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>SDGs</p></div>
+          <div class="date">
+            <p>Coming Soon</p>
+          </div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Harnessing Technology for Sustainable Developments</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@Anniedevkiller"
+            target="_blank"
+            class="author_name"
+            >Tifanny Eberinne</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/problem.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>SE</p></div>
+          <div class="date"><p>Coming Soon</p></div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Problem Solving 101</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@DohouDaniel"
+            target="_blank"
+            class="author_name"
+            >Daniel Dohou</a
+          >
+        </p>
+      </div>
+
+      <div class="card_a">
+        <img src="./images/blogs/women.jpg" />
+        <div class="date_article_type">
+          <div class="tag"><p>Women In Tech</p></div>
+          <div class="date"><p>Coming Soon</p></div>
+        </div>
+        <p class="article_desc">
+          <a
+            href="https://algorithmiasecollaborators.hashnode.dev/"
+            target="_blank"
+            >Women in Tech: Empowering the Next Generation</a
+          >
+        </p>
+        <!-- Replace with an image -->
+        <p>
+          <span class="author_pic"></span
+          ><a
+            href="https://hashnode.com/@shazaAli"
+            target="_blank"
+            class="author_name"
+            >Shaza Aly</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- End of Samuel & Judith's contribution -->
+
+    <div class="scrolltotop" onclick="scrolltop()">
+      <i class="fa fa-arrow-up"></i>
     </div>
 
-    <div class="card_a">
-      <img src="./images/blogs/website.png">
-      <div class="date_article_type">
-        <div class="tag"><p>Projects</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
-        </div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Behind The Scenes: Static Web Project</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@samuelogboye" target="_blank" class="author_name">Samuel Ogboye</a></p>
-    </div>
-
-    <div class="card_a">
-      <img src="./images/blogs/collaborate.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Algorithmia SE 🌍</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
-        </div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Collaboration in Tech: The Power of Team Projects</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@gidambayiantony" target="_blank" class="author_name">Antony Gidambayi</a></p>
-    </div>
-    
-    <div class="card_a">
-      <img src="./images/blogs/code-review.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Open Source</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
-        </div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Mastering the Art of Code Review: Best Practices</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@samuelogboye" target="_blank" class="author_name">Samuel Ogboye</a></p>
-    </div>
-
-    <div class="card_a">
-      <img src="./images/blogs/none_code.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Open Source</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
-        </div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Contributing to Open Source with Non-code Skills</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@Anniedevkiller" target="_blank" class="author_name">Tifanny Eberinne</a></p>
-    </div>
-    
-    <div class="card_a">
-      <img src="./images/blogs/trends.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Tech Trends</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
-        </div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Tech Trends of the year 2023: A Sight of 2024</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@shazaAli"  target="_blank" class="author_name">Shaza Aly</a></p>
-    </div>
-
-    <div class="card_a">
-      <img src="./images/blogs/sdg.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>SDGs</p></div>
-        <div class="date">
-          <p>Coming Soon</p>
-        </div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Harnessing Technology for Sustainable Developments</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@Anniedevkiller" target="_blank" class="author_name">Tifanny Eberinne</a></p>
-    </div>
-
-    <div class="card_a">
-      <img src="./images/blogs/problem.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>SE</p></div>
-        <div class="date"><p>Coming Soon</p></div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Problem Solving 101</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@DohouDaniel" target="_blank" class="author_name">Daniel Dohou</a></p>
-    </div>
-
-    <div class="card_a">
-      <img src="./images/blogs/women.jpg">
-      <div class="date_article_type">
-        <div class="tag"><p>Women In Tech</p></div>
-        <div class="date"><p>Coming Soon</p></div>
-      </div>
-      <p class="article_desc"><a href="https://algorithmiasecollaborators.hashnode.dev/" target="_blank">Women in Tech: Empowering the Next Generation</a></p>
-      <!-- Replace with an image -->
-      <p><span class="author_pic"></span><a href="https://hashnode.com/@shazaAli" target="_blank" class="author_name">Shaza Aly</a></p>
-    </div>
-  </section>
-  <!-- End of Samuel & Judith's contribution -->
-  <footer>
+    <footer>
       <!--footer style="position: fixed;bottom: 0;"-->
       <div class="top">
         <div class="left">
@@ -346,5 +578,61 @@
         </div>
       </div>
     </footer>
-</body>
+
+    <!-- JavaScript -->
+    <script>
+      // menu responsiveness
+      let menu = document.getElementById("menu-bar");
+      let navbar = document.querySelector(".nav-container");
+
+      window.onscroll = function () {
+        menu.classList.remove("fa-times");
+        navbar.classList.remove("active");
+      };
+
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      });
+      // menu responsiveness ends
+
+      // Card visibility
+      function scrolltop() {
+        window.scrollTo(0, 0);
+      }
+
+      // Intersection observer for the navbar
+      const header = document.querySelector("header");
+      const section = document.querySelector(".container");
+      const sectionOptions = {
+        rootMargin: "-200px 0px 0px 0px",
+      };
+
+      const sectionObserver = new IntersectionObserver(function (
+        entries,
+        sectionObserver
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            header.classList.add("nav-scrolled");
+          } else {
+            header.classList.remove("nav-scrolled");
+          }
+        });
+      },
+      sectionOptions);
+
+      sectionObserver.observe(section);
+
+      // Join us link
+      var button = document.getElementById("join_us");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function () {
+        var targetURL = "https://forms.gle/ojo9Yi3xM8mbaZ4HA";
+
+        window.location.href = targetURL;
+      });
+    </script>
+  </body>
 </html>
