@@ -39,3 +39,9 @@ menu.addEventListener("click", function () {
   menu.classList.toggle("fa-times");
   navbar.classList.toggle("active");
 });
+
+// Year updater
+var currentYearElement = document.getElementById('currentYear');
+if (currentYearElement) {
+    currentYearElement.innerText = new Date().getFullYear();
+}
