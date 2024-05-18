@@ -31,6 +31,10 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
+    <!-- The email sending function -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+
     <!-- Title of the website -->
     <title>Algorithmia SE 🌍</title>
   </head>
@@ -275,17 +279,19 @@
         <br />
         Reach out to us
       </p>
-      <form
+      <form onsubmit="emailSend(); this.reset(); return false;">
+        <!--
         action="https://formspree.io/f/mrgwjrej"
         method="POST"
         target="_blank"
-      >
+        -->
         <div class="contact-details">
           <div class="name">
             <div class="first-name">
               <label>First name</label> <br />
               <input
                 type="text"
+                id="firstname"
                 class="input1"
                 placeholder="Enter your first name"
                 required
@@ -295,6 +301,7 @@
               <label>Last name</label> <br />
               <input
                 type="text"
+                id="lastname"
                 class="input1"
                 placeholder="Enter your last name"
                 required
@@ -341,6 +348,33 @@
         <button class="button">Send Message</button>
       </form>
     </div>
+
+    <script>
+      function emailSend() {
+        var firstname = document.getElementById('firstname').value;
+        var lastname = document.getElementById('lastname').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var messageBody = document.getElementById('message').value;
+
+        Email.send({
+          Host: 'smtp.elasticemail.com',
+          Username: 'algorithmiasecollaborators@gmail.com',
+          Password: '704616A958BE547C2147765142FFDC479F8D',
+          To: 'algorithmiasecollaborators@gmail.com',
+          From: email,
+          Subject: 'Contact Form Submission from ' + firstname + ' ' + lastname,
+          Body: '<strong>Name:</strong> ' + firstname + ' ' + lastname + '<br><br><strong>Email:</strong> ' + email + '<br><br><strong>Phone Number:</strong>: ' + phone + '<br><br><strong>Message:</strong> ' + messageBody
+          }).then(
+               message => {
+                 if (message === 'OK') {
+                   swal("Email sent successfully • We'll get back to you shortly.", "", "success");
+                } else {
+                    swal("Mail sending failed 💔 • Try again?", "", "error");
+                  }
+          });
+      }
+    </script>
 
     <!-- Subscribing to newsletter -->
     <div class="subscribe-container">
